@@ -1,0 +1,46 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Filters {
+  font-size: 0.875rem;
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+
+  & :global(.form-select-sm) {
+    font-size: 0.75rem;
+  }
+
+  @include mixins.lg {
+    top: 4rem;
+    bottom: unset;
+    position: sticky;
+    --bs-bg-opacity: 0;
+    width: calc(100% - (125px + 0.75rem));
+    margin-top: -2.6rem;
+
+    & :global(.form-select) {
+      width: 100px;
+    }
+  }
+
+  @include mixins.xl {
+    width: calc(100% - (235px + 0.75rem));
+    top: calc(9.5rem - 2.6rem);
+  }
+
+  @include mixins.xxl {
+    & :global(.form-select) {
+      width: unset;
+    }
+  }
+}
+
+.Main :global([class^="DynamicPage_Pagination"] h2) {
+  @include mixins.lg {
+    width: calc(100% - (300px + 0.75rem));
+  }
+  @include mixins.xl {
+    width: calc(100% - (428px + 0.75rem));
+  }
+}

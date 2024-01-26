@@ -1,0 +1,141 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Heading {
+  background-color: mixins.$black-1;
+}
+
+.Content {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+
+  @include mixins.sm {
+    grid-template-columns: calc(100% / 3) 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media (min-width: 1800px) {
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 1fr;
+  }
+}
+
+.Stats {
+  background-color: mixins.$white-7;
+}
+
+.Background {
+  object-fit: cover;
+}
+
+.Circles {
+  & > * {
+    height: calc(100rem / 16);
+    width: calc(100rem / 16);
+    position: relative;
+    background-color: inherit;
+
+    @include mixins.md {
+      height: calc(150rem / 16);
+      width: calc(150rem / 16);
+    }
+
+    @include mixins.xl {
+      height: calc(200rem / 16);
+      width: calc(200rem / 16);
+    }
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mixins.md {
+      font-size: 0.8rem;
+    }
+
+    @include mixins.xl {
+      font-size: 1rem;
+    }
+  }
+
+  &__Pill {
+    top: 25%;
+
+    @include mixins.md {
+      top: 20%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(7.25%);
+
+    @include mixins.md {
+      transform: translateY(5%);
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 21.5%;
+
+    @include mixins.md {
+      bottom: 17.5%;
+    }
+  }
+}
+
+.Circles.darkMode {
+  & :global(.CircularProgressbar .CircularProgressbar-trail) {
+    stroke: rgba(214, 214, 214, 0.3);
+  }
+}
+
+.Games {
+  & :global(.slick-prev::before),
+  & :global(.slick-next::before) {
+    color: gray !important;
+  }
+
+  & :global(.slick-slide) > :global(div) {
+    margin: 0 calc(0.5rem / 2);
+  }
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.Scores {
+  @include mixins.sm {
+    width: min-content;
+  }
+
+  @include mixins.md {
+    width: unset;
+    max-width: calc(200rem / 16);
+    background-color: mixins.$black-05;
+  }
+
+  & > * {
+    &:nth-last-of-type(1) {
+      @include mixins.md {
+        width: 100%;
+        justify-content: center;
+        background-color: mixins.$black-1;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.DisplayImage {
+  @media (min-width: 1800px) {
+    grid-row: span 1;
+    padding: 1rem;
+  }
+}

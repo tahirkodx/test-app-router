@@ -1,0 +1,136 @@
+@use "@/styles/mixins.module.scss" as mixins;
+/* @import "../Styles/HelperCommon.scss"; */
+
+.MainSlideshow {
+  z-index: 1;
+
+  &__Item {
+    transition: all 500ms ease-in-out !important;
+  }
+
+  &__Item:hover {
+    opacity: 0.25;
+  }
+
+  & :global(.carousel-indicators) {
+    background-color: mixins.$black-6;
+    border-radius: 10rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    right: unset;
+
+    & :global([data-bs-target]) {
+      width: 15px;
+      height: 5px;
+
+      @include mixins.sm {
+        width: 30px;
+      }
+    }
+  }
+}
+
+.Slide {
+  height: 0;
+  position: relative;
+  padding-top: 38.77551020408163%;
+  @media (min-width: 550px) {
+    padding-top: 20.5078125%;
+  }
+}
+
+.SlideLink {
+  background-color: black;
+}
+
+.RainbowLine {
+  background: mixins.$rainbow-gradient-2;
+  height: 5px;
+}
+
+.MainTitle {
+  .Shadow {
+    text-shadow: -2px 0px 6px rgba(0, 0, 0, 0.85);
+  }
+
+  > * {
+    grid-template-columns: 1fr 850px 1fr;
+  }
+
+  @include mixins.xl {
+    > * {
+      grid-template-columns: 1fr 1000px 1fr;
+    }
+  }
+}
+
+.Tiles {
+  display: grid;
+  width: 100%;
+  transition: all ease-in-out 250ms;
+
+  &__Child {
+    padding: 0.5rem;
+    position: relative;
+    transition: ease-in-out 250ms all;
+
+    @include mixins.md {
+      &:hover {
+        & .Tiles__Child__Paragraph {
+          max-height: calc(300rem / 16);
+          opacity: 1;
+        }
+      }
+    }
+
+    @include mixins.lg {
+      padding: 1rem;
+    }
+
+    &__Paragraph {
+      transition: ease-in-out 250ms all;
+      overflow: hidden;
+      max-height: 0;
+      opacity: 0;
+    }
+  }
+
+  &__Product {
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__Link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: mixins.$black-fade-2;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+
+    @include mixins.lg {
+      padding: 1rem;
+    }
+
+    &:hover {
+      background: mixins.$black-fade-1;
+    }
+  }
+
+  &__Logo {
+    max-height: 70%;
+    min-height: 45%;
+    max-width: 50%;
+    display: block;
+    object-fit: contain;
+  }
+}

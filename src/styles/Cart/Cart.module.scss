@@ -1,0 +1,153 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Main {
+  background-color: mixins.$grey-9;
+}
+
+.ShowHideFade {
+  // opacity: 0;
+  transition: all 350ms ease-in-out;
+
+  &.show {
+    opacity: 100%;
+    transition: all 350ms ease-in-out;
+  }
+}
+
+.Product {
+  &__Image {
+    height: 75px;
+
+    @include mixins.sm {
+      height: unset;
+    }
+  }
+
+  &__Description * {
+    font-size: 0.75rem !important;
+  }
+}
+
+.PromoCode {
+  @include mixins.sm {
+    background-color: mixins.$grey-9;
+  }
+}
+
+.Summary {
+  &__Content {
+    max-width: 400px;
+
+    @include mixins.xxl {
+      max-width: unset;
+    }
+  }
+}
+
+.EmptyCart {
+  @include mixins.sm {
+    width: max-content;
+  }
+}
+
+.PayCards {
+  @media (min-width: 1700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.PayCard {
+  grid-template-rows: auto 50px;
+
+  @include mixins.sm {
+    grid-template-rows: 2rem 50px;
+  }
+}
+
+.Ozow {
+  object-fit: fill;
+}
+
+.OzowLogos {
+  gap: 0 0.25rem;
+}
+
+.OzowCard {
+  @media (min-width: 1700px) {
+    grid-column: span 1;
+  }
+}
+
+.HoverGrow {
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.035);
+  }
+}
+
+:global(.form-check-input:checked) + * + .PayCardLink {
+  border: 1px solid grey;
+  border-radius: mixins.$rounded;
+}
+
+.Products {
+  grid-template-rows: auto 1fr;
+}
+
+.Scrollbar,
+.Scrollbar * {
+  scrollbar-width: thin;
+  scrollbar-color: mixins.$blue-2 #bdbdbd;
+}
+
+.Scrollbar::-webkit-scrollbar,
+.Scrollbar *::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Scrollbar::-webkit-scrollbar-track,
+.Scrollbar *::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+
+.Scrollbar::-webkit-scrollbar-thumb,
+.Scrollbar *::-webkit-scrollbar-thumb {
+  background-color: mixins.$blue-2;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+
+.ShippingName {
+  width: calc(100% - 5rem);
+}
+
+.LinkHeading {
+  text-decoration: none;
+  border-color: #dadada;
+}
+
+.ProductsCard {
+  transition: linear 250ms all;
+}
+
+.CartImg {
+  max-height: 150px;
+  height: auto;
+  animation-name: CartImg;
+  animation-duration: 500ms;
+}
+
+@keyframes CartImg {
+  0% {
+    max-height: 150px;
+  }
+
+  50% {
+    max-height: 175px;
+  }
+
+  0% {
+    max-height: 150px;
+  }
+}

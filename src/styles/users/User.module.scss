@@ -1,0 +1,202 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.AddressBook {
+    &__Heading {
+      background-color: rgba(106, 248, 125, 0.849);
+    }
+  }
+  
+  .Orders {
+    &__Columns {
+      @include mixins.sm {
+        grid-template-columns: 5% 10% 15% 20% 20% 15% 15%;
+      }
+    }
+  
+    &__Headings {
+      & > * {
+        border-bottom: 1px solid mixins.$white-1;
+        border-top: 1px solid mixins.$white-1;
+      }
+      
+      @include mixins.sm {
+        display: none !important;
+      }
+    }
+  
+    &__Order {
+      &:nth-of-type(odd) {
+        @include mixins.sm {
+          background-color: rgba(0, 0, 0, 0.025);
+        }
+      }
+  
+      &:nth-of-type(1) .Orders__Headings {
+        @include mixins.sm {
+          display: grid !important;
+        }
+      }
+  
+      & .Orders__Columns {
+        grid-template-rows: repeat(3, 1.75rem) 3rem 3.3rem repeat(2, 1.75rem);
+        overflow: hidden;
+  
+        & > * {
+          overflow: hidden;
+        }
+  
+        @include mixins.sm {
+          grid-template-rows: unset;
+        }
+      }
+  
+      & .Orders__Columns.Offline {
+        grid-template-rows: repeat(3, 1.75rem) 4.5rem 3.3rem 1.75rem;
+  
+        @include mixins.sm {
+          grid-template-rows: unset;
+        }
+      }
+  
+      & .Orders__ContentColumns {
+        & > *:nth-of-type(odd) {
+          background-color: rgba(0, 0, 0, 0.05);
+          border-bottom: 1px solid mixins.$black-1;
+          border-top: 1px solid mixins.$black-1;
+  
+          @include mixins.sm {
+            background-color: unset;
+            border-bottom: unset;
+            border-top: unset;
+          }
+        }
+      }
+    }
+  }
+  
+  .Wishlist {
+    &__Name {
+      & * {
+        font-size: 0.875rem !important;
+      }
+    }
+  
+    &__Product {
+      @include mixins.md {
+        & > * > *:nth-child(1) {
+          display: none;
+        }
+  
+        &:nth-child(1) > * > *:nth-child(1) {
+          display: block;
+        }
+  
+        &:nth-of-type(odd) {
+          background-color: rgba(0, 0, 0, 0.025);
+        }
+      }
+    }
+  
+    &__Price {
+      font-size: 0.875rem;
+  
+      @include mixins.xl {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  .Requests {
+    &__Row {
+      @include mixins.md {
+        & > * > *:nth-child(1) {
+          display: none;
+        }
+  
+        &:nth-child(1) > * > *:nth-child(1) {
+          display: block;
+        }
+  
+        &:nth-of-type(odd) {
+          background-color: rgba(0, 0, 0, 0.025);
+        }
+      }
+    }
+  }
+  
+  #left-tabs-example-tab-null {
+    text-align: center;
+    font-weight: 500;
+    background: mixins.$blue-gradient-1;
+    color: black;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+  
+    & + * {
+      background-color: mixins.$grey-6;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  .Nav {
+    top: 3.5rem;
+    z-index: 2;
+    margin: -0.5rem auto 0;
+    width: 100%;
+    max-width: calc(350rem / 12);
+  
+    @include mixins.sm {
+      margin: -1rem auto 0;
+    }
+  
+    @include mixins.lg {
+      top: unset;
+      z-index: 1;
+      margin: unset;
+    }
+  }
+  
+  .Pagination {
+    background-color: #d5d5d5;
+  }
+  
+  .ItemRow {
+    &__Section:nth-of-type(odd) {
+      background-color:rgba(0, 0, 0, 0.05);
+    }
+  
+    @include mixins.sm {
+      &__Heading {
+        display: none !important;
+      }
+    }
+  
+  }
+  
+  .ItemRow:nth-of-type(1) {
+  
+    & .ItemRow__Heading {
+      @include mixins.sm {
+        display: grid !important;
+      }
+    }
+    
+  }
+  
+  .MyAccountCard {
+  
+    & > *:nth-last-of-type(1) {
+      transition: ease-in-out 250ms all;
+      opacity: 0;
+    }
+  
+    &:hover {
+      z-index: 2;
+  
+      & > *:nth-last-of-type(1) {
+        opacity: 1;
+      }
+    }
+  }

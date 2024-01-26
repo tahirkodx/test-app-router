@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -12,15 +15,28 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@axios": ["./src/custom/utils/apis/axios.ts"],
+      "@actions": ["./src/custom/utils/actions"],
+      "@apitypes": ["./src/custom/utils/types"],
+      "@transformers": ["./src/custom/utils/transformers"],
+      "@apiEndpoints": ["./src/custom/utils/apis/apiEndpoints"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "html/types/**/*.ts",
+    "src/store/common-context.js"
+  ],
   "exclude": ["node_modules"]
 }

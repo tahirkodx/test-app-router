@@ -1,0 +1,7 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Details {
+    @include mixins.sm {
+      grid-template-columns: max-content 1fr;
+    }
+  }

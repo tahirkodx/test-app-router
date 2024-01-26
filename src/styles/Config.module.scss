@@ -1,0 +1,23 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+
+.List {
+    @include mixins.lg {
+      height: 40vh;
+      overflow: auto;
+    }
+  }
+  
+  .Config {
+    @include mixins.lg {
+      top: 2rem;
+    }
+    @include mixins.xl {
+      top: 6.5rem;
+    }
+  }
+  
+  .MobiNav {
+    top: 3.5rem;
+  }
+  

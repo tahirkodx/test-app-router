@@ -1,0 +1,52 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Grid {
+    grid-template-rows: 250px auto;
+  
+    @include mixins.sm {
+      grid-template-rows: unset;
+    }
+  }
+  
+  .NoGrid,
+  .NoGrid > * {
+    max-height: 250px;
+    min-height: 250px;
+  
+    @include mixins.sm {
+      max-height: 413px;
+      min-height: 413px;
+    }
+  }
+  
+  .GridSize {
+    @include mixins.sm {
+      max-height: 413px;
+      min-height: 413px;
+    }
+  }
+  
+  .MainImage {
+    height: 100%;
+    & > * {
+      width: 100%;
+      height: 100%;
+  
+      & > *:nth-of-type(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  
+  .MainCanvas {
+    overflow: hidden;
+  
+    &:hover {
+      border: 1px solid lightgray;
+    }
+  }
+  

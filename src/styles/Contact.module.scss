@@ -1,0 +1,39 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+$color1: purple;
+$color2: hotpink;
+
+.MainHeading {
+  &__Part1 {
+    color: $color1;
+  }
+  &__Part2 {
+    color: $color2;
+  }
+}
+
+.HeroImage {
+  height: 200px;
+  object-fit: contain;
+
+  @include mixins.md {
+    height: auto;
+  }
+}
+
+.BlueGradient {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 121, 145, 1) 0%,
+    rgb(31, 174, 131) 100%
+  );
+}
+
+.SubHeading {
+  color: $color2;
+}
+
+.GoogleMap {
+  width: 100%;
+  height: 330px;
+}

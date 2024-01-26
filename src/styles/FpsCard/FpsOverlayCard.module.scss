@@ -1,0 +1,64 @@
+.FPSPerform {
+  grid-template-rows: minmax(35px, 200px) 1fr min-content;
+}
+
+.LazyPlaceholder {
+  & > * {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.Circles {
+  & > * {
+    height: calc(70rem / 16);
+    width: calc(70rem / 16);
+    position: relative;
+    background-color: white;
+    border-radius: 70rem;
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__Pill {
+    bottom: 0;
+    padding-bottom: 0.3rem !important;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(-15.25%);
+    font-size: 1.5rem;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 32.5%;
+  }
+}
+
+.Content {
+  grid-template-rows: repeat(3, auto) 50px;
+
+  & :global(.slick-list) {
+    // width: calc(100% - 2rem);
+    // margin-left: 1rem;
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  & :global(.slick-slide) {
+    & > div {
+      margin: 0.2rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Items {
+    height: 30vh;
+    overflow: auto;
+}
+
+.FreeItem {
+    & * {
+        font-size: 0.7rem !important;
+    }
+}

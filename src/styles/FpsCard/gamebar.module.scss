@@ -1,0 +1,9 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.LazyPlaceholder {
+  & > * {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

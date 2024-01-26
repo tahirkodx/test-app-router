@@ -1,0 +1,80 @@
+@use "./mixins.module.scss";
+
+$bloodyMary: #dd2476, #ff512f;
+$DarkFade: rgb(33, 37, 41), rgba(33, 37, 41, 0);
+
+.default {
+  background-color: mixins.$lightgrey-3;
+}
+
+.rainbowGradient_4 {
+  background: mixins.$rainbow-gradient-4;
+}
+
+.whiteFadeToTop {
+  background: mixins.$white-fade-1;
+}
+
+.whiteFadeToLeft {
+  background: mixins.$white-fade-1-left;
+}
+
+.whiteFadeToRight {
+  background: mixins.$white-fade-1-right;
+}
+
+.whiteFadeToBottom {
+  background: mixins.$white-fade-1-bot;
+}
+
+.BloodyMary.Right {
+  background: linear-gradient(to right, $bloodyMary);
+}
+
+.BloodyMary.Left {
+  background: linear-gradient(to left, $bloodyMary);
+}
+
+.BloodyMary.Down {
+  background: linear-gradient(to bottom, $bloodyMary);
+}
+
+.BloodyMary.Up {
+  background: linear-gradient(to top, $bloodyMary);
+}
+
+.BloodyMary.Angle {
+  background: linear-gradient(45deg, $bloodyMary);
+}
+
+.BloodyMary.AngleReverse {
+  background: linear-gradient(-45deg, $bloodyMary);
+}
+
+.BloodyMary.Right {
+  background: linear-gradient(to right, $bloodyMary);
+}
+
+.DarkFadeLeft {
+  background: linear-gradient(to left, $DarkFade);
+}
+
+.DarkFadeDown {
+  background: linear-gradient(to bottom, $DarkFade);
+}
+
+.DarkFadeUp {
+  background: linear-gradient(to top, $DarkFade);
+}
+
+.DarkFadeAngle {
+  background: linear-gradient(45deg, $DarkFade);
+}
+
+.DarkFadeAngleReverse {
+  background: linear-gradient(-45deg, $DarkFade);
+}
+
+.MangoPulp {
+  background: linear-gradient(to right, #edde5d, #f09819);
+}

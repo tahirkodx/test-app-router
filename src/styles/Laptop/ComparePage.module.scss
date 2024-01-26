@@ -1,0 +1,55 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.ProductImage {
+  height: 50px;
+
+  @include mixins.sm {
+    height: 100px;
+  }
+
+  @include mixins.md {
+    height: 150px;
+  }
+
+  & > * {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.ProductBrand {
+  height: 20px;
+}
+
+.Product {
+  z-index: 1;
+}
+
+.ProductDetails {
+  & :global(.list-group-item-secondary) {
+    font-size: 1rem;
+  }
+
+  & :global(.list-group-item) * {
+    font-size: 0.8rem;
+    line-height: 1;
+    word-break: break-all;
+  }
+
+  & :global(.accordion-body),
+  & :global(.accordion-button) {
+    padding: 0.5rem;
+  }
+}
+
+.CompareSection {
+  width: 48%;
+
+  @include mixins.lg {
+    width: 23%;
+  }
+}
+
+.ProductPrices {
+  gap: 0 0.5rem;
+}

@@ -1,0 +1,263 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Card {
+    display: grid;
+    grid-template-rows: calc(100rem / 16) 1fr auto;
+    box-sizing: border-box;
+    font-size: mixins.$fs-2;
+    z-index: 1;
+  }
+  
+  .HoverOverlay {
+    opacity: 0;
+    transition: 500ms ease-in opacity;
+  
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
+  .Selected {
+    z-index: 2;
+    transform: scale(1.1);
+    animation-name: growSelected;
+    animation-duration: 250ms;
+  }
+  
+  .BundleCheckMark {
+    transform: scale(1);
+    opacity: 100%;
+    transform-origin: top right;
+    animation-name: growCheck;
+    animation-duration: 250ms;
+  }
+  
+  .PopUp {
+    margin-top: 1rem;
+    width: 100vw;
+    position: relative;
+    animation-duration: 500ms;
+    transform-origin: top right;
+    animation-fill-mode: forwards;
+    &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 0.65rem solid transparent;
+      border-right: 0.65rem solid transparent;
+      border-bottom: 1.3rem solid black;
+      position: absolute;
+      top: -1.25rem;
+    }
+  
+    &.Show {
+      animation-name: ShowPopUp;
+    }
+  
+    &.Hide {
+      animation-name: HidePopUp;
+    }
+  
+    &.DefaultHide {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  .PopUp_1 {
+    max-width: calc(89vw / 2);
+  
+    @include mixins.sm {
+      max-width: calc(70vw / 2);
+    }
+  
+    @include mixins.lg {
+      max-width: calc(55vw / 4);
+    }
+  
+    @include mixins.xxl {
+      max-width: calc(40vw / 4);
+    }
+  
+    & .Card {
+      width: 96%;
+    }
+  }
+  
+  .PopUp_2 {
+    max-width: calc(89vw);
+  
+    @include mixins.sm {
+      max-width: calc(70vw);
+    }
+  
+    @include mixins.lg {
+      max-width: calc(55vw / 2);
+    }
+  
+    @include mixins.xxl {
+      max-width: calc(40vw / 2);
+    }
+  
+    & .Card {
+      width: 48%;
+    }
+  }
+  
+  .PopUp_3 {
+    max-width: calc(89vw);
+  
+    @include mixins.sm {
+      max-width: calc(70vw);
+    }
+  
+    @include mixins.lg {
+      max-width: calc(55vw - (55vw / 3));
+    }
+  
+    @include mixins.xxl {
+      max-width: calc(40vw - (40vw / 3));
+    }
+  
+    & .Card {
+      width: 48%;
+  
+      @include mixins.sm {
+        width: 30%;
+      }
+    }
+  }
+  
+  .PopUp_4 {
+    max-width: 89vw;
+  
+    @include mixins.sm {
+      max-width: 70vw;
+    }
+  
+    @include mixins.lg {
+      max-width: 55vw;
+    }
+  
+    @include mixins.xxl {
+      max-width: 40vw;
+    }
+  
+    & .Card {
+      width: 48%;
+  
+      @media (min-width: 768px) {
+        width: 23%;
+      }
+    }
+  }
+  
+  .Overlay {
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+  
+    &.Show {
+      animation-name: OverlayShow;
+    }
+  
+    &.Hide {
+      animation-name: OverlayHide;
+    }
+  }
+  
+  .OfficeUpgrades {
+    & .PopUp {
+      &::before {
+        right: 1.25rem;
+      }
+    }
+  }
+  
+  .BackPackUpgrades {
+    & .PopUp {
+      &::before {
+        left: 1.25rem;
+  
+        @include mixins.sm {
+          left: unset;
+          right: 1.25rem;
+        }
+      }
+    }
+  }
+  
+  .Cards {
+    max-height: 14rem;
+  
+    @media (min-width: 2000px) {
+      max-height: 20rem;
+    }
+  }
+  
+  @keyframes growSelected {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes growCheck {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    80% {
+      transform: scale(1.02);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes OverlayShow {
+    0% {
+      background-color: mixins.$black-0;
+      opacity: 0%;
+    }
+    100% {
+      background-color: mixins.$black-4;
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes OverlayHide {
+    0% {
+      background-color: mixins.$black-4;
+      opacity: 100%;
+    }
+    100% {
+      background-color: mixins.$black-0;
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes ShowPopUp {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 100%;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes HidePopUp {
+    0% {
+      opacity: 100%;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0%;
+      transform: scale(0);
+    }
+  }
+  

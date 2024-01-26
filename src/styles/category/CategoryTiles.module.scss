@@ -1,0 +1,35 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Body {
+  background: #ffd2f3;
+  background: -webkit-linear-gradient(to right, #ffd2f3, #e2dbff);
+  background: linear-gradient(to right, #ffd2f3, #e2dbff);
+
+  .Link :global(img) {
+    transition: 250ms ease-in-out;
+    transform: scale(0.9);
+  }
+
+  .Link:hover :global(img) {
+    transform: scale(1);
+  }
+
+  .ImageContainer {
+    position: relative;
+    background: mixins.$rainbow-gradient-2;
+  }
+
+  .Text {
+    color: rgb(13, 10, 45) !important;
+    text-shadow: #caf7ff 0px 0px 5px;
+  }
+
+  &.darkMode {
+    background: linear-gradient(45deg, #292929, #676767);
+
+    .Text {
+      color: rgb(214, 214, 214) !important;
+      text-shadow: #00353d 0px 0px 5px;
+    }
+  }
+}

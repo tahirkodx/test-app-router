@@ -1,0 +1,173 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Head {
+  background-color: mixins.$grey-8;
+}
+
+.HeadBtn {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  line-height: 1;
+}
+
+.Arrow {
+  height: calc(24rem / 16);
+
+  &.darkMode {
+    & :global(polygon) {
+      fill: aqua !important;
+    }
+  }
+}
+
+.SelectedTitle {
+  font-size: mixins.$fs-1;
+
+  @include mixins.md {
+    font-size: mixins.$fs-3;
+  }
+}
+
+.BundleOptText {
+  font-size: mixins.$fs-1;
+
+  @include mixins.md {
+    font-size: mixins.$fs-3;
+  }
+}
+
+.ImageBackground {
+  width: 100%;
+  height: 90px;
+
+  @include mixins.md {
+    width: calc(30% + 1rem);
+    height: 100%;
+  }
+}
+
+@keyframes selectedCardGrow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.BundleCard {
+  cursor: pointer;
+
+  // &.Selected {
+  //   animation-name: selectedCardGrow;
+  //   animation-duration: 250ms;
+  //   animation-timing-function: ease-in-out;
+  //   animation-fill-mode: forwards;
+  // }
+}
+
+@keyframes selectedBundlePrice {
+  from {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  to {
+    background-color: #dc3545;
+  }
+}
+
+.BundlePrice {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &:global(.default) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  // &.SelectedPrice {
+  //   animation-name: selectedBundlePrice;
+  //   animation-duration: 250ms;
+  //   animation-timing-function: ease-in;
+  //   animation-fill-mode: forwards;
+  // }
+
+  &.SelectedPrice {
+    background-color: #dc3545;
+  }
+}
+
+.BundlesDiv {
+  padding: 13px 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+@keyframes bundleCheck {
+  0% {
+    transform: scale(0) rotate(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1) rotate(20deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+// .BundleCheck {
+//   animation-name: bundleCheck;
+//   animation-duration: 400ms;
+//   animation-timing-function: ease-in-out;
+//   animation-fill-mode: forwards;
+// }
+
+.BundleImage {
+  height: 72px;
+  & :global(img) {
+    object-fit: contain;
+    max-height: 72px;
+    width: 100%;
+  }
+  @include mixins.md {
+    height: unset;
+    & :global(img) {
+      max-height: 72px;
+    }
+  }
+}
+
+.BundleImageContainer {
+  width: 100%;
+  height: 88px;
+  @include mixins.md {
+    width: 35%;
+    height: 100%;
+  }
+}
+
+.CardImage,
+.GalleryLink {
+  display: grid;
+  grid-template-rows: 80px 1fr;
+
+  @include mixins.md {
+    grid-template-rows: 1fr 30px;
+    grid-template-columns: 35% 1fr;
+  }
+}
+
+.GalleryLink {
+  & > * {
+    opacity: 0;
+    transition: ease-in-out 250ms all;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

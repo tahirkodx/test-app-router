@@ -1,0 +1,51 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+// .Scrollbar_01,
+// .Scrollbar_01 * {
+//   scrollbar-width: thin;
+//   scrollbar-color: mixins.$blue-2 #bdbdbd;
+// }
+
+// .Scrollbar_01::-webkit-scrollbar,
+// .Scrollbar_01 *::-webkit-scrollbar {
+//   width: 8px;
+// }
+
+// .Scrollbar_01::-webkit-scrollbar-track,
+// .Scrollbar_01 *::-webkit-scrollbar-track {
+//   background: #bdbdbd;
+// }
+
+// .Scrollbar_01::-webkit-scrollbar-thumb,
+// .Scrollbar_01 *::-webkit-scrollbar-thumb {
+//   background-color: mixins.$blue-2;
+//   border-radius: 0px;
+//   border: 0px none #ffffff;
+// }
+
+.main,
+.main * {
+  scrollbar-width: thin;
+}
+
+.main::-webkit-scrollbar,
+.main *::-webkit-scrollbar {
+  width: 8px;
+}
+
+.v_1,
+.v_1 * {
+  scrollbar-color: mixins.$blue-2 #bdbdbd;
+}
+
+.v_1::-webkit-scrollbar-track,
+.v_1 *::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+
+.v_1::-webkit-scrollbar-thumb,
+.v_1 *::-webkit-scrollbar-thumb {
+  background-color: mixins.$blue-2;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}

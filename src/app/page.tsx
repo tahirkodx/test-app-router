@@ -1,7 +1,13 @@
+import { AppProps } from "next/app";
+import NextRouter from "next/router";
 import Image from "next/image";
 import styles from "./page.module.css";
 
-export default function Home() {
+export default function Home({
+  Component: Page,
+  pageProps,
+  router,
+}: AppProps & { router: typeof NextRouter }) {
   return (
     <main className={styles.main}>
       <div className={styles.description}>

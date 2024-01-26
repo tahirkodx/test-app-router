@@ -1,0 +1,86 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Features {
+  display: flex;
+}
+
+.FeatureList {
+  width: calc(100% - 69px);
+  margin: auto;
+  display: flex;
+
+  & :global(.slick-slide) > :global(div) {
+    margin: 0 calc(10rem / 16);
+    height: 100%;
+    display: flex;
+  }
+
+  & :global(.slick-list) {
+    margin: 0 calc(10rem / 16 * -1);
+  }
+
+  & :global(.slick-prev::before),
+  & :global(.slick-next::before) {
+    background-color: mixins.$grey-03;
+    border-radius: 10rem;
+    border: 0.25rem solid mixins.$grey-03;
+    box-sizing: border-box;
+    position: absolute;
+    left: -0.25rem;
+    transform: translateY(-50%);
+  }
+
+  & :global(.slick-next) {
+    right: -29px;
+  }
+
+  & :global(.slick-prev) {
+    left: -29px;
+  }
+
+  & :global(.slick-list),
+  & :global(.slick-track),
+  & :global(.slick-initialized .slick-slide) {
+    display: flex;
+  }
+}
+
+.FeatureCard {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+
+  & > :global(span) {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  & :global(img) {
+    width: 100%;
+  }
+
+  & :global(h3),
+  & :global(p) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  & :global(h3) {
+    margin-top: 1rem;
+    font-size: mixins.$fs-9;
+  }
+
+  & :global(p) {
+    font-size: mixins.$fs-3;
+  }
+
+  & :global(a) {
+    background-color: mixins.$grey-2;
+    color: white;
+
+    &:hover {
+      background-color: mixins.$grey-03;
+    }
+  }
+}

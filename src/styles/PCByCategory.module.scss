@@ -1,0 +1,36 @@
+
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Overview {
+    & :global([class^="col"]) {
+      float: left;
+    }
+  
+    & :global(img) {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    & :global(.pt-10) {
+      padding-top: 10px;
+    }
+  
+    & :global(.pb-10) {
+      padding-bottom: 10px;
+    }
+  }
+  
+  .Pagination {
+    position: sticky;
+    top: calc(55rem / 16);
+    z-index: 1;
+  
+    @include mixins.xl {
+      top: calc(95rem / 16);
+    }
+  
+    & :global(.pagination) {
+      margin: 0;
+    }
+  }
+  

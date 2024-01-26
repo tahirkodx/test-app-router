@@ -1,0 +1,35 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Filters {
+  bottom: 2.5rem;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  font-size: 0.875rem;
+
+  & :global(.form-select-sm) {
+    font-size: 0.75rem;
+    width: 100px;
+  }
+
+  & > * {
+    margin: auto;
+  }
+
+  @include mixins.lg {
+    bottom: unset;
+    width: unset;
+    position: sticky;
+    --bs-bg-opacity: 0;
+    top: calc(2.75rem);
+    margin-top: -3rem;
+
+    & > * {
+      margin: unset;
+    }
+  }
+
+  @include mixins.xl {
+    top: 5.3rem;
+  }
+}

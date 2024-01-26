@@ -1,0 +1,67 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+
+.Circles {
+    & > * {
+        height: calc(90rem/16);
+        width: calc(90rem/16);
+        position: relative;
+        background-color: white;
+        border-radius: 90rem;
+    }
+
+    &__Pill, 
+    &__FPS {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__Pill {
+        top: 25%;
+
+        @include mixins.md {
+            top: 20%;
+        }
+    }
+
+    & :global(.CircularProgressbar .CircularProgressbar-text) {
+        transform: translateY(7.25%);
+    }
+
+    & :global(.CircularProgressbar .CircularProgressbar-path) {
+        transform: rotate(180deg) translateX(-100%) translateY(-100%);
+    }
+
+    &__FPS {
+        bottom: 21.5%;
+    }
+}
+
+
+.FPS {
+    background-color: rgba(0, 0, 0, 0.03);
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: calc(50rem / 16);
+        left: 0;
+        height: calc(100% - (50rem / 16));
+        width: 100%;
+        background: linear-gradient(180deg, rgba(173,216,230,1) 0%, rgba(110,183,255,1) 100%);
+        z-index: 0;
+    }
+}
+
+.TimespyHead {
+    background-color: mixins.$white-4 !important;
+}
+
+
+.Grid{
+    @media (min-width: 2200px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

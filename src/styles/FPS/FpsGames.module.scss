@@ -1,0 +1,37 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.FpsGamesDesktop {
+  bottom: 3.4rem;
+  left: 13.4%;
+  z-index: 2;
+  height: 420px;
+  transition: all 250ms ease-in-out;
+
+  &.Closed {
+    width: 420px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.Open {
+    width: 500px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.AllGames {
+  grid-template-rows: repeat(3, 102px);
+  grid-auto-flow: column;
+  grid-auto-columns: 150px;
+  user-select: none;
+  cursor: grab;
+}
+
+.RightScroll {
+  background: mixins.$white-fade-1-left;
+
+  &.darkMode {
+    background: mixins.$black-fade-1-left;
+  }
+}

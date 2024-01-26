@@ -1,0 +1,122 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.FPSSlider {
+  @include mixins.xxl {
+    top: calc(110rem / 16);
+  }
+
+  &:global([name="FPSSlider"]) {
+    max-width: calc(250rem / 16);
+    top: 0;
+  }
+}
+
+.Heading {
+  &__text {
+    font-size: mixins.$fs-1;
+  }
+}
+
+.Circles {
+  & > * {
+    height: 5.25rem;
+    // height: calc(100rem/16);
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__Pill {
+    top: 25%;
+
+    @media (min-width: 1600px) {
+      top: 20%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(7.25%);
+
+    @media (min-width: 1600px) {
+      transform: translateY(5%);
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 21.5%;
+
+    @media (min-width: 1600px) {
+      bottom: 17.5%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-trail) {
+    stroke: #d6d6d6;
+  }
+
+  &.darkMode {
+    & :global(.CircularProgressbar .CircularProgressbar-trail) {
+      stroke: url(#rainbowGradient);
+      opacity: 0.15;
+    }
+
+    & :global(.CircularProgressbar .CircularProgressbar-path) {
+      stroke: url(#rainbowGradient);
+    }
+  }
+}
+
+.darkModeFPSCircles {
+  width: 62px;
+  height: 62px;
+  z-index: -1;
+  left: calc(50% - (62px / 2));
+  top: 11px;
+}
+
+.RGBCircle {
+  background: mixins.$rainbow-gradient-5;
+  transform: rotate(180deg);
+}
+
+.RainbowBorder {
+  border-radius: 4px;
+  border: 1px solid transparent; /*2*/
+  background: mixins.$rainbow-gradient-2 border-box; /*3*/
+  -webkit-mask: /*4*/ linear-gradient(white 0 0) padding-box,
+    linear-gradient(white 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
+}
+
+.BlackFadeCircle {
+  background: mixins.$black-fade-3;
+}
+
+.BlackFadeCircle2 {
+  background: mixins.$black-fade-4;
+}
+
+.TimeSpyScore {
+  font-size: mixins.$fs-1;
+  margin-top: 0.2rem;
+}
+
+.Loader {
+  background-color: mixins.$black-8;
+
+  &__image {
+    width: calc(150rem / 16);
+  }
+}

@@ -1,0 +1,80 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.BreadCrumbs {
+  font-size: mixins.$fs-1;
+
+  & :global(.breadcrumb) {
+    margin-bottom: 0;
+    flex-direction: row-reverse;
+    justify-content: start;
+  }
+
+  & :global(.breadcrumb-item:nth-of-type(1) a) {
+    color: #6c757d;
+    text-decoration: none;
+    pointer-events: none;
+  }
+
+  & :global(.breadcrumb-item::before) {
+    display: none;
+  }
+
+  & :global(a) {
+    --bg: white;
+    --size: 0.75rem;
+    --overlap: calc((var(--size)) * -2);
+    text-decoration: none;
+    display: flex;
+    filter: drop-shadow(1px 0.5px 0.5px lightgrey);
+    margin-right: var(--overlap);
+    color: black;
+
+    &:global(::after) {
+      content: "";
+      width: var(--size);
+      height: var(--size);
+      border-right: var(--size) solid transparent;
+      border-bottom: var(--size) solid transparent;
+      border-top: var(--size) solid transparent;
+      border-left: var(--size) solid var(--bg);
+    }
+
+    & :global(div) {
+      background-color: var(--bg);
+      padding-left: calc(var(--size) * 2);
+      padding-right: var(--size);
+      display: flex;
+      align-items: center;
+      border: 1px solid lightgrey;
+      border-right: 0;
+      border-bottom: 0.1px solid lightgrey;
+    }
+
+    &:hover {
+      --bg: lightgrey;
+    }
+  }
+}
+
+:global(.evetechDark) .BreadCrumbs {
+  & :global(a) {
+    --bg: black;
+    color: #0dcaf0;
+  }
+
+  & :global(.breadcrumb-item:nth-of-type(1) a) {
+    color: rgb(207, 207, 207);
+  }
+}
+
+.TextBreadCrumbs {
+  & .Crumb:nth-of-type(1) .Link {
+    text-decoration: none !important;
+    pointer-events: none !important;
+    color: grey !important;
+    opacity: 0.75;
+  }
+  & .Crumb:nth-of-type(1) .Arrow {
+    display: none;
+  }
+}

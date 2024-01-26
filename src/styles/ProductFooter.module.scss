@@ -1,0 +1,46 @@
+@use "@/styles/mixins.module.scss" as mixins;
+.Footer {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 3rem;
+  left: 0;
+  background: mixins.$white-9;
+
+  @include mixins.lg {
+    bottom: 0;
+  }
+}
+
+.Price {
+  font-size: calc(19rem / 16);
+  @include mixins.md {
+    font-size: 1.5rem;
+  }
+}
+
+.Button {
+  font-size: mixins.$fs-2;
+  line-height: initial;
+
+  @include mixins.md {
+    font-size: 1rem;
+  }
+}
+
+.BuyBtn {
+  background-color: #ffa41d;
+  border: #ffa41d;
+
+  &:hover {
+    background-color: #f09c1e;
+    border: #f09c1e;
+    color: white !important;
+  }
+}
+
+.PcAdd {
+  @include mixins.md {
+    height: 100%;
+  }
+}

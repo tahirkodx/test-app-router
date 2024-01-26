@@ -1,0 +1,7 @@
+@use "@/styles/mixins.module.scss" as mixins;
+.pDocModal {
+  background-color: mixins.$black-5;
+  & :global(.modal-content) {
+    transform: translateX(-8px);
+  }
+}

@@ -1,0 +1,62 @@
+.EveryDayLaptops {
+  $EveryDayColor: #61b811;
+  &__Heading {
+    color: $EveryDayColor;
+  }
+  &__Button {
+    background-color: $EveryDayColor;
+    border-color: $EveryDayColor;
+    color: black;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.EntertainmentLaptops {
+  $EntertainmentColor: #c98704;
+  &__Heading {
+    color: $EntertainmentColor;
+  }
+  &__Button {
+    background-color: $EntertainmentColor;
+    border-color: $EntertainmentColor;
+    color: black;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.ProfessionalLaptops {
+  $ProfessionalColor: #3d798b;
+  &__Heading {
+    color: $ProfessionalColor;
+  }
+  &__Button {
+    background-color: $ProfessionalColor;
+    border-color: $ProfessionalColor;
+  }
+}
+
+.GamingLaptops {
+  $GamingColor: #5e3bb9;
+  &__Heading {
+    color: $GamingColor;
+  }
+  &__Button {
+    background-color: $GamingColor;
+    border-color: $GamingColor;
+  }
+}
+
+.OnTheGoLaptops {
+  $OnTheGoColor: #cb2347;
+  &__Heading {
+    color: $OnTheGoColor;
+  }
+  &__Button {
+    background-color: $OnTheGoColor;
+    border-color: $OnTheGoColor;
+  }
+}

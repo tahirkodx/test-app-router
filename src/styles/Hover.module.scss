@@ -1,0 +1,56 @@
+.easeInOut_1 {
+  transition: 250ms ease-in-out all;
+}
+
+.easeInOut_2 {
+  transition: 500ms ease-in-out all;
+}
+
+.easeInOut_3 {
+  transition: 750ms ease-in-out all;
+}
+
+.easeInOut_4 {
+  transition: 1000ms ease-in-out all;
+}
+
+.easeInOut_5 {
+  transition: 1250ms ease-in-out all;
+}
+
+.grow_1 {
+  &:hover {
+    transform: scale(1.025);
+  }
+}
+
+.grow_2 {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.grow_3 {
+  &:hover {
+    transform: scale(1.075);
+  }
+}
+
+.grow_4 {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.grow_5 {
+  transform: scale(0.9);
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.hide_50 {
+  &:hover {
+    opacity: 50%;
+  }
+}

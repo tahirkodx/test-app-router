@@ -1,0 +1,769 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Header {
+  width: 100%;
+  position: relative;
+  height: 3.5rem;
+
+  @include mixins.xl {
+    height: 6rem;
+  }
+}
+
+.TopBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  box-sizing: border-box;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.TopSearch {
+  display: block;
+  width: 100%;
+  height: 2.1875rem;
+  position: relative;
+
+  @include mixins.xxl {
+    width: 60%;
+  }
+
+  &__Input {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  &__Icon {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightseagreen;
+  }
+}
+
+.TopLog {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1;
+
+  @include mixins.lg {
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    padding-right: 16.5%;
+    justify-content: end;
+  }
+
+  @include mixins.xl {
+    font-size: 1rem;
+    padding-right: 0%;
+  }
+}
+
+.CartLink {
+  width: max-content;
+}
+
+.CartLink,
+.RegisterLink,
+.LoginLink {
+  cursor: pointer;
+}
+
+.LaptopTopBar {
+  & div[class*="TopLog"] {
+    background-color: mixins.$purple-1;
+
+    @include mixins.lg {
+      padding-right: 26%;
+      background-color: unset;
+    }
+
+    @include mixins.xl {
+      padding-right: 0;
+    }
+  }
+
+  & :global(.ais-SearchBox) {
+    width: 46.5%;
+
+    @include mixins.lg {
+      width: 100%;
+    }
+  }
+}
+
+.ComponentHeader .Background,
+.LaptopHeader .Background {
+  background-color: mixins.$headBackColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 3.5rem;
+}
+
+.ComponentTopBar {
+  & div[class*="TopLog"] {
+    background-color: mixins.$grey-10;
+
+    @include mixins.lg {
+      background-color: unset;
+    }
+  }
+}
+
+.CartProduct {
+  display: flex;
+  gap: 1rem;
+  background-color: mixins.$white-6;
+}
+
+.CartSmallText {
+  font-size: 0.8rem;
+  max-height: 3.5rem;
+  overflow: hidden;
+}
+
+.CartIMG {
+  width: 100px !important;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.CartDelete {
+  height: 2.375rem;
+}
+
+.CartBasket {
+  height: 20rem;
+  position: relative;
+  background-color: mixins.$grey-6;
+  margin-top: 0.3rem;
+}
+
+.CartScroll {
+  width: calc(100% + 2rem);
+  height: 4rem;
+  margin-top: -4rem;
+  background: mixins.$white-fade-1;
+  pointer-events: none;
+  font-size: 2rem;
+  position: relative;
+  transform: translateX(-1rem);
+
+  &.darkMode {
+    background: mixins.$black-fade-1;
+  }
+}
+
+.CartTotal {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 1rem;
+}
+
+.CartPrice {
+  width: 100%;
+  font-size: 1.2rem;
+
+  @include mixins.sm {
+    width: unset;
+  }
+}
+
+.CartBottom {
+  @include mixins.sm {
+    flex-direction: row-reverse;
+  }
+}
+
+.CartTerms {
+  @include mixins.sm {
+    width: 50%;
+    margin-right: auto;
+  }
+}
+
+.FindLaptopButton {
+  background: mixins.$yellow-gradient-1;
+  height: 2.1875rem;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 250ms;
+  font-size: 0.875rem;
+  position: absolute;
+  right: 55px;
+  font-size: 0.75rem;
+
+  @include mixins.xl {
+    font-size: 1rem;
+    position: unset;
+  }
+
+  &:hover,
+  &:active {
+    background: mixins.$yellow-gradient-2;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__Content {
+    @include mixins.sm {
+      width: max-content;
+    }
+  }
+}
+
+.FindLaptopButton.darkMode {
+  background: rgb(41 255 173);
+}
+
+.NavBar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+
+  @include mixins.xl {
+    top: 3.5rem;
+  }
+
+  & * {
+    word-break: break-all;
+    font-size: 0.75rem;
+  }
+
+  & :global(a[aria-expanded="true"]) {
+    background-color: mixins.$black-2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.MobiNav {
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+
+  &__Toggle {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__Toggle :global(.navbar-toggler-icon) {
+    background-size: 80%;
+    border-radius: 0.875rem;
+    font-size: 1.25rem !important;
+    transition: all 250ms ease-in-out;
+  }
+
+  &__Toggle:global(.collapsed) :global(.navbar-toggler-icon) {
+    background-image: url(https://www.evetech.co.za/repository/ProductImages/menu-icon-2.png) !important;
+  }
+
+  &__Toggle:not(:global(.collapsed)) :global(.navbar-toggler-icon) {
+    background-image: url(https://www.evetech.co.za/repository/ProductImages/menu-close-icon.png) !important;
+  }
+
+  &__Toggle:focus {
+    box-shadow: unset;
+  }
+}
+
+.Component .MobiNav {
+  &__Toggle:global(.collapsed) :global(.navbar-toggler-icon) {
+    background-color: #333;
+  }
+
+  &__Toggle:not(:global(.collapsed)) :global(.navbar-toggler-icon) {
+    background-color: #333;
+  }
+}
+
+.Laptop .MobiNav {
+  &__Toggle:global(.collapsed) :global(.navbar-toggler-icon) {
+    background-color: mixins.$headBackColor !important;
+  }
+
+  &__Toggle:not(:global(.collapsed)) :global(.navbar-toggler-icon) {
+    background-color: mixins.$headBackColor !important;
+  }
+}
+
+.Laptop .MobiNav .DarkMode {
+  &__Toggle:global(.collapsed) :global(.navbar-toggler-icon) {
+    background-color: mixins.$headBackColor !important;
+  }
+
+  &__Toggle:not(:global(.collapsed)) :global(.navbar-toggler-icon) {
+    background-color: mixins.$headBackColor !important;
+  }
+}
+
+.Collapse {
+  z-index: 1;
+  padding-bottom: 3.5rem;
+  height: calc(100vh - 10.5rem);
+  overflow: auto;
+  font-size: 0.8rem;
+  color: black;
+  pointer-events: auto;
+
+  & :global(.nav-link) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: mixins.$grey-02 1px solid;
+
+    @include mixins.xl {
+      border-bottom: unset;
+      height: 100%;
+    }
+  }
+
+  @include mixins.xl {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    margin-left: auto;
+    height: unset;
+    overflow: unset;
+  }
+
+  @media (min-width: 1800px) {
+    font-size: 1rem;
+  }
+}
+
+.SpecialBtn {
+  height: 2.1875rem;
+  padding: 2px;
+  box-sizing: border-box;
+  background: mixins.$rainbow-gradient;
+
+  * {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.Laptop.DropDown {
+  & > div {
+    background-color: mixins.$grey-04;
+    overflow: auto;
+
+    @include mixins.xl {
+      background-color: mixins.$grey-7;
+    }
+  }
+
+  .DropDown__Content {
+    & > div {
+      background-color: mixins.$white-3;
+      color: mixins.$purple-1;
+    }
+
+    & a {
+      &:hover {
+        background-color: mixins.$white-4;
+      }
+    }
+
+    & > div:nth-of-type(1) {
+      background-color: mixins.$white-7;
+    }
+  }
+}
+
+.Components.DropDown {
+  & > div {
+    background-color: mixins.$black-9;
+    overflow: auto;
+  }
+
+  & .DropDown__Content {
+    & > div {
+      background-color: mixins.$grey-02;
+      color: mixins.$green-2;
+      & > div {
+        background-color: mixins.$black-2;
+        @include mixins.xl {
+          background-color: unset;
+        }
+      }
+    }
+
+    & a {
+      color: #e8e8e8;
+
+      &:hover {
+        background-color: mixins.$black-4;
+      }
+    }
+
+    & > div:nth-of-type(1) {
+      background-color: mixins.$black-7;
+    }
+  }
+}
+
+.SectionDropdown {
+  @include mixins.xl {
+    height: 100%;
+    & :global(.dropdown-toggle::after) {
+      display: none;
+    }
+  }
+}
+
+.Components.LinkTree {
+  & > div {
+    background-color: mixins.$black-9;
+  }
+
+  & > div :global(.dropdown-toggle::after) {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-image: url("https://parspng.com/wp-content/uploads/2021/11/arrowpng.parspng.com-13.png");
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 0.5;
+    display: flex;
+  }
+
+  & .LinkBranch__Content {
+    & > a {
+      background-color: mixins.$grey-02;
+      color: mixins.$green-2;
+      & > div {
+        background-color: mixins.$black-2;
+        @include mixins.xl {
+          background-color: unset;
+        }
+      }
+    }
+
+    & a {
+      color: grey;
+
+      &:hover {
+        background-color: mixins.$black-4;
+      }
+    }
+  }
+}
+
+.Components.LinkBranch:global(.w-100) {
+  & > div {
+    width: 100%;
+  }
+
+  & :global(.dropdown-item) {
+    display: inline;
+    padding: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  & :global(.dropdown-menu) {
+    padding-left: 0.725rem;
+    padding-right: 0.725rem;
+    line-height: 1.75;
+  }
+}
+
+.Components.LinkBranch {
+  & :global(.dropstart .dropdown-toggle::before),
+  & :global(.dropend .dropdown-toggle::after) {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-image: url("https://parspng.com/wp-content/uploads/2021/11/arrowpng.parspng.com-13.png");
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 0.5;
+    display: flex;
+  }
+  & :global(.dropdown-menu-end .dropdown-toggle::before) {
+    transform: rotate(90deg);
+  }
+}
+
+.Components.LinkBar,
+.Components.LinkBranch,
+.Components.LinkTree {
+  & > div {
+    background-color: mixins.$black-9;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+  }
+
+  & .LinkBar__Content,
+  & .LinkBranch__Content,
+  & .LinkTree__Content {
+    & :global(a[aria-expanded="true"]) {
+      color: mixins.$green-2 !important;
+      background-color: mixins.$black-8;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    & > a {
+      background-color: mixins.$grey-02;
+      color: mixins.$green-2;
+      & > div {
+        background-color: mixins.$black-2;
+        @include mixins.xl {
+          background-color: unset;
+        }
+      }
+    }
+
+    & a {
+      color: #e8e8e8;
+
+      &:hover {
+        background-color: mixins.$black-4;
+      }
+    }
+  }
+}
+
+.Components.DropDown {
+  &__SubLinks:visited {
+    color: white !important;
+  }
+}
+
+.DropDown {
+  &__Toggle {
+    height: 100%;
+    @include mixins.xxl {
+      font-size: 1rem;
+    }
+  }
+  & > div {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mixins.xl {
+      position: fixed !important;
+      width: calc(100vw - 2rem);
+      max-height: calc(100vh - 6.5rem - 0.5rem);
+      left: 0.5rem !important;
+      top: 6.5rem !important;
+      margin: unset !important;
+    }
+  }
+
+  &__Content {
+    @include mixins.xl {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    @include mixins.xxl {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    & > div:nth-of-type(1) {
+      height: 100px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 !important;
+      margin-bottom: 0.5rem;
+
+      & * {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include mixins.xl {
+        height: unset;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__SubLinks {
+    font-size: 0.8rem;
+  }
+}
+
+.LinkBar {
+  & > div {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mixins.xl {
+      max-height: calc(100vh - 6.5rem - 0.5rem);
+      top: 3rem !important;
+      margin: unset !important;
+    }
+  }
+
+  &__SubLinks {
+    font-size: 0.8rem;
+  }
+}
+
+.LinkBranch {
+  &__Toggle {
+    @include mixins.xxl {
+      font-size: 1rem;
+    }
+  }
+
+  & > div {
+    font-size: 0.8rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__Content {
+    & > div > a,
+    & :global(.dropdown-menu) > div > a {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  &.Main > * + * {
+    @include mixins.xl {
+      max-height: calc(100vh - 6.5rem - 0.5rem);
+      transform: translateY(0.5rem);
+      margin: unset !important;
+    }
+  }
+
+  &__SubLinks {
+    font-size: 0.8rem;
+  }
+}
+
+.LinkTree {
+  &__Toggle {
+    @include mixins.xxl {
+      font-size: 1rem;
+    }
+  }
+  & > div {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mixins.xl {
+      position: fixed !important;
+      width: calc(100vw - 2rem);
+      max-height: calc(100vh - 6.5rem - 0.5rem);
+      left: 0.5rem !important;
+      top: 6.5rem !important;
+      margin: unset !important;
+      font-size: 0.8rem;
+    }
+  }
+
+  &__Content {
+    font-size: 0.8rem;
+
+    @include mixins.xl {
+      max-height: 100vh;
+      grid-auto-flow: column;
+      gap: 0 1rem;
+
+      & > * {
+        background-color: mixins.$grey-02;
+      }
+
+      & > .LinkBranch > *:nth-of-type(1) {
+        padding: 0.25rem 1rem;
+      }
+
+      & > .LinkBranch > a {
+        font-size: 0.8rem !important;
+      }
+    }
+  }
+
+  &__SubLinks {
+    font-size: 0.8rem;
+  }
+}
+
+.MobileDropdownLinks {
+  font-size: 0.8rem;
+}
+
+.LaptopSpecialLink {
+  margin-right: 37px;
+
+  @include mixins.sm {
+    margin-right: 102px;
+  }
+}
+
+.Components.LinkTree > a,
+.Components.LinkBranch > a,
+.Laptop.DropDown > a,
+.Components.DropDown > a > div,
+.Collapse > div > div > a,
+.SectionLink {
+  font-size: 0.8rem;
+
+  @include mixins.xxl {
+    font-size: 1rem;
+  }
+}
+
+.Laptop.DropDown a::after {
+  display: none;
+}

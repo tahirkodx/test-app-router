@@ -1,0 +1,12 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Shipping {
+    &__HeroImage {
+        height: 100px;
+        object-fit: cover;
+
+        @include mixins.sm {
+        height: 200px;
+        }
+    }
+}

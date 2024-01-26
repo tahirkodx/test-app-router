@@ -1,0 +1,15 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.RainbowBackground {
+  background: mixins.$rainbow-gradient-4;
+}
+
+.Buttons {
+  & > * {
+    transition: ease-in-out all 250ms;
+  }
+
+  & > *:hover {
+    transform: scale(1.1);
+  }
+}

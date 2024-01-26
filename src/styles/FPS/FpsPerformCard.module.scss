@@ -1,0 +1,101 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.FPSPerform {
+  grid-template-rows: calc(100% - ((20rem / 16) + 0.5rem)) minmax(20px, 35px);
+  animation-name: openCard;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+
+  &.closing {
+    animation-name: closeCard;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+  }
+
+  @include mixins.xl {
+    grid-template-rows:
+      minmax(
+        calc(100% - ((20rem / 16) + 1rem)),
+        calc(100% - ((335rem / 16) + 1rem))
+      )
+      minmax(20px, 35px);
+  }
+}
+
+.Circles {
+  & > * {
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    background-color: white;
+    border-radius: 70rem;
+
+    @include mixins.xxl {
+      height: calc(70rem / 16);
+      width: calc(70rem / 16);
+    }
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__Pill {
+    bottom: 0;
+    padding-bottom: 0.3rem !important;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(-15.25%);
+    font-size: 1.5rem;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 32.5%;
+  }
+}
+
+.Content {
+  grid-template-rows: repeat(3, auto) minmax(35px, 52px);
+
+  & :global(.slick-list) {
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  & :global(.slick-slide) {
+    & > div {
+      margin: 0.2rem;
+    }
+  }
+}
+
+@keyframes openCard {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes closeCard {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

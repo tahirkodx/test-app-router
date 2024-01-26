@@ -1,0 +1,275 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Games {
+  $border: calc(8rem / 16);
+  width: 100%;
+
+  @include mixins.sm {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__Mask {
+    width: calc(65rem / 16);
+    height: calc((35rem / 16) + ($border * 4));
+
+    @include mixins.md {
+      width: calc(92rem / 16);
+      height: calc(92rem / 16);
+    }
+  }
+
+  &__Item {
+    border: 0rem solid transparent;
+    margin-top: $border;
+    margin-bottom: calc($border * 3);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25));
+    -moz-filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.25));
+    width: initial !important;
+
+    &::after {
+      content: "";
+      $size: calc(26rem / 16);
+      opacity: 0;
+      width: 0;
+      height: 0;
+      border-left: calc($size / 2) solid transparent;
+      border-right: calc($size / 2) solid transparent;
+      border-top: $size solid #61c863;
+      position: absolute;
+      left: 50%;
+      bottom: calc($size * -1);
+      transform: translateX(-50%);
+      transition: all ease-in-out 250ms;
+    }
+
+    &:global(.Selected) {
+      margin-top: calc(1.6rem / 16);
+      margin-bottom: calc($border * 2);
+      border: $border solid mixins.$green-1;
+      background-color: mixins.$green-1;
+
+      &::after {
+        opacity: 1;
+      }
+
+      @include mixins.md {
+        margin-top: calc(2rem / 16);
+      }
+    }
+  }
+
+  & :global(.slick-prev::before),
+  & :global(.slick-next::before) {
+    color: gray !important;
+  }
+
+  & :global(.slick-slide) > :global(div) {
+    margin: 0 calc(0.5rem / 2);
+  }
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+.Info {
+  background-color: mixins.$grey-06;
+}
+
+.GameInfo {
+  &__Right {
+    background-color: mixins.$green-1;
+
+    @include mixins.sm {
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+  &__Title {
+    font-size: 1rem;
+
+    @include mixins.sm {
+      padding-left: 25% !important;
+      font-size: calc(1.275rem + 0.3vw);
+    }
+  }
+}
+
+.TimeSpy {
+  background-color: mixins.$white-8;
+}
+
+.Background {
+  object-fit: cover;
+}
+
+.Circles {
+  @include mixins.sm {
+    margin-left: 20%;
+  }
+
+  & > * {
+    height: calc(100rem / 16);
+    width: calc(100rem / 16);
+    position: relative;
+    background-color: inherit;
+
+    @include mixins.sm {
+      height: calc(150rem / 16);
+      width: calc(150rem / 16);
+    }
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mixins.sm {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__Pill {
+    top: 25%;
+
+    @include mixins.sm {
+      top: 20%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(7.25%);
+
+    @include mixins.sm {
+      transform: translateY(5%);
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-trail) {
+    stroke: mixins.$white-1;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 21.5%;
+
+    @include mixins.sm {
+      bottom: 17.5%;
+    }
+  }
+
+  &__Progress {
+    background-color: mixins.$grey-02;
+  }
+}
+
+.O {
+  background-color: transparent;
+
+  &__Lvl {
+    transform: scale(1.1) rotate(45deg);
+    background-color: inherit;
+  }
+}
+
+.TimeSpy {
+  &__Heading {
+    background-color: mixins.$black-2;
+  }
+
+  &__Scores {
+    background-color: mixins.$black-1;
+  }
+
+  &__Benchmarks {
+    & > * {
+      width: calc(100% / 3);
+    }
+  }
+
+  &__Quality {
+    grid-template-columns: repeat(4, 1fr);
+
+    & :global(.active) {
+      padding: 2px;
+      background: mixins.$orange-gradient-1;
+    }
+  }
+}
+
+// .darkMode.TimeSpy {
+//   &__Heading {
+//     background-color: mixins.$grey-2;
+//   }
+// }
+
+.TimeSpy__Circles {
+  $highlight: rgb(255, 152, 102);
+
+  & > * {
+    height: calc(100rem / 16);
+    width: calc(100rem / 16);
+    position: relative;
+    background-color: inherit;
+
+    @include mixins.sm {
+      height: calc(150rem / 16);
+      width: calc(150rem / 16);
+    }
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mixins.sm {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__Pill {
+    top: 25%;
+
+    @include mixins.sm {
+      top: 20%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(7.25%);
+    fill: $highlight;
+
+    @include mixins.sm {
+      transform: translateY(5%);
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-trail) {
+    stroke: mixins.$white-1;
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+    stroke: $highlight;
+  }
+
+  &__FPS {
+    bottom: 21.5%;
+
+    @include mixins.sm {
+      bottom: 17.5%;
+    }
+  }
+}

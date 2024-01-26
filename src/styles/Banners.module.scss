@@ -1,0 +1,17 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.MobiSlider {
+    & :global(.carousel-indicators) {
+      margin-bottom: 0;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+  
+  .MobiSlide {
+    & > *:nth-last-child(1) {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  

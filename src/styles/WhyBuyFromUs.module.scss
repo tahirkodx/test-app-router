@@ -1,0 +1,37 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.TopSection {
+  $TopSectionColor: blueviolet;
+
+  &__Heading {
+    color: $TopSectionColor;
+  }
+
+  &__ImageOverlay {
+    background-color: transparentize($TopSectionColor, 0.5);
+  }
+
+  &__ImageParent {
+    height: 100px;
+
+    @include mixins.sm {
+      height: 100%;
+    }
+  }
+
+  &__Image {
+    object-fit: cover;
+  }
+}
+
+.Why {
+  &__Image {
+    height: 100px;
+    object-fit: cover;
+
+    @include mixins.md {
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

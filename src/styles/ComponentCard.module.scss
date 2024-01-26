@@ -1,0 +1,80 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.MainHeading {
+    
+    &__Paragraph {
+        &:nth-last-of-type(1) {
+            margin: 0 !important;
+        }
+    }
+
+}
+
+.CardLink {
+    transition: all 250ms ease-in-out;
+    transform: scale(1.0);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &:active {
+        transform: scale(1.01);
+    }
+}
+
+
+.Categories {
+
+    &__Card {
+        display: grid;
+        grid-template-rows: 125px 1fr;
+    }
+
+    &__Image {
+        object-fit: contain;
+        max-height: 100%;
+    }
+} 
+
+
+.HoverGrow {
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.035);
+    }
+}
+
+.Products {
+    &__Price {
+        @include mixins.gradientText1;
+    }
+
+    &__Buttons {
+        grid-template-columns: 1fr auto auto;
+
+        & > * {
+            padding: 2px;
+            background: mixins.$purple-gradient-1;
+        }
+    }
+
+    &__Card {
+        display: grid;
+        grid-template-rows: calc(125rem / 16) 2.1rem repeat(3, auto);
+
+        @include mixins.xl {
+            grid-template-rows: calc(200em / 16) 2.1rem repeat(3, auto);
+        } 
+    }
+
+    &__TagText {
+        text-shadow: 0px 1px 5px #000000;
+    }
+
+    &__Image {
+        object-fit: contain;
+        max-height: 100%;
+    }
+}

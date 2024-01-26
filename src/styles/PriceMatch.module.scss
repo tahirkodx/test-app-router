@@ -1,0 +1,22 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Small {
+  & > * > * {
+    font-size: 1em !important;
+  }
+}
+
+.Description {
+  &.Closed {
+    height: 2rem;
+  }
+  &.Open {
+    height: auto;
+  }
+}
+
+.Comments {
+  @include mixins.lg {
+    height: 81%;
+  }
+}

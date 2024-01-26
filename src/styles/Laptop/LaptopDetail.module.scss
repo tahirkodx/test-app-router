@@ -1,0 +1,463 @@
+@use "@/styles/mixins.module.scss";
+
+.LaptopSlogan {
+  font-size: mixins.$fs-2;
+}
+
+.ReviewSlogan,
+.LaptopCode {
+  font-size: mixins.$fs-1;
+}
+
+.MainHighlight {
+  font-size: mixins.$fs-2;
+  padding: calc(5rem / 16);
+  width: 50%;
+
+  @include mixins.sm {
+    width: 25%;
+  }
+}
+
+.MainPrices {
+  display: grid;
+  gap: 0.5rem;
+
+  & * {
+    width: 100%;
+  }
+
+  & *:nth-child(3) {
+    order: 1;
+  }
+
+  & *:nth-child(1),
+  & *:nth-child(2) {
+    order: 2;
+  }
+
+  @include mixins.lg {
+    display: unset;
+    flex-direction: unset;
+  }
+}
+
+.MainTitle {
+  font-size: 1rem;
+  height: 4rem;
+  line-height: 1.25rem;
+  overflow: hidden;
+  &:global(.extend) {
+    height: auto;
+  }
+
+  @include mixins.sm {
+    font-size: 1.1rem;
+  }
+
+  @include mixins.md {
+    height: 4.5rem;
+    line-height: 1.5rem;
+  }
+
+  @media (min-width: 1840px) {
+    height: auto;
+    line-height: 1.6rem;
+  }
+}
+
+.TitleBtn {
+  @media (min-width: 1840px) {
+    display: none;
+  }
+}
+
+.MainQty {
+  @include mixins.lg {
+    justify-content: flex-end;
+  }
+
+  & :global(.qty__text) {
+    width: 35px;
+  }
+}
+
+.MainGalParent,
+.MainInfo {
+  @media (min-width: 1840px) {
+    width: 50%;
+  }
+}
+
+.MainGallery {
+  position: relative;
+  z-index: 1;
+
+  & > :global(div:nth-of-type(1)) {
+    height: 100%;
+    width: 100%;
+  }
+
+  & :global(.slick-dots) {
+    position: unset;
+    display: flex !important;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  & :global(.slick-dots li.slick-active button::before) {
+    opacity: 1;
+    color: red;
+  }
+
+  & :global(.slick-dots li) {
+    display: inline-block;
+    width: min-content;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  & :global(.slick-dots li button) {
+    max-width: 20px;
+    height: 20px;
+    padding: 0px;
+  }
+
+  @include mixins.xl {
+    height: 100%;
+    display: flex;
+    border-top: 1px solid mixins.$grey-03;
+    border-bottom: 1px solid mixins.$grey-03;
+  }
+
+  @include mixins.xxl {
+    border-top: unset;
+    border-bottom: unset;
+  }
+}
+
+.FreeDelivery {
+  @include mixins.lg {
+    margin-top: mixins.$m-2;
+  }
+  @media (min-width: 1840px) {
+    margin-top: 0;
+  }
+}
+
+.NewPrice {
+  font-size: mixins.$fs-6;
+  color: red;
+}
+
+.ActionButtons {
+  & :global(.btn) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    // @media(min-width: 1840px) {
+    //     font-size: 1rem;
+    // }
+  }
+}
+
+.TitleSection {
+  & :global(.btn) {
+    font-size: mixins.$fs-2;
+    border-radius: 100px;
+
+    @include mixins.md {
+      font-size: 1rem;
+    }
+  }
+}
+
+.SpecDetails {
+  border-radius: 0 !important;
+
+  & * {
+    font-size: mixins.$fs-2;
+    line-height: 1.2rem;
+
+    @include mixins.md {
+      font-size: 1rem;
+      line-height: unset;
+    }
+  }
+
+  & * :global(h6) {
+    margin-bottom: 0;
+  }
+}
+
+.Spec {
+  background-color: mixins.$black-2;
+  @include mixins.md {
+    font-size: 1.5rem;
+  }
+}
+
+.ExtrasSlogan {
+  display: none;
+  @include mixins.sm {
+    display: block;
+  }
+}
+
+.StockStatus * {
+  font-size: mixins.$fs-1;
+}
+
+.StockStatus {
+  height: 38px;
+}
+
+.BuyBtn {
+  background-color: #ffa41d;
+  border: none;
+  color: black;
+
+  &:hover {
+    background-color: #f09c1e;
+  }
+}
+
+.UpgradeHeader {
+  background: inherit;
+}
+
+.LaptopDetailBanner img {
+  width: 100%;
+}
+
+.UpgradeLink {
+  font-size: mixins.$fs-1;
+  cursor: pointer;
+
+  @include mixins.lg {
+    width: 100%;
+  }
+}
+
+.UpgradeLinkWrapper {
+  @include mixins.lg {
+    width: 100%;
+  }
+}
+
+.tags {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  padding: 15px;
+
+  @include mixins.md {
+    left: 111px;
+  }
+}
+
+.tags h3 {
+  margin-bottom: 8px;
+  padding-top: 1px;
+  display: block;
+  position: unset;
+  border-radius: 0.4rem;
+  width: max-content;
+}
+
+.tags .product_on_special {
+  background: hsl(0, 100%, 40%);
+}
+
+.tags .product_on_special_text {
+  color: white;
+  font-size: calc(14rem / 16);
+  padding: 0.3rem;
+  width: max-content;
+}
+
+.Tabs {
+  gap: 3px;
+  border-bottom: #0575e6 2px solid;
+  white-space: nowrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  --bs-nav-tabs-border-width: 0px;
+
+  & :global(li.nav-item) {
+    font-size: 0.795rem;
+    flex-grow: 1;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(-1px -1px 0px rgba(0, 0, 0, 0.5));
+  }
+
+  & :global(.nav-link),
+  & :global(.nav-link:before),
+  & :global(.nav-link:after) {
+    background: linear-gradient(to top, #c7c7c7, #ffffff) 100%;
+    color: black;
+    z-index: 1;
+  }
+
+  & :global(.nav-link:hover),
+  & :global(.nav-link:hover:before),
+  & :global(.nav-link:hover:after),
+  & :global(.nav-link.active:hover),
+  & :global(.nav-link.active:hover:before),
+  & :global(.nav-link.active:hover:after) {
+    background: linear-gradient(to top, #88add2, #559fe8) 100%;
+
+    color: black;
+  }
+
+  & :global(.nav-link.active),
+  & :global(.nav-link.active:before),
+  & :global(.nav-link.active:after) {
+    background: linear-gradient(to bottom, #73b9ff, #2d8ceb) 100%;
+  }
+
+  & :global(.nav-link:hover) {
+    border-color: transparent;
+  }
+
+  & :global(.nav-link.active) {
+    color: white;
+    font-weight: 500;
+    border: transparent;
+    z-index: 2;
+    position: relative;
+  }
+
+  & :global(.nav-link:before),
+  & :global(.nav-link:after) {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 18px;
+    height: 100%;
+  }
+
+  & :global(.nav-link:before) {
+    left: 0;
+    margin-left: -15px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+
+  & :global(.nav-link:after) {
+    right: 0;
+    margin-right: -15px;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+
+  @include mixins.md {
+    & :global(li.nav-item) {
+      flex-grow: 0;
+    }
+  }
+}
+
+.AboutList {
+  & .List {
+    font-size: mixins.$fs-2;
+    overflow: hidden;
+
+    @include mixins.sm {
+      font-size: 1rem;
+    }
+  }
+}
+
+:global(.closed).AboutList {
+  & .List {
+    max-height: 3.75rem;
+    @include mixins.sm {
+      max-height: 4.5rem;
+    }
+  }
+}
+
+:global(.open).AboutList {
+  & .List {
+    max-height: auto;
+  }
+}
+
+.FPSToggle {
+  z-index: 1;
+  background: mixins.$blue-gradient-1;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-bottom-right-radius: 50px !important;
+
+  &:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+  }
+
+  & > * {
+    text-shadow: 1px 3px 5px rgba(32, 32, 32, 0.7);
+  }
+
+  &__Text {
+    background: mixins.$blue-gradient-1;
+    width: calc(30rem / 16);
+  }
+}
+
+.GalleryLinkArea {
+  grid-template-rows: 250px auto;
+  @include mixins.sm {
+    grid-template-rows: unset;
+    grid-template-columns: 16.8% 1fr;
+  }
+}
+
+.FreeGame,
+.FreeStuff {
+  height: 200px;
+  align-items: center;
+
+  & a,
+  & img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    display: block;
+    object-fit: contain;
+  }
+
+  @include mixins.sm {
+    height: 295px;
+  }
+
+  @include mixins.xxl {
+    height: 330px;
+  }
+}
+
+.MainSlideshow {
+  & :global(.carousel-item-next) {
+    display: flex;
+  }
+
+  & :global(.carousel-item-prev) {
+    display: flex;
+  }
+  & :global(.carousel-item.active) {
+    display: flex;
+  }
+}
+
+.PCGamingFooter {
+  @include mixins.xxl {
+    width: 86.5% !important;
+    left: unset !important;
+    right: 0 !important;
+  }
+}

@@ -1,0 +1,8 @@
+.MainDark {
+  & a {
+    color: #0dcaf0;
+  }
+  & a > span {
+    color: #0dcaf0 !important;
+  }
+}

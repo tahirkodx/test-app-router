@@ -1,0 +1,484 @@
+@use "@/styles/mixins.module.scss";
+
+@mixin random-bgr() {
+  background: rgb(random(255), random(255), random(255));
+}
+
+.Youtube {
+  & :global(.mt-30) {
+    margin-top: 30px;
+  }
+
+  & :global(.grid-display) {
+    display: grid;
+  }
+
+  & :global(.gap-15) {
+    gap: 15px;
+  }
+
+  & :global(.pb-10) {
+    padding-bottom: 10px;
+  }
+
+  & :global(.p-15) {
+    padding: 15px;
+  }
+
+  & :global(.rounded-8) {
+    border-radius: 8px;
+  }
+
+  & :global(.relative) {
+    position: relative;
+  }
+
+  & :global(.light-grey-border-bottom) {
+    border-bottom: 1px solid lightgray;
+  }
+
+  & :global(.w100) {
+    width: 100%;
+  }
+
+  & :global(.absolute-center) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & :global(.grey-border) {
+    border: 1px solid grey;
+  }
+
+  & :global(.hs-responsive-embed-youtube) {
+    position: relative;
+    padding-bottom: 56.25%;
+
+    & :global(iframe) {
+      position: absolute;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+  & :global(.text-info) {
+    color: #31708f !important;
+  }
+
+  @include mixins.md {
+    & :global(.gap-sm-30) {
+      gap: 30px;
+    }
+
+    & :global(.p-sm-30) {
+      padding: 30px;
+    }
+  }
+
+  @include mixins.lg {
+    & :global(.col-md-offset-2) {
+      margin-left: 16.66666667%;
+    }
+  }
+}
+
+.YoutubeVideo {
+  padding-bottom: 56.25%;
+
+  & > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+
+.HoverGrow {
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.035);
+  }
+}
+
+.CompSpecialsLinkData {
+  & * {
+    max-width: 100%;
+  }
+}
+
+.Components {
+  $num-colors: 100;
+  $base-color: #996b4d;
+  $spectrum: 360deg;
+  $offset: 50deg;
+
+  & :global(a) {
+    @for $i from 0 to $num-colors {
+      &:nth-of-type(#{$i}) > div > div {
+        @include random-bgr();
+      }
+    }
+
+    & > div > div::before {
+      transition: ease-in-out all 250ms;
+      content: "";
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: mixins.$white-fade-1-left;
+      opacity: 0.7;
+    }
+
+    &:hover > div > div::before {
+      width: 100%;
+    }
+
+    & > * {
+      grid-auto-rows: min-content;
+      grid-template-rows: repeat(3, auto) 1fr;
+    }
+  }
+}
+
+.LastChild__FullWidth {
+  & > *:nth-last-of-type(1) {
+    grid-column: -1/1;
+  }
+}
+
+.FPSButton {
+  $IconRadius: 50% 50% 15% 15% / 60% 0% 0% 40%;
+  $gradient: mixins.$rainbow-gradient;
+  $height: 1.8rem;
+  overflow: hidden;
+  transition: ease-in-out 250ms all;
+
+  &__Icon {
+    border-radius: $IconRadius;
+    background: $gradient;
+    padding: 0.16em;
+    padding-right: 0;
+    height: $height;
+    & > * {
+      border-radius: $IconRadius;
+      padding-left: 0.16rem;
+      padding-right: 0.1rem;
+    }
+  }
+
+  &__TextContainer {
+    transition: ease-in-out 250ms all;
+    padding-top: 0.16em;
+    padding-bottom: 0.16em;
+    background: $gradient;
+    height: $height;
+  }
+
+  &__Text {
+    transition: ease-in-out 250ms all;
+    opacity: 0%;
+    margin-right: 0em;
+    width: 0px;
+  }
+}
+
+.ListCard {
+  grid-template-rows: 150px 1fr;
+  transition: ease-in-out 250ms all;
+
+  &__Price {
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__Heading {
+    line-height: 1;
+
+    @include mixins.sm {
+      line-height: 1.15rem;
+    }
+  }
+
+  &__Link {
+    background: mixins.$rainbow-gradient-4;
+    padding: 0.15em;
+
+    & > * {
+      --bs-btn-bg: #fff;
+    }
+  }
+
+  &__VAT {
+    font-size: 0.6875rem;
+    margin-bottom: 0.1rem;
+  }
+
+  &__Image {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__Info {
+    grid-template-rows: 2.4rem auto;
+
+    @include mixins.sm {
+      grid-template-rows: 3rem auto;
+    }
+  }
+
+  &__PriceBtn {
+    flex-direction: column;
+
+    @include mixins.xxl {
+      flex-direction: row;
+    }
+  }
+
+  @include mixins.lg {
+    grid-template-rows: 200px 1fr;
+  }
+}
+
+.ListCard:hover .FPSButton {
+  @include mixins.xl {
+    transition: ease-in-out 250ms all;
+    $height: 1.8rem;
+
+    &__TextContainer {
+      transition: ease-in-out 250ms all;
+      height: $height;
+    }
+
+    &__Text {
+      transition: ease-in-out 250ms all;
+      opacity: 75%;
+      margin-right: 0.32em;
+      width: max-content;
+    }
+  }
+}
+
+.LoveCard {
+  &__Info {
+    grid-template-rows: 2.4rem repeat(2, auto);
+
+    @include mixins.sm {
+      grid-template-rows: 3rem repeat(2, auto);
+    }
+  }
+
+  &__BuyBtn {
+    background: mixins.$rainbow-gradient-4;
+    padding: 0.15em;
+
+    & > * {
+      --bs-btn-bg: #fff;
+    }
+  }
+}
+
+.LineBreak {
+  width: min-content;
+  display: inline-block;
+}
+
+.RenderSpecials {
+  & :global(img) {
+    max-width: 100%;
+  }
+}
+
+.LayoutSwitch {
+  z-index: 2;
+  height: 46px;
+  text-align: end;
+
+  &.Grid {
+    margin-bottom: -3.4rem;
+    top: 4rem;
+
+    @include mixins.xl {
+      top: 6.25rem;
+    }
+  }
+
+  &.List {
+    margin-bottom: -3.3rem;
+    top: 3rem;
+  }
+}
+
+.SpecialsFooter {
+  & :global(.grid-display) {
+    display: grid;
+  }
+
+  & :global(.gap-15) {
+    gap: 15px;
+  }
+
+  & :global(.my-15) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  & :global(.w100) {
+    width: 100%;
+  }
+
+  @include mixins.md {
+    & :global(.my-sm-30) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    & :global(.grid-col-sm-2) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.SectionLinks {
+  background: #50c9c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45deg,
+    #b3e0de,
+    #6fcdc8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    45deg,
+    #b3e0de,
+    #6fcdc8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  & .Text {
+    color: rgb(13, 10, 45) !important;
+    text-shadow: #caf7ff 0px 0px 5px;
+  }
+
+  @include mixins.lg {
+    background: unset;
+  }
+}
+
+.Banner {
+  text-align: center;
+
+  @include mixins.md {
+    position: relative;
+    width: 100%;
+  }
+
+  @include mixins.lg {
+    text-align: unset;
+  }
+
+  & :global(.slick-list) {
+    margin: 0 calc(4rem / 16 * -1);
+  }
+
+  &__Background {
+    position: relative;
+    overflow: hidden;
+    height: calc(75rem / 16);
+
+    @include mixins.sm {
+      height: calc(125rem / 16);
+    }
+
+    @include mixins.md {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__BG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__Container {
+    @include mixins.md {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__Heading {
+    color: mixins.$blue-1;
+  }
+
+  &__Paragraph {
+    color: mixins.$white-7;
+  }
+
+  &__Button {
+    width: max-content;
+  }
+
+  &__Logo {
+    opacity: 0.5;
+    height: calc(60rem / 16);
+  }
+
+  &__Card {
+    display: grid !important;
+    grid-template-rows: calc(100rem / 16) 4rem auto;
+    z-index: 1;
+    transition: ease-in-out all 250ms;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+
+    & img {
+      object-fit: contain;
+      height: 100%;
+    }
+
+    & .Tags {
+      width: 4.5rem;
+    }
+  }
+}
+
+.Banner,
+.ImageTiles__MobileRow {
+  & :global(.slick-slide) > :global(div) {
+    margin: calc(4rem / 16);
+  }
+}
+
+.BannerCard {
+  &__Footer {
+    @media (min-width: 1400px) {
+      flex-direction: row;
+    }
+  }
+}
+
+.SalesHeader.ListHeader {
+  top: 3.5rem;
+  z-index: 2;
+
+  @include mixins.xl {
+    top: 5.7rem;
+  }
+
+  @media (min-width: 1800px) {
+    top: 6.2rem;
+  }
+}

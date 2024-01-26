@@ -1,0 +1,61 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.Form {
+  width: calc(500% + 1rem);
+  &.Personal {
+    margin-left: 0;
+  }
+  &.Address {
+    margin-left: -100%;
+  }
+  &.Work {
+    margin-left: -200%;
+  }
+  &.Docs {
+    margin-left: -300%;
+  }
+  &.Confirm {
+    margin-left: -400%;
+  }
+  &__Header {
+    height: 73px;
+  }
+}
+
+.Work {
+  &__Content {
+    height: calc(100% - 3rem);
+
+    @include mixins.lg {
+      height: 100%;
+    }
+  }
+}
+
+.Docs {
+  &__PhotoPreview {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.NavButtons {
+  height: auto;
+
+  @include mixins.md {
+    position: sticky;
+    top: 75%;
+  }
+}
+
+.RightNavBtn {
+  @include mixins.md {
+    transform: translateX(1.6rem);
+  }
+}
+
+.LeftNavBtn {
+  @include mixins.md {
+    transform: translateX(-1.6rem);
+  }
+}

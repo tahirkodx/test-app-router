@@ -1,0 +1,8 @@
+:global(#launcher-frame) {
+  left: 5px !important;
+  bottom: 50px !important;
+
+  @include mixins.lg {
+    bottom: 10px !important;
+  }
+}

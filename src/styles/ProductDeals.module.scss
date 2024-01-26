@@ -1,0 +1,119 @@
+@use "@/styles/mixins.module.scss" as mixins;
+$cardIMG-xs: 9.5em;
+$cardIMG: calc(280rem / 16);
+
+.ParentCard {
+  border: none;
+  background-color: mixins.$lightgrey-3;
+  transition: all ease-in-out 250ms;
+  border-radius: 0;
+}
+
+.Header {
+  border: none;
+  background-color: mixins.$black-1;
+  border-radius: 0 !important;
+}
+
+.CardLink {
+  transition: all 250ms ease-in-out;
+  transform: scale(1);
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(1.01);
+  }
+}
+
+.Card {
+  box-sizing: border-box;
+  $border: 2px;
+  background: white;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  transition: all 250ms ease-in-out;
+  width: $cardIMG-xs;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(235deg, white, lightgrey);
+    opacity: 0;
+    transition: ease-in-out 250ms all;
+  }
+
+  &:hover {
+    &:before {
+      background: linear-gradient(to right, red, orange);
+      opacity: 1;
+    }
+  }
+
+  @include mixins.lg {
+    width: $cardIMG;
+
+    &:hover {
+      transform: scale(1.025);
+      &:before {
+        background: linear-gradient(to right, red, orange);
+      }
+    }
+  }
+}
+
+.CardTitle {
+  height: calc(45rem / 16);
+  max-height: calc(45rem / 16);
+}
+
+.CardImage {
+  height: calc($cardIMG-xs - 2rem);
+
+  @include mixins.lg {
+    height: calc($cardIMG - 5rem);
+  }
+}
+
+.Highlight {
+  height: 3.8rem;
+  overflow: hidden;
+
+  &__Item {
+    font-size: calc(13rem / 16);
+  }
+}
+
+.RainbowBG01 {
+  background: mixins.$rainbow-gradient-4;
+}
+
+.MobiSlider {
+  & :global(.carousel-indicators) {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.MobiSlide {
+  & > *:nth-last-child(1) {
+    width: 100% !important;
+    height: auto !important;
+  }
+}

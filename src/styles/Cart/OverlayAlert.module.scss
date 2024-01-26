@@ -1,0 +1,149 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.TopRightAlert,
+.BottomRightAlert {
+  transform: translateX(100%);
+  padding-right: 2rem;
+  border-radius: 2.5rem 0 0 2.5rem !important;
+  animation-name: jumpInFromRight;
+  //   animation-iteration-count: infinite;
+
+  @include mixins.md {
+    padding-right: 4rem;
+  }
+}
+
+.TopLeftAlert,
+.BottomLeftAlert {
+  transform: translateX(-100%);
+  padding-left: 2rem;
+  animation-name: jumpInFromLeft;
+  border-radius: 0 2.5rem 2.5rem 0 !important;
+  //   animation-iteration-count: infinite;
+
+  @include mixins.md {
+    padding-left: 4rem;
+  }
+}
+
+.BottomCenterAlert {
+  transform: translateY(185%);
+  opacity: 0%;
+  animation-name: jumpInFromBottom;
+  //   animation-iteration-count: infinite;
+}
+
+.CenterAlert {
+  transform: scale(0.8) perspective(250px) rotateX(-45deg);
+  opacity: 0%;
+  animation-name: jumpInFromCenter;
+  //   animation-iteration-count: infinite;
+}
+
+.Overlay {
+  opacity: 0;
+  animation-name: fadeInOut;
+}
+
+@keyframes jumpInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  10% {
+    transform: translateX(-1rem);
+  }
+  20% {
+    transform: translateX(-2rem);
+  }
+  80% {
+    transform: translateX(-2rem);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes jumpInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  10% {
+    transform: translateX(1rem);
+  }
+  20% {
+    transform: translateX(2rem);
+  }
+  80% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes jumpInFromBottom {
+  0% {
+    transform: translateY(185%);
+    opacity: 0%;
+  }
+  10% {
+    transform: translateY(-1rem);
+    opacity: 100%;
+  }
+  20% {
+    transform: translateY(0rem);
+  }
+  80% {
+    transform: translateY(0rem);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(185%);
+    opacity: 0%;
+  }
+}
+
+@keyframes jumpInFromCenter {
+  0% {
+    transform: scale(0.8) perspective(250px) rotateX(-45deg);
+    opacity: 0%;
+  }
+
+  10% {
+    transform: scale(1.2) perspective(250px) rotateX(20deg);
+    opacity: 100%;
+  }
+
+  20% {
+    transform: scale(1) perspective(250px) rotateX(0deg);
+    opacity: 100%;
+  }
+
+  80% {
+    transform: scale(1) perspective(250px) rotateX(0deg);
+    opacity: 100%;
+  }
+
+  0% {
+    transform: scale(0.8) perspective(250px) rotateX(-45deg);
+    opacity: 0%;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0%;
+  }
+
+  20% {
+    opacity: 100%;
+  }
+
+  80% {
+    opacity: 100%;
+  }
+
+  0% {
+    opacity: 0%;
+  }
+}

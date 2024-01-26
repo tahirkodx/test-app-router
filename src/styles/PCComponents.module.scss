@@ -1,0 +1,10 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.StickyHeader {
+    top: calc(65rem / 16);
+    z-index: 1;
+  
+    @include mixins.xl {
+      top: calc(96rem / 16);
+    }
+  }

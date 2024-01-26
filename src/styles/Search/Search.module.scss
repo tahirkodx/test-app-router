@@ -1,0 +1,334 @@
+@use "@/styles/mixins.module.scss";
+
+.Results {
+  & :global(ol) {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mixins.sm {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    @include mixins.xxl {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  & :global(li) {
+    padding: 0;
+    border-radius: 0.375rem !important;
+    overflow: hidden;
+    transition: 250ms ease-in-out all;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.Card {
+  transition: 250ms ease-in-out all;
+  grid-template-rows: calc(150rem / 16) 2.5rem 2.2rem;
+  border-radius: 0.375rem !important;
+  overflow: hidden;
+
+  &:hover {
+    border: 1px blueviolet solid !important;
+    z-index: 2;
+  }
+}
+
+.Price {
+  background: mixins.$blue-gradient-2;
+
+  & > * {
+    @include mixins.textShadow1;
+  }
+}
+
+.Price.darkMode {
+  background: linear-gradient(to right, rgba(137, 43, 226, 0.5), black);
+}
+
+.Search {
+  & :global(.ais-SearchBox-input),
+  & :global(.ais-SearchBox-form) {
+    overflow: hidden;
+    border-radius: 100rem;
+  }
+}
+
+.Results {
+  height: calc(100vh - 20rem);
+  z-index: 0;
+
+  @include mixins.lg {
+    height: calc(100vh - 18rem);
+  }
+
+  @include mixins.xl {
+    grid-auto-rows: min-content;
+  }
+}
+
+.CurrentRefinements {
+  height: 1.5rem;
+
+  & :global(.ais-CurrentRefinements-list) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  & :global(.ais-CurrentRefinements-item) {
+    background-color: blue;
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5em;
+    border-radius: 100rem;
+  }
+}
+
+.SearchArea {
+  top: 7rem;
+  z-index: 1;
+  background-image: url(https://www.evetech.co.za/repository/ProductImages/gaming-computer-setup.jpg);
+  background-size: 100% auto;
+
+  @include mixins.xl {
+    top: 6rem;
+  }
+}
+
+.Filters {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  background-color: mixins.$black-5;
+  transition: all 250ms ease-in-out;
+
+  @include mixins.xl {
+    z-index: unset;
+  }
+
+  &__Content {
+    background-color: white;
+    max-width: calc(300rem / 16);
+    height: 100vh;
+    transition: all 250ms ease-in-out;
+
+    @include mixins.xl {
+      background-color: unset;
+      max-width: unset;
+      height: unset;
+    }
+
+    &.Hide {
+      margin-left: calc((300rem / 16) * -1);
+
+      @include mixins.xl {
+        margin-left: 0;
+      }
+    }
+
+    &.Show {
+      margin-left: 0;
+    }
+  }
+
+  &__Header {
+    z-index: 1;
+
+    @include mixins.xl {
+      display: none;
+    }
+  }
+
+  &.Hide {
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+
+    @include mixins.xl {
+      left: 0;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+
+  &.Show {
+    left: 0;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  @include mixins.xl {
+    position: relative;
+    overflow: auto;
+    height: calc(100vh - 18rem);
+    background-color: unset;
+  }
+}
+
+.PaginationArea {
+  background-color: mixins.$grey-01;
+}
+
+.ResultsExtras {
+  z-index: 1;
+}
+
+.Scrollbar,
+.Scrollbar * {
+  scrollbar-width: thin;
+  scrollbar-color: mixins.$blue-2 #bdbdbd;
+}
+
+.Scrollbar::-webkit-scrollbar,
+.Scrollbar *::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Scrollbar::-webkit-scrollbar-track,
+.Scrollbar *::-webkit-scrollbar-track {
+  background: #bdbdbd;
+}
+
+.Scrollbar::-webkit-scrollbar-thumb,
+.Scrollbar *::-webkit-scrollbar-thumb {
+  background-color: mixins.$blue-2;
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
+
+.Banners {
+  @include mixins.lg {
+    height: calc(100vh - 18rem);
+  }
+}
+
+.DarkSearch {
+  & :global(.ais-HierarchicalMenu-showMore),
+  & :global(.ais-Menu-showMore),
+  & :global(.ais-RefinementList-showMore),
+  & :global(.ais-ClearRefinements-button),
+  & :global(.ais-InfiniteHits-loadMore),
+  & :global(.ais-RangeInput-submit),
+  & :global(.ais-InfiniteHits-loadPrevious),
+  & :global(.ais-Pagination-link),
+  & :global(.ais-GeoSearch-redo),
+  & :global(.ais-GeoSearch-reset),
+  & :global(.ais-VoiceSearch-button),
+  & :global(.ais-RelevantSort-button) {
+    background-color: #0d0d0d;
+    background-image: unset;
+    border: 1px solid rgba(36, 36, 36, 0.75);
+    color: rgb(87, 195, 214);
+  }
+
+  & :global(.ais-HierarchicalMenu-showMore:hover),
+  & :global(.ais-Menu-showMore:hover),
+  & :global(.ais-RefinementList-showMore:hover),
+  & :global(.ais-ClearRefinements-button:hover),
+  & :global(.ais-InfiniteHits-loadMore:hover),
+  & :global(.ais-RangeInput-submit:hover),
+  & :global(.ais-InfiniteHits-loadPrevious:hover),
+  & :global(.ais-Pagination-link:hover),
+  & :global(.ais-GeoSearch-redo:hover),
+  & :global(.ais-GeoSearch-reset:hover),
+  & :global(.ais-VoiceSearch-button:hover),
+  & :global(.ais-RelevantSort-button:hover) {
+    background-color: darkblue !important;
+    background-image: unset !important;
+    border: 1px solid rgba(36, 36, 36, 0.75) !important;
+    color: rgb(255, 255, 255);
+  }
+
+  & :global(.ais-HierarchicalMenu-showMore:active),
+  & :global(.ais-Menu-showMore:active),
+  & :global(.ais-RefinementList-showMore:active),
+  & :global(.ais-ClearRefinements-button:active),
+  & :global(.ais-InfiniteHits-loadMore:active),
+  & :global(.ais-InfiniteHits-loadPrevious:active),
+  & :global(.ais-Pagination-item--selected .ais-Pagination-link),
+  & :global(.ais-Pagination-link:active),
+  & :global(.ais-GeoSearch-redo:active),
+  & :global(.ais-GeoSearch-reset:active),
+  & :global(.ais-VoiceSearch-button:active) {
+    background-color: hsl(210, 100%, 28%) !important;
+    color: white;
+
+    border-color: #050505;
+    box-shadow: rgba(119, 122, 175, 0.4) 0 1px 4px 0 inset,
+      rgba(119, 122, 175, 0.4) 0 1px 1px 0 inset,
+      rgba(35, 38, 59, 0.05) 0 1px 0 0;
+  }
+
+  & :global(.ais-SearchBox-input) {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #4b4b4b;
+  }
+
+  & :global(.ais-SearchBox-input::placeholder) {
+    color: white;
+  }
+
+  & :global(.ais-RefinementList-count) {
+    background: black none repeat scroll 0% 0%;
+    color: #898989;
+    border: 1px solid #1f1f1f;
+  }
+
+  & :global(.ais-ClearRefinements-button:disabled[disabled]) {
+    background-image: linear-gradient(-180deg, #000000, #272727);
+    border-color: #3b3b3b;
+    box-shadow: none;
+    color: #b6b7d5;
+  }
+
+  & :global(.track::before),
+  & :global(.thumb) {
+    background: rgb(87, 195, 214);
+  }
+
+  & :global(.ais-HitsPerPage-select),
+  & :global(.ais-SortBy-select) {
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+      linear-gradient(-180deg, #000000, #262626);
+    border: 1px solid #636363;
+    color: #d7d7d7;
+  }
+
+  & :global(.ais-HitsPerPage-select:hover),
+  & :global(.ais-SortBy-select:hover) {
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+      linear-gradient(-180deg, #222222, #3e3e3e);
+    border-color: #e3e3e3;
+  }
+
+  & :global(.ais-HitsPerPage-select:focus),
+  & :global(.ais-SortBy-select:focus) {
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="24" xmlns="http://www.w3.org/2000/svg"><g stroke="%23777aaf" stroke-width="2" fill="none" fill-rule="evenodd"><path d="M13 7L7 1 1 7M1 17l6 6 6-6"/></g></svg>'),
+      linear-gradient(-180deg, #222222, #3e3e3e);
+    border-color: #e3e3e3;
+    box-shadow: #3c4fe0 0 0 0 1px, rgba(35, 38, 59, 0.05) 0 2px 0 0;
+  }
+
+  & :global(.ais-ClearRefinements-button:disabled[disabled]),
+  & :global(.ais-InfiniteHits-loadMore:disabled[disabled]),
+  & :global(.ais-InfiniteHits-loadPrevious:disabled[disabled]),
+  & :global(.ais-Pagination-item--disabled .ais-Pagination-link),
+  & :global(.ais-GeoSearch-redo--disabled),
+  & :global(.ais-GeoSearch-reset--disabled),
+  & :global(.ais-VoiceSearch-button:disabled) {
+    background-image: unset !important;
+    background-color: #272727;
+    border-color: #000000 !important;
+    box-shadow: none !important;
+    color: #707070 !important;
+  }
+}

@@ -1,0 +1,6 @@
+.main {
+  :global(.form-control::placeholder) {
+    color: var(--bs-light-color);
+    opacity: 0.5;
+  }
+}

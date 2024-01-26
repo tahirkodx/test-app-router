@@ -1,0 +1,4 @@
+@use "@/styles/mixins.module.scss" as mixins;
+.SocialsIcon {
+  color: mixins.$blue-1;
+}

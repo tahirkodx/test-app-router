@@ -1,0 +1,121 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.ModalLink {
+  height: calc(70rem / 16);
+}
+
+.Background {
+  object-fit: cover;
+}
+
+.BigImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @include mixins.md {
+    height: unset;
+    width: unset;
+  }
+}
+
+.Scores {
+  line-height: 0;
+  background-color: mixins.$black-1;
+}
+
+.TimeSpy {
+  column-gap: 0.25rem;
+}
+
+.TimeSpyModal {
+  & :global(.modal-content) {
+    transform: translate(-8px);
+  }
+}
+
+.Quality {
+  font-size: mixins.$fs-1;
+
+  @include mixins.sm {
+    font-size: 1rem;
+  }
+}
+
+.Circles {
+  & > * {
+    height: calc(100rem / 16);
+    position: relative;
+    background-color: inherit;
+
+    @include mixins.sm {
+      height: calc(150rem / 16);
+    }
+
+    @include mixins.lg {
+      height: calc(200rem / 16);
+    }
+  }
+
+  &__Pill,
+  &__FPS {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mixins.sm {
+      font-size: 0.8rem;
+    }
+
+    @include mixins.lg {
+      font-size: 1rem;
+    }
+  }
+
+  &__Pill {
+    top: 25%;
+
+    @include mixins.sm {
+      top: 20%;
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-text) {
+    transform: translateY(7.25%);
+
+    @include mixins.sm {
+      transform: translateY(5%);
+    }
+  }
+
+  & :global(.CircularProgressbar .CircularProgressbar-path) {
+    transform: rotate(180deg) translateX(-100%) translateY(-100%);
+  }
+
+  &__FPS {
+    bottom: 21.5%;
+
+    @include mixins.sm {
+      bottom: 17.5%;
+    }
+  }
+
+  &.darkMode :global(.CircularProgressbar .CircularProgressbar-trail) {
+    stroke: rgba(214, 214, 214, 0.3) !important;
+  }
+}
+
+.GameOptions {
+  & :global(.slick-prev::before),
+  & :global(.slick-next::before) {
+    color: gray !important;
+  }
+
+  & :global(.slick-slide) > :global(div) {
+    margin: 0 calc(0.5rem / 2);
+  }
+
+  & > * {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,13 @@
+@use "@/styles/mixins.module.scss" as mixins;
+
+.BrandsCard {
+  height: calc(350rem / 16);
+}
+
+.BrandLogosXL {
+  justify-items: center;
+}
+
+.Fade {
+  height: calc(85rem / 16);
+}
