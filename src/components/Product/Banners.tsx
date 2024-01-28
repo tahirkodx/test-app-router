@@ -1,3 +1,4 @@
+"use client";
 import { nanoid } from "nanoid";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";

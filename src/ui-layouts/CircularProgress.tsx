@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
-// import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
-// import "react-circular-progressbar/dist/styles.css";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "@/store/AnimatedProgressProvider";
 // import ChangingProgressProvider from "../Store/ChangingProgressProvider";
@@ -20,16 +21,16 @@ const CircularProgress = (props: any) => {
       {(value: any) => {
         const roundedValue = Math.round(value);
         return (
-          "Tahir"
-          // <CircularProgressbar
-          //   value={value}
-          //   text={isNaN(text) ? "Not Playable" : text}
-          //   /* This is important to include, because if you're fully managing the animation yourself, you'll want to disable the CSS animation. */
-          //   styles={buildStyles({
-          //     pathTransition: "none",
-          //     textSize: isNaN(text) && "13px",
-          //   })}
-          // />
+          // "ui-layout Loader"
+          <CircularProgressbar
+            value={value}
+            text={isNaN(text) ? "Not Playable" : text}
+            /* This is important to include, because if you're fully managing the animation yourself, you'll want to disable the CSS animation. */
+            styles={buildStyles({
+              pathTransition: "none",
+              textSize: isNaN(text) && "13px",
+            })}
+          />
         );
       }}
     </AnimatedProgressProvider>

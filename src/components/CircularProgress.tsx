@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -19,6 +20,7 @@ const CircularProgress = (props: any) => {
       {(value: any) => {
         const roundedValue = Math.round(value);
         return (
+          // "Component Loader"
           <CircularProgressbar
             value={value}
             text={isNaN(text) ? "Not Playable" : text}

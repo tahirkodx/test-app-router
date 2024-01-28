@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import PageLink from "./PageLink";
 import { LazyLoadImage } from "react-lazy-load-image-component";

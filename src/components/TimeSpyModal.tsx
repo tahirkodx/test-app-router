@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Modal, Stack } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Heading from "../Heading";

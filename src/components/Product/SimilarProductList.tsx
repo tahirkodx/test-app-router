@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { customAlphabet } from "nanoid";
 import { Row } from "react-bootstrap";
