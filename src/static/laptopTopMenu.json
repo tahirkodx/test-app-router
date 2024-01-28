@@ -1,0 +1,2345 @@
+{
+    "result": [
+        {
+            "type": "link",
+            "title": "Home",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/home-icon-silhouette-w20.png",
+            "link": "/mobile",
+            "dropdown": []
+        },
+        {
+            "type": "dropdown",
+            "title": "Laptops",
+            "link": "",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/neon-gaming-laptops-computers.jpg",
+                    "alt": "Evetech Laptops South Africa",
+                    "sections": [
+                        {
+                            "heading": "By Brand",
+                            "links": [
+                                {
+                                    "url": "/dell-laptops-on-special/l/339.aspx",
+                                    "text": "Dell Laptops on Special"
+                                },
+                                {
+                                    "url": "/hp-laptops-on-special/l/492.aspx",
+                                    "text": "HP Laptops on Special"
+                                },
+                                {
+                                    "url": "/lenovo-laptops-on-special/l/262.aspx",
+                                    "text": "Lenovo Laptops on Special"
+                                },
+                                {
+                                    "url": "/asus-laptops-on-special/l/261.aspx",
+                                    "text": "ASUS Laptops on Special"
+                                },
+                                {
+                                    "url": "/msi-laptops-on-special/l/35.aspx",
+                                    "text": "MSI Laptops on Special"
+                                },
+                                {
+                                    "url": "/laptop-specials-for-sale-south-africa.aspx",
+                                    "text": "All Laptops On Special"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i7-laptops/l/961.aspx",
+                                    "text": "Intel Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i5-laptops/l/960.aspx",
+                                    "text": "Intel Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i3-laptops/l/959.aspx",
+                                    "text": "Intel Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i9-laptops/l/962.aspx",
+                                    "text": "Intel Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/intel-12th-gen-laptops-on-special/l/1072.aspx",
+                                    "text": "Intel 12th Gen Laptops"
+                                },
+                                {
+                                    "url": "/intel-laptops-on-special/l/866.aspx",
+                                    "text": "All Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "12th Gen",
+                            "links": [
+                                {
+                                    "url": "/intel-12th-gen-gaming-laptops/l/1078.aspx",
+                                    "text": "Intel 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-12th-gen-gaming-laptops/l/1073.aspx",
+                                    "text": "MSI 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-12th-gen-gaming-laptops/l/1077.aspx",
+                                    "text": "DELL 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-12th-gen-gaming-laptops/l/1076.aspx",
+                                    "text": "HP 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-12th-gen-gaming-laptops/l/1075.aspx",
+                                    "text": "LENOVO 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-12th-gen-gaming-laptops/l/1074.aspx",
+                                    "text": "ASUS 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-12th-gen-laptops-on-special/l/1072.aspx",
+                                    "text": "Intel 12th Gen Laptops On Special"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Ryzen laptops",
+                            "links": [
+                                {
+                                    "url": "/amd-ryzen-7-laptops/l/839.aspx",
+                                    "text": "AMD Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-5-laptops/l/838.aspx",
+                                    "text": "AMD Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-3-laptops/l/837.aspx",
+                                    "text": "AMD Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-9-laptops/l/841.aspx",
+                                    "text": "AMD Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/ryzen-laptop-deals/l/682.aspx",
+                                    "text": "All Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Gaming Laptops By Brand",
+                            "links": [
+                                {
+                                    "url": "/dell-gaming-laptops/l/963.aspx",
+                                    "text": "Dell Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-gaming-laptops/l/964.aspx",
+                                    "text": "HP Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-gaming-laptops/l/965.aspx",
+                                    "text": "Lenovo Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-gaming-laptops.aspx",
+                                    "text": "ASUS Gaming Laptops"
+                                },
+                                {
+                                    "url": "/buy-laptop/msi-gaming-laptops.aspx",
+                                    "text": "MSI Gaming Laptops"
+                                },
+                                {
+                                    "url": "/gaming-laptops.aspx",
+                                    "text": "All Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Geforce Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/gtx-1650-gaming-laptops/l/840.aspx",
+                                    "text": "GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-2050-laptop-deals/l/1279.aspx",
+                                    "text": "RTX 2050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3050-laptop-deals/l/814.aspx",
+                                    "text": "RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3060-laptop-deals/l/729.aspx",
+                                    "text": "RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3070-laptop-deals/l/730.aspx",
+                                    "text": "RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3080-laptop-deals/l/731.aspx",
+                                    "text": "RTX 3080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4050-laptop-deals/l/1253.aspx",
+                                    "text": "RTX 4050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4060-laptop-deals/l/1254.aspx",
+                                    "text": "RTX 4060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4070-laptop-deals/l/1255.aspx",
+                                    "text": "RTX 4070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4080-laptop-deals/l/1256.aspx",
+                                    "text": "RTX 4080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4090-laptop-deals/l/1257.aspx",
+                                    "text": "RTX 4090 Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/nvidia-rtx-a500-workstation-laptops/l/1328.aspx",
+                                    "text": "NVIDIA RTX A500 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-a1000-workstation-laptops/l/1329.aspx",
+                                    "text": "NVIDIA RTX A1000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-2000-workstation-laptops/l/1330.aspx",
+                                    "text": "NVIDIA RTX 2000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-3000-workstation-laptops/l/1331.aspx",
+                                    "text": "NVIDIA RTX 3000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-3500-workstation-laptops/l/1332.aspx",
+                                    "text": "NVIDIA RTX 3500 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-a3000-workstation-laptops/l/1044.aspx",
+                                    "text": "NVIDIA A3000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/quadro-rtx-5000-workstation-laptops/l/589.aspx",
+                                    "text": "Quadro RTX 5000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/dell-precision-workstation-laptops/l/918.aspx",
+                                    "text": "Dell Precision Workstation Laptops"
+                                },
+                                {
+                                    "url": "/hp-zbook-firefly-workstation-laptops/l/956.aspx",
+                                    "text": "HP ZBook Workstation Laptops"
+                                },
+                                {
+                                    "url": "/msi-workstation-laptops/l/006.aspx",
+                                    "text": "MSI Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i5-workstation-laptops/l/988.aspx",
+                                    "text": "Intel Core i5 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i7-workstation-laptops/l/989.aspx",
+                                    "text": "Intel Core i7 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/workstation-laptops/l/621.aspx",
+                                    "text": "All Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "FPS Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/pubg-gaming-laptops/l/1168.aspx",
+                                    "text": "PUBG Gaming Laptops"
+                                },
+                                {
+                                    "url": "/gta-v-gaming-laptops/l/1178.aspx",
+                                    "text": "GTA V Gaming Laptops"
+                                },
+                                {
+                                    "url": "/counter-strike-gaming-laptops/l/1169.aspx",
+                                    "text": "Counter-Strike Gaming Laptops"
+                                },
+                                {
+                                    "url": "/fortnite-gaming-laptops/l/1157.aspx",
+                                    "text": "Fortnite Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "By OS",
+                            "links": [
+                                {
+                                    "url": "/windows-11-pro-laptop-deals/l/1068.aspx",
+                                    "text": "Windows 11 Pro Laptop Deals"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Touchscreen laptops",
+                            "links": [
+                                {
+                                    "url": "/touchscreen-laptops/l/842.aspx",
+                                    "text": "Touchscreen laptops"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Gaming Laptop",
+            "link": "",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/neon-gaming-laptops-computers.jpg",
+                    "alt": "By Brand",
+                    "sections": [
+                        {
+                            "heading": "By Brand",
+                            "links": [
+                                {
+                                    "text": "Dell Gaming Laptops",
+                                    "url": "/dell-gaming-laptops/l/963.aspx"
+                                },
+                                {
+                                    "text": "HP Gaming Laptops",
+                                    "url": "/hp-gaming-laptops/l/964.aspx"
+                                },
+                                {
+                                    "text": "Lenovo Gaming Laptops",
+                                    "url": "/lenovo-gaming-laptops/l/965.aspx"
+                                },
+                                {
+                                    "text": "ASUS Gaming Laptops",
+                                    "url": "/asus-gaming-laptops.aspx"
+                                },
+                                {
+                                    "text": "MSI Gaming Laptops",
+                                    "url": "/buy-laptop/msi-gaming-laptops.aspx"
+                                },
+                                {
+                                    "text": "All Gaming Laptops",
+                                    "url": "/gaming-laptops.aspx"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Geforce Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/gtx-1650-gaming-laptops/l/840.aspx",
+                                    "text": "GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-2050-laptop-deals/l/1279.aspx",
+                                    "text": "RTX 2050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3050-laptop-deals/l/814.aspx",
+                                    "text": "RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3060-laptop-deals/l/729.aspx",
+                                    "text": "RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3070-laptop-deals/l/730.aspx",
+                                    "text": "RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-3080-laptop-deals/l/731.aspx",
+                                    "text": "RTX 3080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4050-laptop-deals/l/1253.aspx",
+                                    "text": "RTX 4050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4060-laptop-deals/l/1254.aspx",
+                                    "text": "RTX 4060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4070-laptop-deals/l/1255.aspx",
+                                    "text": "RTX 4070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4080-laptop-deals/l/1256.aspx",
+                                    "text": "RTX 4080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/rtx-4090-laptop-deals/l/1257.aspx",
+                                    "text": "RTX 4090 Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Intel Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i7-gaming-laptops/l/971.aspx",
+                                    "text": "Intel i7 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i5-gaming-laptops/l/970.aspx",
+                                    "text": "Intel i5 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i9-gaming-laptops/l/972.aspx",
+                                    "text": "Intel i9 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-12th-gen-gaming-laptops/l/1078.aspx",
+                                    "text": "Intel 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/all-intel-gaming-laptops/l/973.aspx",
+                                    "text": "Intel Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Ryzen Gaming laptops",
+                            "links": [
+                                {
+                                    "url": "/amd-ryzen-7-gaming-laptops/l/975.aspx",
+                                    "text": "AMD Ryzen 7 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-5-gaming-laptops/l/974.aspx",
+                                    "text": "AMD Ryzen 5 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-9-gaming-laptops/l/976.aspx",
+                                    "text": "AMD Ryzen 9 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-gaming-laptops/l/977.aspx",
+                                    "text": "Ryzen Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-gtx-1650-gaming-laptop-deals/l/497.aspx",
+                                    "text": "Dell GTX 1650 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-rtx-3050-gaming-laptops/l/913.aspx",
+                                    "text": "Dell RTX 3050 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-rtx-3060-gaming-laptops/l/914.aspx",
+                                    "text": "Dell RTX 3060 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-rtx-3070-gaming-laptops/l/1183.aspx",
+                                    "text": "Dell RTX 3070 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-g15-gaming-laptops/l/1007.aspx",
+                                    "text": "Dell G15 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-g16-gaming-laptops/l/1298.aspx",
+                                    "text": "Dell G16 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-12th-gen-gaming-laptops/l/1077.aspx",
+                                    "text": "DELL 12th Gen Gaming Laptop"
+                                },
+                                {
+                                    "url": "/dell-gaming-laptops/l/963.aspx",
+                                    "text": "All Dell Gaming Laptop"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-rtx-3050-gaming-laptops/l/966.aspx",
+                                    "text": "HP RTX 3050 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-rtx-3060-gaming-laptops/l/928.aspx",
+                                    "text": "HP RTX 3060 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-rtx-3070-gaming-laptops/l/967.aspx",
+                                    "text": "HP RTX 3070 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/buy-radeon-rx-6500m-gaming-laptops-south-africa/l/1236.aspx",
+                                    "text": "Radeon RX 6500M Gaming Laptop"
+                                },
+                                {
+                                    "url": "/buy-radeon-rx-6600m-gaming-laptops-south-africa/l/1103.aspx",
+                                    "text": "Radeon RX 6600M Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-victus-gaming-laptops/l/926.aspx",
+                                    "text": "HP Victus Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-omen-gaming-laptop-deals/l/777.aspx",
+                                    "text": "HP Omen Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-pavilion-gaming-laptop-deals/l/775.aspx",
+                                    "text": "HP Pavilion Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-12th-gen-gaming-laptops/l/1076.aspx",
+                                    "text": "HP 12th Gen Gaming Laptop"
+                                },
+                                {
+                                    "url": "/hp-gaming-laptops/l/964.aspx",
+                                    "text": "All HP Gaming Laptop"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-gtx-1650-gaming-laptop-deals/l/510.aspx",
+                                    "text": "Lenovo GTX 1650 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-rtx-3050-laptops/l/848.aspx",
+                                    "text": "Lenovo RTX 3050 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-rtx-3060-gaming-laptops/l/1032.aspx",
+                                    "text": "Lenovo RTX 3060 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-12th-gen-gaming-laptops/l/1075.aspx",
+                                    "text": "LENOVO 12th Gen Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-legion-gaming-laptop-deals/l/220.aspx",
+                                    "text": "Lenovo Legion Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-ideapad-3-gaming-laptop-deals/l/711.aspx",
+                                    "text": "Lenovo Ideapad 3 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-core-i5-gaming-laptops/l/968.aspx",
+                                    "text": "Lenovo Core i5 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-5-gaming-laptops/l/969.aspx",
+                                    "text": "Lenovo Ryzen 5 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/lenovo-gaming-laptops/l/965.aspx",
+                                    "text": "All Lenovo Gaming Laptop"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-rtx-40-series-gaming-laptops/l/1266.aspx",
+                                    "text": "MSI RTX 40 Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gtx-1650-gaming-laptops/l/1031.aspx",
+                                    "text": "MSI GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3050-laptop/l/850.aspx",
+                                    "text": "MSI RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3060-laptops/l/732.aspx",
+                                    "text": "MSI RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3070-laptops/l/733.aspx",
+                                    "text": "MSI RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3080-laptops/l/734.aspx",
+                                    "text": "MSI RTX 3080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-katana-gaming-laptops/l/1263.aspx",
+                                    "text": "MSI Katana Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-cyborg-gaming-laptops/l/1264.aspx",
+                                    "text": "MSI Cyborg Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-12th-gen-gaming-laptops/l/1073.aspx",
+                                    "text": "MSI 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-ge-series-gaming-laptops/l/686.aspx",
+                                    "text": "MSI GE Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gf-series-gaming-laptops/l/815.aspx",
+                                    "text": "MSI GF Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gl-series-gaming-laptop-deals/l/021.aspx",
+                                    "text": "MSI GL Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gp-series-gaming-laptops/l/685.aspx",
+                                    "text": "MSI GP Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/buy-laptop/msi-gaming-laptops.aspx",
+                                    "text": "All MSI Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-rtx-40-series-gaming-laptops/l/1299.aspx",
+                                    "text": "ASUS RTX 40 Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-gtx-1650-laptops/l/579.aspx",
+                                    "text": "ASUS GTX 1650 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3050-laptops/l/843.aspx",
+                                    "text": "ASUS RTX 3050 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3060-laptops/l/726.aspx",
+                                    "text": "ASUS RTX 3060 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3070-laptops/l/724.aspx",
+                                    "text": "ASUS RTX 3070 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3080-laptops/l/725.aspx",
+                                    "text": "ASUS RTX 3080 Laptops"
+                                },
+                                {
+                                    "url": "/asus-12th-gen-gaming-laptops/l/1074.aspx",
+                                    "text": "ASUS 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-tuf-gaming-laptops/l/577.aspx",
+                                    "text": "ASUS TUF Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-laptops-south-africa/l/550.aspx",
+                                    "text": "ASUS ROG Gaming laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-zephyrus-gaming-laptop-deals/l/248.aspx",
+                                    "text": "ROG Zephyrus Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-zephyrus-duo-gaming-laptops/l/643.aspx",
+                                    "text": "ROG Zephyrus Duo Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-gaming-laptops.aspx",
+                                    "text": "All ASUS Gaming laptops"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Intel",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/intel-logo-image-v2.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/asus-x515ep-11th-gen-core-i7-laptop-1058px-v4.jpg",
+                    "alt": "Intel Laptop",
+                    "sections": [
+                        {
+                            "heading": "By CPU",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i7-laptops/l/961.aspx",
+                                    "text": "Intel Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i5-laptops/l/960.aspx",
+                                    "text": "Intel Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i3-laptops/l/959.aspx",
+                                    "text": "Intel Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i9-laptops/l/962.aspx",
+                                    "text": "Intel Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/intel-laptops-on-special/l/866.aspx",
+                                    "text": "All Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Gaming Laptops By Brand",
+                            "links": [
+                                {
+                                    "url": "/dell-intel-gaming-laptops/l/991.aspx",
+                                    "text": "Dell Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-intel-gaming-laptops/l/992.aspx",
+                                    "text": "HP Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-intel-gaming-laptops/l/993.aspx",
+                                    "text": "Lenovo Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-intel-gaming-laptops/l/994.aspx",
+                                    "text": "ASUS Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-intel-gaming-laptops/l/995.aspx",
+                                    "text": "MSI Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/all-intel-gaming-laptops/l/973.aspx",
+                                    "text": "All Intel Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Intel Geforce Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/intel-gtx-1650-gaming-laptops/l/978.aspx",
+                                    "text": "Intel GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-rtx-3050-gaming-laptops/l/979.aspx",
+                                    "text": "Intel RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-rtx-3060-gaming-laptops/l/980.aspx",
+                                    "text": "Intel RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-rtx-3070-gaming-laptops/l/981.aspx",
+                                    "text": "Intel RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/intel-rtx-3080-gaming-laptops/l/982.aspx",
+                                    "text": "Intel RTX 3080 Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-core-i7-laptop-deals/l/849.aspx",
+                                    "text": "Dell Intel Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i5-laptop-deals/l/852.aspx",
+                                    "text": "Dell Intel Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i3-laptop-deals/l/912.aspx",
+                                    "text": "Dell Intel Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i9-laptop-deals/l/1023.aspx",
+                                    "text": "Dell Intel Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/dell-intel-laptops/l/983.aspx",
+                                    "text": "All Dell Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-core-i7-laptop-deals/l/456.aspx",
+                                    "text": "HP Intel Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i5-laptop-deals/l/455.aspx",
+                                    "text": "HP Intel Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i3-laptop-deals/l/454.aspx",
+                                    "text": "HP Intel Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i9-laptop-deals/l/1026.aspx",
+                                    "text": "HP Intel Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/hp-celeron-laptop-deals/l/1109.aspx",
+                                    "text": "HP Celeron Laptops"
+                                },
+                                {
+                                    "url": "/hp-intel-laptops/l/984.aspx",
+                                    "text": "All HP Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-core-i7-laptop-deals/l/343.aspx",
+                                    "text": "Lenovo Intel Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i5-laptop-deals/l/342.aspx",
+                                    "text": "Lenovo Intel Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i3-laptop-deals/l/341.aspx",
+                                    "text": "Lenovo Intel Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i9-laptop-deals/l/1027.aspx",
+                                    "text": "Lenovo Intel Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-celeron-laptop-deals/l/1108.aspx",
+                                    "text": "Lenovo Celeron Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-intel-laptops/l/985.aspx",
+                                    "text": "All Lenovo Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-core-i7-laptop-deals/l/142.aspx",
+                                    "text": "ASUS Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i5-laptop-deals/l/143.aspx",
+                                    "text": "ASUS Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i3-laptop-deals/l/144.aspx",
+                                    "text": "ASUS Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i9-laptop-deals/l/1028.aspx",
+                                    "text": "ASUS Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/asus-intel-laptops/l/986.aspx",
+                                    "text": "All ASUS Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-core-i7-laptop-deals/l/853.aspx",
+                                    "text": "MSI Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i5-laptop-deals/l/854.aspx",
+                                    "text": "MSI Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i3-laptop-deals/l/1029.aspx",
+                                    "text": "MSI Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i9-laptop-deals/l/1030.aspx",
+                                    "text": "MSI Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/msi-intel-laptops/l/987.aspx",
+                                    "text": "All MSI Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Intel Workstations",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i5-workstation-laptops/l/988.aspx",
+                                    "text": "Intel Core i5 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i7-workstation-laptops/l/989.aspx",
+                                    "text": "Intel Core i7 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-workstation-laptops/l/990.aspx",
+                                    "text": "All Intel Workstation Laptops"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Ryzen",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/amd-ryzen-logo-image-v4.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/asus-proart-studiobook-16-ryzen-9-rtx-3060-professional-laptop-overview-v3.jpg",
+                    "alt": "Ryzen Laptop",
+                    "sections": [
+                        {
+                            "heading": "By CPU",
+                            "links": [
+                                {
+                                    "url": "/amd-ryzen-7-laptops/l/839.aspx",
+                                    "text": "AMD Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-5-laptops/l/838.aspx",
+                                    "text": "AMD Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-3-laptops/l/837.aspx",
+                                    "text": "AMD Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-9-laptops/l/841.aspx",
+                                    "text": "AMD Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/ryzen-laptop-deals/l/682.aspx",
+                                    "text": "All Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Gaming Laptops By Brand",
+                            "links": [
+                                {
+                                    "url": "/dell-ryzen-gaming-laptops/l/996.aspx",
+                                    "text": "Dell Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-gaming-laptops/l/997.aspx",
+                                    "text": "HP Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-gaming-laptops/l/998.aspx",
+                                    "text": "Lenovo Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-gaming-laptops/l/999.aspx",
+                                    "text": "ASUS Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-gaming-laptops/l/1000.aspx",
+                                    "text": "MSI Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/amd-ryzen-gaming-laptops/l/977.aspx",
+                                    "text": "Ryzen Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Ryzen Geforce Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/ryzen-gtx-1650-gaming-laptops/l/1001.aspx",
+                                    "text": "Ryzen GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/ryzen-rtx-3050-gaming-laptops/l/1002.aspx",
+                                    "text": "Ryzen RTX 3050 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/ryzen-rtx-3060-gaming-laptops/l/1003.aspx",
+                                    "text": "Ryzen RTX 3060 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/ryzen-rtx-3070-gaming-laptops/l/1004.aspx",
+                                    "text": "Ryzen RTX 3070 Gaming Laptop"
+                                },
+                                {
+                                    "url": "/ryzen-rtx-3080-gaming-laptops/l/1005.aspx",
+                                    "text": "Ryzen RTX 3080 Gaming Laptop"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-ryzen-7-laptops/l/1012.aspx",
+                                    "text": "Dell Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-5-laptops/l/1011.aspx",
+                                    "text": "Dell Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-3-laptops/l/1010.aspx",
+                                    "text": "Dell Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-9-laptops/l/1013.aspx",
+                                    "text": "Dell Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-laptop-deals/l/1009.aspx",
+                                    "text": "All Dell Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-ryzen-7-laptop-deals/l/461.aspx",
+                                    "text": "HP Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-5-laptop-deals/l/460.aspx",
+                                    "text": "HP Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-3-laptop-deals/l/459.aspx",
+                                    "text": "HP Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-9-laptop-deals/l/1022.aspx",
+                                    "text": "HP Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-laptop-deals/l/1006.aspx",
+                                    "text": "All HP Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-ryzen-7-laptop-deals/l/464.aspx",
+                                    "text": "Lenovo Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-5-laptop-deals/l/463.aspx",
+                                    "text": "Lenovo Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-3-laptop-deals/l/462.aspx",
+                                    "text": "Lenovo Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-9-laptop-deals/l/1019.aspx",
+                                    "text": "Lenovo Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-laptop-deals/l/1014.aspx",
+                                    "text": "All Lenovo Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-ryzen-7-laptops/l/845.aspx",
+                                    "text": "ASUS Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-5-laptops/l/846.aspx",
+                                    "text": "ASUS Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-3-laptops/l/1020.aspx",
+                                    "text": "ASUS Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-9-laptops/l/844.aspx",
+                                    "text": "ASUS Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-laptop-deals/l/578.aspx",
+                                    "text": "All ASUS Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-ryzen-7-laptop-deals/l/1016.aspx",
+                                    "text": "MSI Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-5-laptop-deals/l/1017.aspx",
+                                    "text": "MSI Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-3-laptop-deals/l/1015.aspx",
+                                    "text": "MSI Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-9-laptops-deals/l/949.aspx",
+                                    "text": "MSI Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-laptop-deals/l/1018.aspx",
+                                    "text": "All MSI Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Ryzen Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/ryzen-workstation-laptop-deals/l/1021.aspx",
+                                    "text": "Ryzen Workstation Laptops"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Dell",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/dell-header-logo.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/dell-inspiron-14-5420-12th-gen-core-i5-laptop-1200px-v3.jpg",
+                    "alt": "Dell Laptop",
+                    "sections": [
+                        {
+                            "heading": "Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-core-i7-laptop-deals/l/849.aspx",
+                                    "text": "Dell Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i5-laptop-deals/l/852.aspx",
+                                    "text": "Dell Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i3-laptop-deals/l/912.aspx",
+                                    "text": "Dell Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/dell-core-i9-laptop-deals/l/1023.aspx",
+                                    "text": "Dell Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/dell-intel-laptops/l/983.aspx",
+                                    "text": "All Dell Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-ryzen-7-laptops/l/1012.aspx",
+                                    "text": "Dell Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-5-laptops/l/1011.aspx",
+                                    "text": "Dell Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-3-laptops/l/1010.aspx",
+                                    "text": "Dell Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-9-laptops/l/1013.aspx",
+                                    "text": "Dell Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/dell-ryzen-laptop-deals/l/1009.aspx",
+                                    "text": "All Dell Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Desktop PCs",
+                            "links": [
+                                {
+                                    "url": "/dell-all-in-one-desktop-pcs/l/638.aspx",
+                                    "text": "Dell All-in-One Desktop PCs"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Latitude",
+                            "links": [
+                                {
+                                    "url": "/dell-latitude-laptop-deals/l/566.aspx",
+                                    "text": "Dell Latitude Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-gtx-1650-gaming-laptop-deals/l/497.aspx",
+                                    "text": "Dell GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-rtx-3050-gaming-laptops/l/913.aspx",
+                                    "text": "Dell RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-rtx-3060-gaming-laptops/l/914.aspx",
+                                    "text": "Dell RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-rtx-3070-gaming-laptops/l/1183.aspx",
+                                    "text": "Dell RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-g15-gaming-laptops/l/1007.aspx",
+                                    "text": "Dell G15 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-g16-gaming-laptops/l/1298.aspx",
+                                    "text": "Dell G16 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-12th-gen-gaming-laptops/l/1077.aspx",
+                                    "text": "DELL 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/dell-gaming-laptops/l/963.aspx",
+                                    "text": "All Dell Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Workstation laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-precision-workstation-laptops/l/918.aspx",
+                                    "text": "Dell Precision Workstation Laptops"
+                                },
+                                {
+                                    "url": "/dell-workstation-laptop-deals/l/1041.aspx",
+                                    "text": "Dell Workstation Laptop Deals"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell XPS Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-xps-13-laptop-deals/l/504.aspx",
+                                    "text": "Dell XPS 13 Laptops"
+                                },
+                                {
+                                    "url": "/dell-xps-15-gaming-laptops-deals/l/915.aspx",
+                                    "text": "Dell XPS 15 Laptops"
+                                },
+                                {
+                                    "url": "/dell-xps-17-gaming-laptops-deals/l/916.aspx",
+                                    "text": "Dell XPS 17 Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Alienware",
+                            "links": [
+                                {
+                                    "url": "/alienware-m15-gaming-laptops/l/1184.aspx",
+                                    "text": "Alienware M15 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/alienware-x15-gaming-laptops/l/1186.aspx",
+                                    "text": "Alienware X15 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/alienware-x17-gaming-laptops/l/1185.aspx",
+                                    "text": "Alienware X17 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/alienware-gaming-laptop-deals/l/608.aspx",
+                                    "text": "All Alienware Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Inspiron Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-inspiron-14-laptops/l/870.aspx",
+                                    "text": "DELL Inspiron 14 Laptops"
+                                },
+                                {
+                                    "url": "/dell-inspiron-15-laptops/l/872.aspx",
+                                    "text": "DELL Inspiron 15 Laptops"
+                                },
+                                {
+                                    "url": "/dell-inspiron-16-laptops/l/1182.aspx",
+                                    "text": "DELL Inspiron 16 Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Vostro",
+                            "links": [
+                                {
+                                    "url": "/dell-vostro-laptop-deals/l/565.aspx",
+                                    "text": "Dell Vostro Laptop"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell 2-in-1 Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-2-in-1-laptop-deals/l/568.aspx",
+                                    "text": "DELL 2-in-1 Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Laptop Specials",
+                            "links": [
+                                {
+                                    "url": "/dell-laptops-on-special/l/339.aspx",
+                                    "text": "Laptops on Special"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "HP",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/hp-header-logo.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/mobile/Laptop/ProImages/hp-envy-x360-core-i7-4k-laptop-1000px-v1-0012.jpg",
+                    "alt": "HP Laptop",
+                    "sections": [
+                        {
+                            "heading": "HP Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-core-i7-laptop-deals/l/456.aspx",
+                                    "text": "HP Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i5-laptop-deals/l/455.aspx",
+                                    "text": "HP Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i3-laptop-deals/l/454.aspx",
+                                    "text": "HP Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/hp-core-i9-laptop-deals/l/1026.aspx",
+                                    "text": "HP Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/hp-celeron-laptop-deals/l/1109.aspx",
+                                    "text": "HP Celeron Laptops"
+                                },
+                                {
+                                    "url": "/hp-intel-laptops/l/984.aspx",
+                                    "text": "All HP Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP AMD Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-ryzen-7-laptop-deals/l/461.aspx",
+                                    "text": "HP Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-5-laptop-deals/l/460.aspx",
+                                    "text": "HP Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-3-laptop-deals/l/459.aspx",
+                                    "text": "HP Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-9-laptop-deals/l/1022.aspx",
+                                    "text": "HP Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/hp-ryzen-laptop-deals/l/1006.aspx",
+                                    "text": "All HP Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Victus Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-victus-rtx-3050-gaming-laptops/l/1034.aspx",
+                                    "text": "HP Victus RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-victus-rtx-3060-gaming-laptops/l/1035.aspx",
+                                    "text": "HP Victus RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-victus-gaming-laptops/l/926.aspx",
+                                    "text": "HP Victus Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-rtx-3050-gaming-laptops/l/966.aspx",
+                                    "text": "RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-rtx-3060-gaming-laptops/l/928.aspx",
+                                    "text": "RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-rtx-3070-gaming-laptops/l/967.aspx",
+                                    "text": "RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-12th-gen-gaming-laptops/l/1076.aspx",
+                                    "text": "HP 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/buy-radeon-rx-6500m-gaming-laptops-south-africa/l/1236.aspx",
+                                    "text": "Radeon RX 6500M Gaming Laptops"
+                                },
+                                {
+                                    "url": "/buy-radeon-rx-6600m-gaming-laptops-south-africa/l/1103.aspx",
+                                    "text": "Radeon RX 6600M Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-victus-gaming-laptops/l/926.aspx",
+                                    "text": "HP Victus Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-omen-gaming-laptop-deals/l/777.aspx",
+                                    "text": "HP Omen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-pavilion-gaming-laptop-deals/l/775.aspx",
+                                    "text": "HP Pavilion Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-gaming-laptops/l/964.aspx",
+                                    "text": "All HP Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-zbook-firefly-workstation-laptops/l/956.aspx",
+                                    "text": "HP ZBook Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Notebooks",
+                            "links": [
+                                {
+                                    "url": "/hp-elitebook-laptop-deals/l/861.aspx",
+                                    "text": "HP EliteBook Laptops"
+                                },
+                                {
+                                    "url": "/hp-probook-laptop-deal/l/927.aspx",
+                                    "text": "HP Probook Laptops"
+                                },
+                                {
+                                    "url": "/new-must-haves-for-your-home-office-study-hp-15/l/617.aspx",
+                                    "text": "HP Laptop Deals"
+                                },
+                                {
+                                    "url": "/hp-laptops-on-special/l/492.aspx",
+                                    "text": "HP Laptops On Special"
+                                },
+                                {
+                                    "url": "/hp-notebook-laptop-deals/l/1105.aspx",
+                                    "text": "All HP Notebook Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Gaming PCs",
+                            "links": [
+                                {
+                                    "url": "/hp-omen-30l-desktop-gaming-pc/l/817.aspx",
+                                    "text": "HP OMEN Desktop Gaming PCs"
+                                },
+                                {
+                                    "url": "/hp-victus-desktop-gaming-pcs/l/1147.aspx",
+                                    "text": "HP Victus Gaming Gaming PCs"
+                                },
+                                {
+                                    "url": "/hp-desktop-pcs/l/1150.aspx",
+                                    "text": "HP All-in-One PCs"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "OMEN By HP",
+                            "links": [
+                                {
+                                    "url": "/hp-omen-gaming-laptop-deals/l/777.aspx",
+                                    "text": "HP OMEN Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Pavilion Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-pavilion-gaming-laptop-deals/l/775.aspx",
+                                    "text": "HP Pavilion Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-pavilion-intel-gaming-laptops/l/1036.aspx",
+                                    "text": "HP Pavilion Intel Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-pavilion-ryzen-gaming-laptops/l/1037.aspx",
+                                    "text": "HP Pavilion Ryzen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/hp-pavilion-aero-laptops/l/941.aspx",
+                                    "text": "HP Pavilion Aero Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP ENVY Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-envy-15-laptop-deals/l/485.aspx",
+                                    "text": "HP ENVY 15 Laptops"
+                                },
+                                {
+                                    "url": "/hp-envy-14-laptops/l/1038.aspx",
+                                    "text": "HP ENVY 14 Laptops"
+                                },
+                                {
+                                    "url": "/hp-envy-13-laptop-deals/l/486.aspx",
+                                    "text": "HP ENVY 13 Laptops"
+                                },
+                                {
+                                    "url": "/hp-envy-laptop-deals/l/778.aspx",
+                                    "text": "All HP ENVY Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Chromebook",
+                            "links": [
+                                {
+                                    "url": "/hp-chromebook-laptop-deals/l/889.aspx",
+                                    "text": "HP Chromebook Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Certified Accessories",
+                            "links": [
+                                {
+                                    "url": "/hp-accessories/x/484.aspx",
+                                    "text": "HP Certified Accessories"
+                                },
+                                {
+                                    "url": "/hp-storage-south-africa/x/496.aspx",
+                                    "text": "HP Certified Storage Devices"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Lenovo",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/lenovo-legion-laptops-100px-v4.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/lenovo-yoga-laptops.jpg",
+                    "alt": "Lenovo Laptop",
+                    "sections": [
+                        {
+                            "heading": "Lenovo Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-core-i7-laptop-deals/l/343.aspx",
+                                    "text": "Lenovo Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i5-laptop-deals/l/342.aspx",
+                                    "text": "Lenovo Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i3-laptop-deals/l/341.aspx",
+                                    "text": "Lenovo Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i9-laptop-deals/l/1027.aspx",
+                                    "text": "Lenovo Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-celeron-laptop-deals/l/1108.aspx",
+                                    "text": "Lenovo Celeron Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-intel-laptops/l/985.aspx",
+                                    "text": "All Lenovo Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo AMD Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-ryzen-7-laptop-deals/l/464.aspx",
+                                    "text": "Lenovo Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-5-laptop-deals/l/463.aspx",
+                                    "text": "Lenovo Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-3-laptop-deals/l/462.aspx",
+                                    "text": "Lenovo Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-9-laptop-deals/l/1019.aspx",
+                                    "text": "Lenovo Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-laptop-deals/l/1014.aspx",
+                                    "text": "All Lenovo Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/lenovo-gtx-1650-gaming-laptop-deals/l/510.aspx",
+                                    "text": "Lenovo GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-rtx-3050-laptops/l/848.aspx",
+                                    "text": "Lenovo RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-rtx-3060-gaming-laptops/l/1032.aspx",
+                                    "text": "Lenovo RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-12th-gen-gaming-laptops/l/1075.aspx",
+                                    "text": "LENOVO 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ideapad-3-gaming-laptop-deals/l/711.aspx",
+                                    "text": "Lenovo Ideapad 3 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-core-i5-gaming-laptops/l/968.aspx",
+                                    "text": "Lenovo Core i5 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ryzen-5-gaming-laptops/l/969.aspx",
+                                    "text": "Lenovo Ryzen 5 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-gaming-laptops/l/965.aspx",
+                                    "text": "All Lenovo Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Legion Gaming Laptop",
+                            "links": [
+                                {
+                                    "url": "/lenovo-legion-gaming-laptop-deals/l/220.aspx",
+                                    "text": "Lenovo Legion Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-legion-5-amd-ryzen-5-laptop-deals/l/709.aspx",
+                                    "text": "Lenovo Legion 5 AMD Gaming Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-legion-5-intel-10th-gen-laptop/l/714.aspx",
+                                    "text": "Lenovo Legion 5 Intel Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Ideapad",
+                            "links": [
+                                {
+                                    "url": "/lenovo-ideapad-flex-5-14-laptop-deals/l/708.aspx",
+                                    "text": "Lenovo Ideapad flex 5 14"
+                                },
+                                {
+                                    "url": "/lenovo-ideapad-3-laptop-deals/l/707.aspx",
+                                    "text": "Lenovo Ideapad 3 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-ideapad-flex-laptop-deals/l/1104.aspx",
+                                    "text": "All Lenovo Ideapad flex Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-gaming-laptops/l/965.aspx",
+                                    "text": "Lenovo Laptops on Special"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo Yoga",
+                            "links": [
+                                {
+                                    "url": "/lenovo-yoga-6-laptop-deals/l/1181.aspx",
+                                    "text": "Lenovo Yoga 6 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-yoga-7-laptop-deals/l/1040.aspx",
+                                    "text": "Lenovo Yoga 7 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-yoga-9-laptop-deals/l/802.aspx",
+                                    "text": "Lenovo Yoga 9 Laptops"
+                                },
+                                {
+                                    "url": "/lenovo-yoga-laptop-deals/l/333.aspx",
+                                    "text": "All Lenovo Yoga Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo ThinkBook",
+                            "links": [
+                                {
+                                    "url": "/lenovo-thinkbook-14-laptops/l/1039.aspx",
+                                    "text": "Lenovo ThinkBook 14 Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Lenovo ThinkPad",
+                            "links": [
+                                {
+                                    "url": "/lenovo-thinkpad-laptop/l/1235.aspx",
+                                    "text": "Lenovo ThinkPad Laptop Deals"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Asus",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/asus-header-logo1.png",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/asus-tuf-gaming-f15-fx506hc-core-i7-rtx-3050-laptop-1200-v1.jpg",
+                    "alt": "Asus Laptop",
+                    "sections": [
+                        {
+                            "heading": "ASUS Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-core-i7-laptop-deals/l/142.aspx",
+                                    "text": "ASUS Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i5-laptop-deals/l/143.aspx",
+                                    "text": "ASUS Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i3-laptop-deals/l/144.aspx",
+                                    "text": "ASUS Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/asus-core-i9-laptop-deals/l/1028.aspx",
+                                    "text": "ASUS Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/asus-celeron-laptop-deals/l/576.aspx",
+                                    "text": "ASUS Celeron Laptops"
+                                },
+                                {
+                                    "url": "/asus-intel-laptops/l/986.aspx",
+                                    "text": "All ASUS Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS AMD Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-ryzen-7-laptops/l/845.aspx",
+                                    "text": "ASUS Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-5-laptops/l/846.aspx",
+                                    "text": "ASUS Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-3-laptops/l/1020.aspx",
+                                    "text": "ASUS Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-9-laptops/l/844.aspx",
+                                    "text": "ASUS Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/asus-ryzen-laptop-deals/l/578.aspx",
+                                    "text": "All ASUS Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-rtx-40-series-gaming-laptops/l/1299.aspx",
+                                    "text": "ASUS RTX 40 Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-gtx-1650-laptops/l/579.aspx",
+                                    "text": "ASUS GTX 1650 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3050-laptops/l/843.aspx",
+                                    "text": "ASUS RTX 3050 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3060-laptops/l/726.aspx",
+                                    "text": "ASUS RTX 3060 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3070-laptops/l/724.aspx",
+                                    "text": "ASUS RTX 3070 Laptops"
+                                },
+                                {
+                                    "url": "/asus-rtx-3080-laptops/l/725.aspx",
+                                    "text": "ASUS RTX 3080 Laptops"
+                                },
+                                {
+                                    "url": "/asus-12th-gen-gaming-laptops/l/1074.aspx",
+                                    "text": "ASUS 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-tuf-gaming-laptops/l/577.aspx",
+                                    "text": "ASUS TUF Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-laptops-south-africa/l/550.aspx",
+                                    "text": "ASUS ROG Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-zephyrus-gaming-laptop-deals/l/248.aspx",
+                                    "text": "ROG Zephyrus Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-rog-zephyrus-duo-gaming-laptops/l/643.aspx",
+                                    "text": "ROG Zephyrus Duo Gaming Laptops"
+                                },
+                                {
+                                    "url": "/asus-gaming-laptops.aspx",
+                                    "text": "All ASUS Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS Creator Laptops",
+                            "links": [
+                                {
+                                    "url": "/asus-zenbook-laptop-deals/l/268.aspx",
+                                    "text": "ASUS ZenBook Laptops"
+                                },
+                                {
+                                    "url": "/asus-vivobook-laptops/l/544.aspx",
+                                    "text": "ASUS VivoBook Laptops"
+                                },
+                                {
+                                    "url": "/asus-proart-studiobook/l/623.aspx",
+                                    "text": "ASUS ProArt StudioBook Laptops"
+                                },
+                                {
+                                    "url": "/asus-expertbook-laptop-deals/l/1106.aspx",
+                                    "text": "ASUS ExpertBook Laptops"
+                                },
+                                {
+                                    "url": "/asus-notebook-laptop-deals/l/1107.aspx",
+                                    "text": "ASUS Notebook Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "ASUS On special",
+                            "links": [
+                                {
+                                    "url": "/asus-laptops-on-special/l/261.aspx",
+                                    "text": "ASUS Laptops on Special"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "MSI",
+            "link": "",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/msi-logo-70px-v2.png",
+            "dropdown": [
+                {
+                    "img": "https://storage-asset.msi.com/global/image/Reseller/nb/Katana-GF66-12U/Katana-GF66-CPU.jpg",
+                    "alt": "MSI Laptop",
+                    "sections": [
+                        {
+                            "heading": "MSI Intel Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-core-i7-laptop-deals/l/853.aspx",
+                                    "text": "MSI Core i7 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i5-laptop-deals/l/854.aspx",
+                                    "text": "MSI Core i5 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i3-laptop-deals/l/1029.aspx",
+                                    "text": "MSI Core i3 Laptops"
+                                },
+                                {
+                                    "url": "/msi-core-i9-laptop-deals/l/1030.aspx",
+                                    "text": "MSI Core i9 Laptops"
+                                },
+                                {
+                                    "url": "/msi-intel-laptops/l/987.aspx",
+                                    "text": "All MSI Intel Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Ryzen Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-ryzen-7-laptop-deals/l/1016.aspx",
+                                    "text": "MSI Ryzen 7 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-5-laptop-deals/l/1017.aspx",
+                                    "text": "MSI Ryzen 5 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-3-laptop-deals/l/1015.aspx",
+                                    "text": "MSI Ryzen 3 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-9-laptops-deals/l/949.aspx",
+                                    "text": "MSI Ryzen 9 Laptops"
+                                },
+                                {
+                                    "url": "/msi-ryzen-laptop-deals/l/1018.aspx",
+                                    "text": "All MSI Ryzen Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Gaming Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-rtx-40-series-gaming-laptops/l/1266.aspx",
+                                    "text": "MSI RTX 40 Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gtx-1650-gaming-laptops/l/1031.aspx",
+                                    "text": "MSI GTX 1650 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3050-laptop/l/850.aspx",
+                                    "text": "MSI RTX 3050 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3060-laptops/l/732.aspx",
+                                    "text": "MSI RTX 3060 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3070-laptops/l/733.aspx",
+                                    "text": "MSI RTX 3070 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-rtx-3080-laptops/l/734.aspx",
+                                    "text": "MSI RTX 3080 Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-katana-gaming-laptops/l/1263.aspx",
+                                    "text": "MSI Katana Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-cyborg-gaming-laptops/l/1264.aspx",
+                                    "text": "MSI Cyborg Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-pulse-gaming-laptops/l/1265.aspx",
+                                    "text": "MSI Pulse Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-12th-gen-gaming-laptops/l/1073.aspx",
+                                    "text": "MSI 12th Gen Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-crosshair-gaming-laptops/l/1099.aspx",
+                                    "text": "MSI Crosshair Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-stealth-series-laptops/l/719.aspx",
+                                    "text": "MSI Stealth series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gs-series-gaming-laptops/l/640.aspx",
+                                    "text": "MSI GS Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-ge-series-gaming-laptops/l/686.aspx",
+                                    "text": "MSI GE Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gf-series-gaming-laptops/l/815.aspx",
+                                    "text": "MSI GF Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gl-series-gaming-laptop-deals/l/021.aspx",
+                                    "text": "MSI GL Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/msi-gp-series-gaming-laptops/l/685.aspx",
+                                    "text": "MSI GP Series Gaming Laptops"
+                                },
+                                {
+                                    "url": "/buy-laptop/msi-gaming-laptops.aspx",
+                                    "text": "All MSI Gaming Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Workstations",
+                            "links": [
+                                {
+                                    "url": "/msi-wf-series-workstation-laptops/l/1045.aspx",
+                                    "text": "MSI WF Series Workstation Laptops"
+                                },
+                                {
+                                    "url": "/msi-ws-workstation-laptops/l/1046.aspx",
+                                    "text": "MSI WS Series Workstation Laptops"
+                                },
+                                {
+                                    "url": "/msi-workstation-laptops/l/006.aspx",
+                                    "text": "MSI Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Creator Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-prestige-laptop-deals/l/338.aspx",
+                                    "text": "MSI Prestige Series Laptops"
+                                },
+                                {
+                                    "url": "/msi-modern-14-laptops/l/591.aspx",
+                                    "text": "MSI Modern 14 Laptops"
+                                },
+                                {
+                                    "url": "/msi-modern-15-laptops/l/920.aspx",
+                                    "text": "MSI Modern 15 Laptops"
+                                },
+                                {
+                                    "url": "/msi-summit-e13-laptops/l/921.aspx",
+                                    "text": "MSI Summit E13 Laptops"
+                                },
+                                {
+                                    "url": "/msi-summit-e-series-laptops/l/1177.aspx",
+                                    "text": "MSI Summit E Series Laptops"
+                                },
+                                {
+                                    "url": "/msi-creator-laptops/l/940.aspx",
+                                    "text": "MSI Creator Laptops"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "dropdown",
+            "title": "Workstations",
+            "link": "",
+            "dropdown": [
+                {
+                    "img": "https://www.evetech.co.za/repository/ProductImages/dell-precision-3561-core-i5-quadro-t600-workstation-laptop-1000px-v2.jpg",
+                    "alt": "Lenovo Laptop",
+                    "sections": [
+                        {
+                            "heading": "Intel Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i7-workstation-laptops/l/989.aspx",
+                                    "text": "Intel Core i7 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-core-i5-workstation-laptops/l/988.aspx",
+                                    "text": "Intel Core i5 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/intel-workstation-laptops/l/990.aspx",
+                                    "text": "All Intel Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "NVIDIA Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/nvidia-rtx-a500-workstation-laptops/l/1328.aspx",
+                                    "text": "NVIDIA RTX A500 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-a1000-workstation-laptops/l/1329.aspx",
+                                    "text": "NVIDIA RTX A1000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-2000-workstation-laptops/l/1330.aspx",
+                                    "text": "NVIDIA RTX 2000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-3000-workstation-laptops/l/1331.aspx",
+                                    "text": "NVIDIA RTX 3000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-rtx-3500-workstation-laptops/l/1332.aspx",
+                                    "text": "NVIDIA RTX 3500 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/nvidia-a3000-workstation-laptops/l/1044.aspx",
+                                    "text": "NVIDIA A3000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/quadro-rtx-5000-workstation-laptops/l/589.aspx",
+                                    "text": "Quadro RTX 5000 Workstation Laptops"
+                                },
+                                {
+                                    "url": "/workstation-laptops/l/621.aspx",
+                                    "text": "All Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Dell Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/dell-precision-workstation-laptops/l/918.aspx",
+                                    "text": "Dell Precision Workstation Laptops"
+                                },
+                                {
+                                    "url": "/dell-workstation-laptop-deals/l/1041.aspx",
+                                    "text": "Dell Workstation Laptop Deals"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "HP Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/hp-zbook-firefly-workstation-laptops/l/956.aspx",
+                                    "text": "HP ZBook Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "MSI Workstation Laptops",
+                            "links": [
+                                {
+                                    "url": "/msi-wf-series-workstation-laptops/l/1045.aspx",
+                                    "text": "MSI WF Series Workstation Laptops"
+                                },
+                                {
+                                    "url": "/msi-ws-workstation-laptops/l/1046.aspx",
+                                    "text": "MSI WS Series Workstation Laptops"
+                                },
+                                {
+                                    "url": "/msi-workstation-laptops/l/006.aspx",
+                                    "text": "MSI Workstation Laptops"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "Intel Workstation PCs",
+                            "links": [
+                                {
+                                    "url": "/intel-core-i7-workstation-pc-deals/x/204.aspx",
+                                    "text": "Intel Core i7 Workstation PCs"
+                                },
+                                {
+                                    "url": "/intel-core-i5-workstation-pc-deals/x/203.aspx",
+                                    "text": "Intel Core i5 Workstation PCs"
+                                },
+                                {
+                                    "url": "/intel-core-i3-workstation-pc-deals/x/205.aspx",
+                                    "text": "Intel Core i3 Workstation PCs"
+                                },
+                                {
+                                    "url": "/intel-core-i9-workstation-pc-deals/x/135.aspx",
+                                    "text": "Intel Core i9 Workstation PCs"
+                                },
+                                {
+                                    "url": "/buy-intel-workstation-pcs-south-africa/x/834.aspx",
+                                    "text": "All Intel Workstation PCs"
+                                }
+                            ]
+                        },
+                        {
+                            "heading": "AMD Workstation PCs",
+                            "links": [
+                                {
+                                    "url": "/amd-ryzen-7-workstation-pc-deals/x/154.aspx",
+                                    "text": "AMD RYZEN 7 Workstation PCs"
+                                },
+                                {
+                                    "url": "/amd-ryzen-5-workstation-pc-deals/x/153.aspx",
+                                    "text": "AMD RYZEN 5 Workstation PCs"
+                                },
+                                {
+                                    "url": "/amd-ryzen-3-workstation-pc-deals/x/152.aspx",
+                                    "text": "AMD RYZEN 3 Workstation PCs"
+                                },
+                                {
+                                    "url": "/amd-ryzen-9-workstation-pc-deals/x/448.aspx",
+                                    "text": "AMD RYZEN 9 Workstation PCs"
+                                },
+                                {
+                                    "url": "/amd-ryzen-workstation-pcs-deals/x/833.aspx",
+                                    "text": "All AMD RYZEN Workstation PCs"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "link",
+            "title": "Microsoft",
+            "link": "/microsoft-surface/l/1270.aspx",
+            "dropdown": []
+        },
+        {
+            "type": "link",
+            "title": "Tablets",
+            "link": "/tablets-on-special/l/1321.aspx",
+            "dropdown": []
+        },
+        {
+            "type": "link",
+            "title": "Chromebooks",
+            "link": "/chromebook-on-special/l/1064.aspx",
+            "dropdown": []
+        },
+        {
+            "type": "link",
+            "title": "Laptop Specials",
+            "link": "/laptop-specials-for-sale-south-africa.aspx/",
+            "dropdown": [],
+            "color": "#b631ed"
+        },
+        {
+            "type": "link",
+            "title": "Clearance",
+            "link": "/clearance-deals/x/1095.aspx",
+            "dropdown": []
+        },
+        {
+            "type": "link",
+            "title": "FPS",
+            "logo": "https://www.evetech.co.za/repository/ProductImages/fps-header-logo.png",
+            "link": "/mobile/Find-Gaming-laptops.aspx",
+            "dropdown": []
+        }
+    ],
+    "message": "Data Found"
+}

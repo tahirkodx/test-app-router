@@ -27,7 +27,10 @@
       "@actions": ["./src/custom/utils/actions"],
       "@apitypes": ["./src/custom/utils/types"],
       "@transformers": ["./src/custom/utils/transformers"],
-      "@apiEndpoints": ["./src/custom/utils/apis/apiEndpoints"]
+      "@apiEndpoints": ["./src/custom/utils/apis/apiEndpoints"],
+      "@styles": ["./src/public/styles"],
+      "@ui-layouts": ["./src/ui-layouts"],
+      "@components": ["./src/components"],
     }
   },
   "include": [

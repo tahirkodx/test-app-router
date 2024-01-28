@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import { AppProps } from "next/app";
+import NextRouter from "next/router";
+import "@/styles/globals.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap-typeahead/css/Typeahead.css";
+import "react-image-gallery/styles/css/image-gallery.css";
+import AuthProvider from "@/store/AuthProvider";
+import HeaderProvider from "@/store/HeaderProvider";
+import HelperProvider from "@/store/HelperProvider";
+import NCartProvider from "@/store/NCartProvider";
+import { Structure } from "@components";
+
+// import Main from "@/pages/_main";
+import Head from "next/head";
+import { ThemeProvider, useTheme } from "@/store/ThemeContext";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,115 +25,30 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  Component: Page,
+  pageProps,
+  router,
+}: AppProps & { router: typeof NextRouter }) {
   return (
     <html lang="en">
-      <head>
-        <title>RYZEN 5 5500 RTX 4070 12GB Budget Gaming PC</title>
-  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="icon" href="/icons/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta
-    name="msapplication-TileImage"
-    content="https://www.evetech.co.za/icons/ms-icon-144x144.png"
-  />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="author" content="Evetech.co.za" />
-  <meta name="Robots" content="Index, Follow" />
-  <meta name="GOOGLEBOT" content="Index, Follow" />
-  <meta
-    name="description"
-    content="Buy AMD RYZEN 5 5500 RTX 4070 12GB Gaming PC at a super low price. Evetech.co.za is your one source for the Ryzen Gaming PC deals In South Africa."
-  />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="product" />
-  <meta property="og:site_name" content="Evetech" />
-  <meta
-    property="og:title"
-    content="RYZEN 5 5500 RTX 4070 12GB Budget Gaming PC"
-  />
-  <meta
-    property="og:description"
-    content="Buy AMD RYZEN 5 5500 RTX 4070 12GB Gaming PC at a super low price. Evetech.co.za is your one source for the Ryzen Gaming PC deals In South Africa."
-  />
-  <meta
-    property="og:url"
-    content="https://www.main.evetech.co.za/ryzen-5-5500-rtx-4070-12gb-budget-gaming-pc/best-pc-deal/18156.aspx"
-  />
-  <meta property="og:site_name" content="Evetech" />
-  <meta
-    property="og:image"
-    content="https://www.evetech.co.za/repository/ProductImages/evetech-onyx-tempered-glass-atx-gaming-case-with-monitor-600px-v01.jpg"
-  />
-  <meta property="og:image:width" content="600" />
-  <meta property="og:image:height" content="400" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="twitter:label1" content="Price" />
-  <meta property="twitter:label2" content="Availibility" />
-  <meta property="twitter:data2" content="In Stock with Evetech" />
-  <meta property="product:brand" content="Evetech" />
-  <meta property="product:price:currency" content="ZAR" />
-  <meta property="product:condition" content="new" />
-  <meta name="next-head-count" content="42" />
-  <noscript data-n-css=""></noscript>
-  <script
-    type="text/javascript"
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=DC-9064218&amp;l=dataLayer&amp;cx=c"
-  ></script>
-  <script
-    type="text/javascript"
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-2TRV0BEV6K&amp;l=dataLayer&amp;cx=c"
-  ></script>
-  <script
-    type="text/javascript"
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=AW-948051367&amp;l=dataLayer&amp;cx=c"
-  ></script>
-  <script async src="https://static.ads-twitter.com/uwt.js"></script>
-  <script
-    async
-    src="https://connect.facebook.net/en_US/fbevents.js"
-  ></script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtm.js?id=GTM-5HBP5LH"
-  ></script>
-  <script
-    defer
-    src="/_next/static/chunks/polyfills.js?ts=1706094253467"
-  ></script>
-  <script
-    src="/_next/static/chunks/webpack.js?ts=1706094253467"
-    defer
-  ></script>
-  <script src="/_next/static/chunks/main.js?ts=1706094253467" defer></script>
-  <script
-    src="/_next/static/chunks/pages/_app.js?ts=1706094253467"
-    defer
-  ></script>
-  <script
-    src="/_next/static/chunks/pages/test.js?ts=1706094253467"
-    defer
-  ></script>
-  <script
-    src="/_next/static/development/_buildManifest.js?ts=1706094253467"
-    defer
-  ></script>
-  <script
-    src="/_next/static/development/_ssgManifest.js?ts=1706094253467"
-    defer
-  ></script>
-</head>
-
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AuthProvider>
+        <HeaderProvider>
+          <HelperProvider>
+            <NCartProvider>
+              <ThemeProvider>
+                <Structure
+                  Component={Page}
+                  pageProps={pageProps}
+                  router={router}
+                >
+                </Structure>
+              </ThemeProvider>
+            </NCartProvider>
+          </HelperProvider>
+        </HeaderProvider>
+      </AuthProvider>
+      </body>
     </html>
   );
 }

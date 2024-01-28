@@ -1,0 +1,9 @@
+export { default as AppFooter } from "./AppFooter";
+export { default as ContactDetails } from "./ContactDetails";
+export { default as EmailSignUp } from "./EmailSignUp";
+export { default as FooterLinks } from "./FooterLinks";
+export { default as FooterTerms } from "./FooterTerms";
+export { default as GoogleMaps } from "./GoogleMaps";
+export { default as LaptopFooter } from "./LaptopFooter";
+export { default as LaptopFooterLinks } from "./LaptopFooterLinks";
+export { default as SocialLinks } from "./SocialLinks";
