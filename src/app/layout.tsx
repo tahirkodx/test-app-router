@@ -31,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <title itemProp="name" lang="en">
+            Tahir Amjad
+          </title>
       <body className={inter.className}>
         <AuthProvider>
         <HeaderProvider>
