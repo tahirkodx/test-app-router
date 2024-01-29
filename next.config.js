@@ -5,7 +5,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  // output: "export",
+  // output: "standalone",
   images: { unoptimized: true },
   // layouts: {
   //   layoutsDir: "layouts",
