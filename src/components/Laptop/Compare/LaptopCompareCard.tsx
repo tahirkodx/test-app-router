@@ -4,7 +4,7 @@ import Heading from "@/components/Heading";
 import Link from "next/link";
 import { Badge, Image, Button } from "react-bootstrap";
 import { FaShoppingCart, FaTimes } from "react-icons/fa";
-import styles from "@/styles/laptop/ComparePage.module.scss";
+import styles from "@/styles/Laptop/ComparePage.module.scss";
 import {
   highlightText,
   isTextLinkDark,

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { customAlphabet } from "nanoid";
 import { useEffect } from "react";
 import LaptopHeader from "@/components/Laptop/LaptopHeader";
-import styles from "@/styles/laptop/DynamicPage.module.scss";
+import styles from "@/styles/Laptop/DynamicPage.module.scss";
 import { Button, Col, Container, Image, Row, Spinner } from "react-bootstrap";
 import Paginator from "@/components/Paginator";
 import LaptopCard from "@/components/Laptop/Controls/LaptopCard";

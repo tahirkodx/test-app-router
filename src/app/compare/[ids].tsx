@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 import { Col, Image, Row, Spinner, Stack } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";
 import Swal from "sweetalert2";
-import styles from "@/styles/laptop/ComparePage.module.scss";
+import styles from "@/styles/Laptop/ComparePage.module.scss";
 import LaptopCompareCard from "@/components/Laptop/Compare/LaptopCompareCard";
 import { nanoid } from "nanoid";
 import { useTheme } from "@/store/ThemeContext";

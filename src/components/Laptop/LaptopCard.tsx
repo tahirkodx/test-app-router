@@ -17,7 +17,7 @@ import {
 import Swal from "sweetalert2";
 import SpecialTag from "../Main/Controls/SpecialTag";
 import LaptopHeighlights from "./Controls/LaptopHeighlights";
-import classes from "@/styles/laptop/LaptopCard.module.scss";
+import classes from "@/styles/Laptop/LaptopCard.module.scss";
 import { useTheme } from "@/store/ThemeContext";
 import FancyPrice from "../FancyPrice";
 

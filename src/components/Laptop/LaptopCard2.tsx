@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import React, { useContext, useState } from "react";
 import { Badge, Card, Form, Image, Stack, Button } from "react-bootstrap";
 import Swal from "sweetalert2";
-import classes from "@/styles/laptop/LaptopCard.module.scss";
+import classes from "@/styles/Laptop/LaptopCard.module.scss";
 import SpecialTag from "../Main/Controls/SpecialTag";
 import FancyPrice from "../FancyPrice";
 import { FaCartPlus, FaHeart } from "react-icons/fa";

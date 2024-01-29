@@ -9,7 +9,7 @@ import styles from "@/styles/ModalGallery.module.scss";
 import { FaSearchPlus, FaTimes } from "react-icons/fa";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import BigGallery from "@/components/Gallery/BigGallery";
-import LaptopDetailStyles from "@/styles/laptop/LaptopDetail.module.scss";
+import LaptopDetailStyles from "@/styles/Laptop/LaptopDetail.module.scss";
 import { useTheme } from "@/store/ThemeContext";
 import { isBodyDark } from "../Auth/LoginModal";
 

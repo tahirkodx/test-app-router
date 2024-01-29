@@ -1,7 +1,7 @@
 "use client";
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
-import "@/styles/laptop/MultiRangeSlider.css";
+import "@/styles/Laptop/MultiRangeSlider.css";
 
 const MultiRangeSlider = ({
   min,

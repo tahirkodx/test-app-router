@@ -18,7 +18,7 @@ import {
   Modal,
   Row,
 } from "react-bootstrap";
-import styles from "@/styles/laptop/DynamicPage.module.scss";
+import styles from "@/styles/Laptop/DynamicPage.module.scss";
 import { FaFacebook, FaSlidersH, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { nanoid } from "nanoid";
 import _ from "lodash";

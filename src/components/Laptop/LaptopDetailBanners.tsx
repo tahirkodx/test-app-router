@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import LoadingSpinner from "../Spinner";
 import { nanoid } from "nanoid";
 import { Carousel, Image } from "react-bootstrap";
-import styles from "@/styles/laptop/LaptopDetail.module.scss";
+import styles from "@/styles/Laptop/LaptopDetail.module.scss";
 import Link from "next/link";
 import _ from "lodash";
 
