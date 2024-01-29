@@ -57,43 +57,43 @@ var _ = require("lodash");
 const Swal = require("sweetalert2");
 
 // This gets called on every request
-export async function getServerSideProps(context) {
-  // Fetch data from external API
-  // const res = await fetch(`https://.../data`)
+// export async function getServerSideProps(context) {
+//   // Fetch data from external API
+//   // const res = await fetch(`https://.../data`)
   
-  const { params } = context;
-  let urlId: any = params?.id;
-  let ProductId;
+//   const { params } = context;
+//   let urlId: any = params?.id;
+//   let ProductId;
   
-  if (urlId !== undefined && urlId.trim().length > 0) {
-    if (isNaN(urlId)) {
-      try {
-        urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
-        ProductId = urlId;
-      } catch (e) {
-        /* router.replace("/"); */
-        console.log(e);
-      }
-    } else {
-      urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
-      ProductId = urlId;
-    }
-  }
-  let data = {};
-  const prods = await ProductAPI.getPCById({ ProductId });
-        if (
-          prods !== null &&
-          prods !== undefined &&
-          prods?.result !== undefined &&
-          prods?.result?.length > 0
-        ) {
-          data = prods.result[0];
-        }
-  // const data = "Tahir Amjad"; // await res.json()
+//   if (urlId !== undefined && urlId.trim().length > 0) {
+//     if (isNaN(urlId)) {
+//       try {
+//         urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
+//         ProductId = urlId;
+//       } catch (e) {
+//         /* router.replace("/"); */
+//         console.log(e);
+//       }
+//     } else {
+//       urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
+//       ProductId = urlId;
+//     }
+//   }
+//   let data = {};
+//   const prods = await ProductAPI.getPCById({ ProductId });
+//         if (
+//           prods !== null &&
+//           prods !== undefined &&
+//           prods?.result !== undefined &&
+//           prods?.result?.length > 0
+//         ) {
+//           data = prods.result[0];
+//         }
+//   // const data = "Tahir Amjad"; // await res.json()
  
-  // Pass data to the page via props
-  return { props: { product: data } }
-}
+//   // Pass data to the page via props
+//   return { props: { product: data } }
+// }
 
 const PC = (props: any) => {
   const helperCtx = useContext(HelperContext);
@@ -962,12 +962,14 @@ const PC = (props: any) => {
 
       const fetchData = async () => {
         // console.log("props.product", props);
-        // const prods = await ProductAPI.getPCById({ ProductId });
+        const prods = await ProductAPI.getPCById({ ProductId });
         if (
-          props.product !== null &&
-          props.product !== undefined
+          prods !== null &&
+          prods !== undefined &&
+          prods?.result !== undefined &&
+          prods?.result?.length > 0
         ) {
-          let product = props.product;
+          let product = prods.result[0];
           console.log("Product Data", product);
           if (product === undefined) router.replace("/");
 
