@@ -17,8 +17,8 @@ import {
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import "instantsearch.css/themes/satellite.css";
 import { Badge, Button, Col, Image, Stack } from "react-bootstrap";
-import { RangeSlider } from "@/components/Main/Controls/Search/RangeSlider";
-import { useParams } from "next/navigation";
+import { RangeSlider } from "@components";
+import { useParams, usePathname } from "next/navigation";
 import Link from "next/link";
 import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import { FaSlidersH, FaTimes } from "react-icons/fa";
@@ -172,6 +172,7 @@ const ResultExtras = () => {
 
 const Search = () => {
   const params = useParams<any>();
+  const pathname = usePathname();
   let searchTerm = params?.st;
 
   const isSM = useMediaQuery("(min-width: 576px)");
@@ -204,7 +205,7 @@ const Search = () => {
   const darkMode = isDarkMode;
 
   const router: any = useRouter();
-  const location = router.pathname;
+  const location: any = pathname;
 
   const gameLaptopData = location.state?.gameLaptopData;
   const everyDayLaptopData = location.state?.everyDayLaptopData;

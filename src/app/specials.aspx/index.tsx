@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import styles from "@/styles/Specials/Specials.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
@@ -108,7 +108,8 @@ const Specials = () => {
   };
 
   const router = useRouter();
-  const URLAddress = router.pathname;
+  const pathname = usePathname();
+  const URLAddress = pathname;
 
   useEffect(() => {
     const checkURL = () => {

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Image, Stack } from "react-bootstrap";
 // import FindGameNav from "./Controls/FindGameNav";
-import Games from "@/components/FPS/Games";
+import { Games } from "@components";
 import styles from "@/styles/FindGaming.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/navigation";

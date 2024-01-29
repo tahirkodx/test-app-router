@@ -1,10 +1,10 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { Col, Form, Image, Stack } from "react-bootstrap";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import styles from "@/styles/FindGaming.module.scss";
-import FindGameNav from "@/components/FPS/FindGameNav";
-import { useParams } from "next/navigation";
-import { useRouter } from "next/navigation";
+import { FindGameNav, FPSPCCard } from "@components";
+import { useRouter, useParams, usePathname } from "next/navigation";
 import {
   FaArrowUp,
   FaFacebook,
@@ -12,12 +12,10 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-
 import { nanoid } from "nanoid";
 import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import CustomeSpinner from "@/components/CustomeSpinner";
 import NoPageData from "@/components/NoPageData";
-import FPSPCCard from "@/components/FPS/FPSPCCard";
 import DoubleRangeSlider from "@/components/DoubleRangeSlider";
 
 import {
@@ -32,6 +30,7 @@ import { useTheme } from "@/store/ThemeContext";
 const _ = require("lodash");
 
 const FindGamingPCsByFPS = () => {
+  const pathname: any = usePathname();
   const params: any = useParams();
 
   const router = useRouter();
@@ -162,7 +161,7 @@ const FindGamingPCsByFPS = () => {
     setActiveTab(tabStr);
   };
 
-  const currentURL = router.pathname.replace(
+  const currentURL = pathname.replace(
     "http://localhost:3000/",
     "https://www.evetech.co.za/"
   );

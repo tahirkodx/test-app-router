@@ -12,7 +12,6 @@ const CategoryBlocks = (props: any) => {
     "https://www.evetech.co.za/repository/ProductImages/image-placeholder.png";
 
   return props.tileLinks.map((Child: any, index: number) => {
-    console.log("Child.product", Child.product.replace("evereact.", ""))
     return (
       <div
         onClick={() => router.push(Child.url)}
