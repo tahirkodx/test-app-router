@@ -76,7 +76,7 @@ import { RiHeartAddLine } from "react-icons/ri";
 import ShareLink from "@/components/Product/ShareLink";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { Router, useRouter } from "next/router";
+import { Router, useRouter } from "next/navigation";
 import { CartAPI, ProductAPI } from "@/custom/utils/actions";
 import Script from "next/script";
 import { useTheme } from "@/store/ThemeContext";

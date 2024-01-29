@@ -1,3 +1,4 @@
+"use client";
 import ApiEndpoints from "@apiEndpoints";
 import { Catched, eveTechApi } from "@/custom/utils/actions/global";
 import * as _ from "lodash";

@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 import { useSearchParams } from "next/navigation";
 import { CartAPI } from "@/custom/utils/actions";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useTheme } from "@/store/ThemeContext";
 

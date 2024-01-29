@@ -10,7 +10,7 @@ import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Badge from "react-bootstrap/Badge";
 import { Col } from "react-bootstrap";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useTheme } from "@/store/ThemeContext";
 import FancyPrice from "../FancyPrice";
 

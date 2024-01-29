@@ -1,7 +1,7 @@
 "use client";
 import _ from "lodash";
 import { nanoid } from "nanoid";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React from "react";
 import {
   Button,

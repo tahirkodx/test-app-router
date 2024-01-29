@@ -4,7 +4,7 @@ import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import styles from "@/styles/FindGaming.module.scss";
 import FindGameNav from "@/components/Laptop/Controls/FindGameNav";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 import { nanoid } from "nanoid";

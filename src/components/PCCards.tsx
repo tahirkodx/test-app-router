@@ -14,7 +14,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "@/styles/PCCards.module.scss";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import Link from "next/link";
 import { Image } from "react-bootstrap";

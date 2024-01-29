@@ -1,3 +1,4 @@
+"use client";
 import ApiEndpoints from "@apiEndpoints";
 import {
   Catched,

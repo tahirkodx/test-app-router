@@ -34,7 +34,7 @@ import { Alert, Spinner } from "react-bootstrap";
 import OverlayAlert from "@/components/Cart/OverlayAlert";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import { nanoid } from "nanoid";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useTheme } from "@/store/ThemeContext";
 import darkFormStyles from "@/styles/DarkForm.module.scss";

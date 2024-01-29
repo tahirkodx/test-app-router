@@ -1,9 +1,7 @@
 "use client";
 import { AppProps } from "next/app";
 import styles from "@/styles/fonts/Fredoka.module.scss";
-import Spinner from "@/components/Spinner";
-import MenuHeader from "@/components/Menu/Header";
-import GoogleServices from "@/components/Google/GoogleServices";
+import { Spinner, MenuHeader, GoogleServices } from "@components";
 import { AppHeader, MainFooter } from "@ui-layouts";
 import { Suspense, useContext, useEffect, useState } from "react";
 import AuthContext from "@/store/auth-context";
@@ -13,7 +11,11 @@ import { AuthAPI, CartAPI } from "@/custom/utils/actions";
 import Script from "next/script";
 import { useTheme } from "@/store/ThemeContext";
 
-export default function Structure({ Component: Page, pageProps }: AppProps) {
+const Structure = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   const authCtx = useContext(AuthContext);
   const cartCtx = useContext(NCartContext);
   const [isInitAuthFetched, setIsInitAuthFetched] = useState(false);
@@ -120,7 +122,7 @@ export default function Structure({ Component: Page, pageProps }: AppProps) {
         </div>
       }
     >
-      <Script async src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
+      {/* {<Script async src="https://code.jquery.com/jquery-3.6.0.min.js"></Script>} */}
       <div className={`${styles.Main}`}>
         <GoogleServices />
         {authChecked && (
@@ -128,7 +130,7 @@ export default function Structure({ Component: Page, pageProps }: AppProps) {
             <AppHeader />
             <MenuHeader />
 
-            <Page {...pageProps} />
+            {children}
 
             <MainFooter />
           </>
@@ -137,3 +139,5 @@ export default function Structure({ Component: Page, pageProps }: AppProps) {
     </Suspense>
   );
 }
+
+export default Structure;

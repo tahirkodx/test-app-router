@@ -7,7 +7,7 @@ import _ from "lodash";
 import { nanoid } from "nanoid";
 import Head from "next/head";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useContext, useEffect, useState } from "react";
 import { Card, Col, Image, Stack, Button } from "react-bootstrap";
 import Swal from "sweetalert2";

@@ -3,7 +3,7 @@ import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import HelperContext from "@/store/helper-context";
 import _ from "lodash";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useContext, useState } from "react";
 import { Badge, Card, Form, Image, Stack, Button } from "react-bootstrap";
 import Swal from "sweetalert2";

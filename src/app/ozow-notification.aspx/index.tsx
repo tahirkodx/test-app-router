@@ -7,7 +7,7 @@ import { useContext } from "react";
 import AuthContext from "@/store/auth-context";
 import CartContext from "@/store/ncart-context";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI } from "@/custom/utils/actions";
 import Link from "next/link";
 import { useTheme } from "@/store/ThemeContext";

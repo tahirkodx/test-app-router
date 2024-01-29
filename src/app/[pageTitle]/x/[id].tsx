@@ -6,7 +6,7 @@ import HTMLReactParser from "html-react-parser";
 import _ from "lodash";
 import Head from "next/head";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useContext, useEffect, useRef, useState } from "react";
 import styles from "@/styles/component/DynamicPage.module.scss";
 import { Badge, Col, Container, Row } from "react-bootstrap";

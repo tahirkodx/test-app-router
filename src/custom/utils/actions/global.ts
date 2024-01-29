@@ -1,3 +1,4 @@
+"use client";
 import axios from "@axios";
 import * as _ from "lodash";
 import qs from "query-string";
@@ -60,6 +61,7 @@ export const eveTechApi = {
       } else {
         payload = {};
       }
+      
       const { data } = await axios.get(
         // API URL
         updateUrl,

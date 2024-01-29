@@ -7,7 +7,7 @@ import { useState } from "react";
 import { Button, Form, Modal, Row } from "react-bootstrap";
 import Swal from "sweetalert2";
 import AuthContext from "@/store/auth-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI, CmsAPI } from "@/custom/utils/actions";
 import UserAPI from "@/custom/utils/actions/user";
 import { useTheme } from "@/store/ThemeContext";

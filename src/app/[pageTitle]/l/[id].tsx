@@ -7,7 +7,7 @@ import AuthContext from "@/store/auth-context";
 import HTMLReactParser from "html-react-parser";
 import Head from "next/head";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import {
   Badge,

@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import styles from "@/styles/User.module.scss";
 import { FaIconDynamic as Icon } from "@ui-layouts";
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import AuthContext from "@/store/auth-context";
 import { useState } from "react";
 import { useEffect } from "react";

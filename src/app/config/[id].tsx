@@ -23,7 +23,7 @@ import styles from "@/styles/Config.module.scss";
 import AuthContext from "@/store/auth-context";
 import { ComponentsHeader } from "@/components/Home";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI, ProductAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";
 

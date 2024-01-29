@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import { customAlphabet } from "nanoid";
 import styles from "@/styles/LaptopDetail.module.scss";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useTheme } from "@/store/ThemeContext";
 
 const nanoid = customAlphabet("1234567890abcdef", 10);

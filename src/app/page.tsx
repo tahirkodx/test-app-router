@@ -1,128 +1,286 @@
-import { AppProps } from "next/app";
-import NextRouter from "next/router";
-import "@/styles/globals.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "react-bootstrap-typeahead/css/Typeahead.css";
-import "react-image-gallery/styles/css/image-gallery.css";
-import AuthProvider from "@/store/AuthProvider";
-import HeaderProvider from "@/store/HeaderProvider";
-import HelperProvider from "@/store/HelperProvider";
-import NCartProvider from "@/store/NCartProvider";
-
-// import Main from "@/pages/_main";
+"use client";
+import React, { useEffect, useContext, useState } from "react";
 import Head from "next/head";
-import { ThemeProvider, useTheme } from "@/store/ThemeContext";
+import Stack from "react-bootstrap/Stack";
+import {
+  ComponentsHeader,
+  ComponentSlideShow,
+  ComponentTiles,
+} from "@/components/Home";
+import { ProductDeals, Brands, CategoryTiles } from "@/components/Product";
+import Banners from "@/components/Home/Banners";
+import FeatureList from "@/components/Feature/FeatureList";
+import { nanoid } from "nanoid";
+import { Col } from "react-bootstrap";
+import CustomeSpinner from "@/components/CustomeSpinner";
+import AuthContext from "@/store/auth-context";
+import { Helmet } from "react-helmet";
+import Spinner from "@/components/Spinner";
+import styles from "@/styles/Component.module.scss";
+import useMediaQuery from "@/custom/hooks/useMediaQuery";
+import { CmsAPI, ProductAPI } from "@actions";
+import { useTheme } from "@/store/ThemeContext";
 
-export default function _App({
-  Component: Page,
-  pageProps,
-  router,
-}: AppProps & { router: typeof NextRouter }) {
+const _ = require("lodash");
+const Home = (props: any) => {
+  const [productCard, setProductCard] = useState<any>([]);
+  const [initCards, setInitCards] = useState(false);
+  const [showPageTopMsg, setShowPageTopMsg] = useState(true);
+  const [FooterBanners, setFooterBanners] = useState([]);
+  const [DealsBanners, setDealsBanners] = useState([]);
+  const [InfluencerBanner, setInfluencerBanner] = useState([]);
+  const [isSetBanners, setIsSetBanners] = useState(false);
+  const [loader, setLoader] = useState(true);
+  const [initDeals, setInitDeals] = useState(false);
+  const [dealsData, setDealsData] = useState([]);
+  const isLG = useMediaQuery("(min-width: 992px)");
+  const { isDarkMode } = useTheme();
+
+  const authCtx = useContext(AuthContext);
+  const showLogin = props.showLogin !== undefined ? props.showLogin : false;
+
+  const fetchFooterBanners = async () => {
+    try {
+      const footerData = await CmsAPI.rctwebinfmulti({
+        id: "4,6,9",
+      });
+
+      if (footerData.result !== undefined && footerData.result.length > 0) {
+        let footBanner = _.find(footerData.result, (res: any) => {
+          if (res.col_id !== undefined && res.col_id === "4") return res;
+        });
+        let influeBanner = _.find(footerData.result, (res: any) => {
+          if (res.col_id !== undefined && res.col_id === "6") return res;
+        });
+        let dealBanner = _.find(footerData.result, (res: any) => {
+          if (res.col_id !== undefined && res.col_id === "9") return res;
+        });
+
+        if (footBanner !== undefined && footBanner.result !== undefined)
+          setFooterBanners(footBanner.result);
+
+        if (influeBanner !== undefined && influeBanner.result !== undefined)
+          setInfluencerBanner(influeBanner.result);
+
+        if (dealBanner !== undefined && dealBanner.result !== undefined)
+          setDealsBanners(dealBanner.result);
+
+        setLoader(false);
+        setIsSetBanners(true);
+      }
+    } catch (error: any) {
+      console.error("Failed to fetch React Info [Home]:", error.message);
+    }
+  };
+
+  const fetchData = async (queryIds: any) => {
+    const prods = await ProductAPI.bmultiqids({
+      queryIds: queryIds,
+      cache: true,
+    });
+    /*  const prods = await fetch("/api/bmultiqids", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        queryIds: queryIds,
+        cache: true,
+      }),
+    }).then((res) => res.json()); */
+    /*    setLaptops(prods.result);
+    setInitData(true); */
+    setDealsData(prods?.result);
+    setInitDeals(true);
+  };
+
+  useEffect(() => {
+    if (
+      DealsBanners !== undefined &&
+      DealsBanners !== null &&
+      DealsBanners.length > 0 &&
+      !initDeals
+    ) {
+      let queryIDs = _.join(
+        DealsBanners.map((deal: any) => {
+          return deal.queryId;
+        }),
+        ","
+      );
+      fetchData(queryIDs);
+    }
+  }, [DealsBanners]);
+
+  useEffect(() => {}, [dealsData]);
+
+  useEffect(() => {
+    try {
+      fetchFooterBanners();
+      console.log(initCards, " ---- testing ----", productCard);
+      if (
+        (!initCards && productCard == undefined) ||
+        productCard.length === 0
+      ) {
+        console.log(initCards, " ---- inside testing ----", productCard);
+        const getProductsCard = async () => {
+          const cardData = await ProductAPI.getProductCards();
+          console.log("Products Card", cardData);
+          let prodCards = cardData.result;
+
+          setProductCard((prevProdCards: any) => {
+            prevProdCards = prodCards;
+            return prevProdCards;
+          });
+          setInitCards(true);
+        };
+
+        getProductsCard();
+      }
+
+      if (showLogin) authCtx.onShowLogin(true);
+    } catch (error: any) {
+      console.error(
+        "Failed to fetch React Info [Home useEffect]:",
+        error.message
+      );
+    }
+  }, []);
+
+  useEffect(() => {}, [isSetBanners]);
+
+  const getViewAllLink = (title: any) => {
+    switch (title) {
+      case "PC Deals":
+        return "/specials.aspx#PCs";
+      case "Component Deals":
+        return "/specials.aspx#Comp";
+      case "Laptop Deals":
+        return "/laptop-specials-for-sale-south-africa.aspx";
+      default:
+        return "";
+    }
+  };
+
   return (
     <>
       <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="/icons/apple-icon-57x57.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="60x60"
-          href="/icons/apple-icon-60x60.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="/icons/apple-icon-72x72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/icons/apple-icon-76x76.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="/icons/apple-icon-114x114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/icons/apple-icon-120x120.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="/icons/apple-icon-144x144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/icons/apple-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/icons/apple-icon-180x180.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/icons/android-icon-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/icons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/icons/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/icons/favicon-16x16.png"
-        />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-          name="msapplication-TileImage"
-          content="/icons/ms-icon-144x144.png"
-        />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-          name="msapplication-TileImage"
-          content="/icons/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="/icons/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-          name="msapplication-TileImage"
-          content="https://www.evetech.co.za/icons/ms-icon-144x144.png"
-        />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta
-          name="msapplication-TileImage"
-          content="https://www.evetech.co.za/icons/ms-icon-144x144.png"
-        />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="author" content="Evetech.co.za" />
-        <meta name="Robots" content="Index, Follow"></meta>
-        <meta name="GOOGLEBOT" content="Index, Follow"></meta>
+        <title itemProp="name" lang="en">
+          Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
+        </title>
+        <link rel="icon" href="https://evetech.co.za/icons/favicon-32x32.png" />
       </Head>
-      Page
+      <Helmet>
+        {/* <title itemProp="name" lang="en">
+          Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
+        </title> */}
+        <link rel="canonical" href="https://www.evetech.co.za/" />
+        <meta
+          name="description"
+          content="Gaming Pc's, Custom Built Cheap Gaming Computer Systems, The lastest Gaming PC Systems, Intel i7 PC Gaming Desktops. Configure your own Gaming Pc Here!"
+        />
+        <meta
+          name="keywords"
+          content="gaming pc,gaming computers,cheap gaming pc,intel core i7,custom gaming computers,custom gaming pc"
+        />
+      </Helmet>
+      <ComponentsHeader showpagetopmsg={showPageTopMsg} />
+
+      <div className={`${isDarkMode ? `bg-secondary evetechDark` : ``}`}>
+        <div
+          className={`
+          ${isDarkMode ? `bg-dark bg-opacity-75` : ``}
+          position-relative z-index-1 overflow-hidden
+        `}
+        >
+          <Stack gap={isLG ? 4 : 3} className="position-relative z-index-1">
+            <ComponentSlideShow />
+
+            <ComponentTiles />
+
+            <CategoryTiles />
+
+            <div
+              className={`
+                ${styles.MainTitle} 
+                ${isLG ? "px-3 d-block" : "d-none"}
+              `}
+            >
+              <div className="d-grid gap-1 align-items-center">
+                <div
+                  className={`
+                ${styles.RainbowLine} 
+                ${!isLG ? "h-100" : "rounded-pill"} 
+                  w-100  
+              `}
+                ></div>
+                <h1
+                  className={`
+                    ${isLG ? `fs-4 px-3` : `${styles.Shadow} text-light p-3`} 
+                    ${isDarkMode ? `text-light` : ``}
+                    position-relative m-0 text-center fs-5
+                  `}
+                >
+                  Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
+                  & so much more
+                </h1>
+                <div
+                  className={`
+                    ${styles.RainbowLine} 
+                    ${!isLG ? "h-100" : "rounded-pill"} 
+                      w-100  
+                  `}
+                ></div>
+              </div>
+            </div>
+
+            <Col md={{ span: 10, offset: 1 }}>
+              <Stack gap={isLG ? 4 : 3}>
+                {loader && (
+                  <>
+                    <Spinner />
+                  </>
+                )}
+                {DealsBanners !== undefined &&
+                  DealsBanners.length > 0 &&
+                  DealsBanners.map((deal: any) => {
+                    return (
+                      <ProductDeals
+                        QueryId={deal.queryId}
+                        DealTitle={deal.dealTitle}
+                        DealsProds={_.get(dealsData, deal.queryId)}
+                        BannerData={deal.banners}
+                        key={nanoid(5)}
+                        PageLink={getViewAllLink(deal.dealTitle)}
+                      />
+                    );
+                  })}
+              </Stack>
+            </Col>
+
+            {loader && <Spinner />}
+            {FooterBanners !== undefined && FooterBanners.length > 0 && (
+              <Banners source={FooterBanners} />
+            )}
+
+            <Brands />
+
+            <section className="px-1 px-md-0 bg-secondary bg-opacity-25">
+              <Col md={{ span: 10, offset: 1 }}>
+                {!initCards && <CustomeSpinner variant="danger" />}
+                {initCards && <FeatureList Features={productCard} />}
+              </Col>
+            </section>
+
+            {loader && <Spinner />}
+            {InfluencerBanner !== undefined && InfluencerBanner.length > 0 && (
+              <Banners source={InfluencerBanner} />
+            )}
+          </Stack>
+        </div>
+      </div>
     </>
   );
-}
+};
+
+export default Home;

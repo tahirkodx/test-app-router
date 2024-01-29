@@ -7,7 +7,7 @@ import { Image, Stack } from "react-bootstrap";
 import Games from "@/components/FPS/Games";
 import styles from "@/styles/FindGaming.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 // import AppFooter from "../../Layouts/CompFooter";
 import { Helmet } from "react-helmet";
 import { ProductAPI } from "@/custom/utils/actions";

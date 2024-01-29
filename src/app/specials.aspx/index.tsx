@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import styles from "@/styles/Specials/Specials.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { nanoid } from "nanoid";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";

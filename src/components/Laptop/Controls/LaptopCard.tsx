@@ -17,7 +17,7 @@ import { useState } from "react";
 import SpecialTag from "@/components/Main/Controls/SpecialTag";
 import { useContext } from "react";
 import HelperContext from "@/store/helper-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useTheme } from "@/store/ThemeContext";
 import FancyPrice from "@/components/FancyPrice";

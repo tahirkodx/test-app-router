@@ -40,7 +40,7 @@ import ShareLink from "@/components/Product/ShareLink";
 import { RiHeartAddLine } from "react-icons/ri";
 import { useParams } from "next/navigation";
 import NCartContext from "@/store/ncart-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI, ProductAPI } from "@/custom/utils/actions";
 import Link from "next/link";
 import { ComponentsHeader } from "@/components/Home";

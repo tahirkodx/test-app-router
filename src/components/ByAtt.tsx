@@ -11,7 +11,7 @@ import LaptopCard from "@/components/Laptop/Controls/LaptopCard";
 import LaptopDetailBanners from "@/components/Banners/LaptopDetailBanners";
 import NoPageData from "@/components/NoPageData";
 import { Helmet } from "react-helmet";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { ProductAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";
 import useMediaQuery from "@/custom/hooks/useMediaQuery";

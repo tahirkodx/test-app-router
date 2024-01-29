@@ -7,7 +7,7 @@ import AuthContext from "@/store/auth-context";
 import CartContext from "@/store/ncart-context";
 import { Helmet } from "react-helmet";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CartAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";

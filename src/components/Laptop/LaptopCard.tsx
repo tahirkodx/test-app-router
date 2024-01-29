@@ -2,7 +2,7 @@
 import HelperContext from "@/store/helper-context";
 import _ from "lodash";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 import {
   Badge,

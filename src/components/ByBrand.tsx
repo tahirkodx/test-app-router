@@ -9,7 +9,7 @@ import styles from "@/styles/DynamicPage.module.scss";
 import LaptopCard from "@/components/Laptop/Controls/LaptopCard";
 import NoPageData from "@/components/NoPageData";
 import { Helmet } from "react-helmet";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { ProductAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";
 const nanoid = customAlphabet("1234567890abcdef", 10);

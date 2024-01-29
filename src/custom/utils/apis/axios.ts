@@ -1,3 +1,4 @@
+"use client";
 import axios from "axios";
 import CONFIG from "@/custom/utils/config";
 import token from "@/custom/utils/token";
@@ -27,9 +28,9 @@ const userToken = () => {
   }
   return tokenInStorage;
 };
-
+console.log(CONFIG?.BASE_URL)
 const axiosInstance = axios.create({
-  baseURL: CONFIG.BASE_URL,
+  baseURL: "https://api-dev.evetech.co.za/api",
   withCredentials: true,
 });
 
@@ -53,7 +54,7 @@ axiosInstance.interceptors.request.use(
     if (!userToken()) {
       delete config.headers.Authorization;
     }
-
+    console.log("updateUrl", config);
     return config;
   },
   (error) => {

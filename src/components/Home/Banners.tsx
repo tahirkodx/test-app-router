@@ -10,7 +10,7 @@ import { Carousel } from "react-bootstrap";
 import styles from "@/styles/Banners.module.scss";
 import HorizontalScrollView from "@/components/Main/Controls/HorizontalScrollView";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const placeholderImg =
   "https://www.evetech.co.za/repository/ProductImages/image-placeholder.png";
@@ -34,7 +34,7 @@ const SmallBanners = ({ section }:any) => {
                 className="position-relative d-block"
               >
                 <LazyLoadImage
-                  src={Banner.image}
+                  src={Banner.image.replace("evereact.", "")}
                   alt={Banner.title}
                   className={`
                       ${Hover.easeInOut_1} ${Hover.grow_1} ${Hover.hide_50}
@@ -56,6 +56,7 @@ const Banners = (props:any) => {
   const isSM = useMediaQuery("(min-width: 576px)");
   const isLG = useMediaQuery("(min-width: 992px)");
   const router = useRouter();
+  console.log("props.source", props.source)
   return (
     <>
       {props.source.map((Section:any) => {
@@ -78,7 +79,7 @@ const Banners = (props:any) => {
                         `}
                       ></div>
                       <LazyLoadImage
-                        src={Banner.image}
+                        src={Banner.image.replace("evereact.", "")}
                         alt={Banner.title}
                         width={2560}
                         height={525}
@@ -137,8 +138,8 @@ const Banners = (props:any) => {
                           src={
                             LinkArea.mobileImg !== undefined &&
                             LinkArea.mobileImg.length > 0
-                              ? LinkArea.mobileImg
-                              : LinkArea.image
+                              ? LinkArea.mobileImg.replace("evereact.", "")
+                              : LinkArea.image.replace("evereact.", "")
                           }
                           visibleByDefault={
                             LinkArea.mobileImg !== undefined &&

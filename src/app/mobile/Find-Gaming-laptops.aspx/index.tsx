@@ -7,7 +7,7 @@ import FindGameNav from "@/components/Laptop/Controls/FindGameNav";
 import Games from "@/components/Laptop/Games";
 import styles from "@/styles/FindGaming.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 // import LaptopFooter from "../../Layouts/LaptopFooter";
 import { Helmet } from "react-helmet";
 import { ProductAPI } from "@/custom/utils/actions";

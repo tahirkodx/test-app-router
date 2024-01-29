@@ -1,3 +1,4 @@
+"use client";
 import { TAPIParams } from "../types";
 
 export const transformAPIParams = (json: any): TAPIParams => {

@@ -11,7 +11,7 @@ import PCCards from "@/components/PCCards";
 import Paginator from "@/components/Paginator";
 import { Helmet } from "react-helmet";
 import NoPageData from "@/components/NoPageData";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { ProductAPI } from "@/custom/utils/actions";
 import Spinner from "@/components/Spinner";
 import { get } from "lodash";

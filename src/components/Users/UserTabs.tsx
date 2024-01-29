@@ -8,7 +8,7 @@ import Stack from "react-bootstrap/Stack";
 import TabContainer from "react-bootstrap/TabContainer";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaIconDynamic as Icon } from "@ui-layouts";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useContext } from "react";
 import AuthContext from "@/store/auth-context";
 import { useEffect } from "react";

@@ -18,7 +18,7 @@ import CartContext from "@/store/ncart-context";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import { Helmet } from "react-helmet";
 import { FetchReactInfo } from "@/custom/utils/Helper";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CmsAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";

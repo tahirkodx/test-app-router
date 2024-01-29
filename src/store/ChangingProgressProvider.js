@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 class ChangingProgressProvider extends React.Component {

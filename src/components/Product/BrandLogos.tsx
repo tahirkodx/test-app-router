@@ -1,12 +1,12 @@
-"use client";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Hover from "@/styles/Hover.module.scss";
 import { CmsAPI } from "@/custom/utils/actions";
 import useMediaQuery from "@/custom/hooks/useMediaQuery";
-import Spinner from "@/components/Spinner";
-import { useRouter } from "next/router";
+import { Spinner } from "@components";
+import { useRouter } from "next/navigation";
 
 const BrandLogos = () => {
   const [BrandLogos, setBrandLogos] = useState([]);
@@ -64,7 +64,7 @@ const BrandLogos = () => {
               >
                 <span className="px-3 py-2">
                   <LazyLoadImage
-                    src={Logo.image}
+                    src={Logo.image.replace("evereact.", "")}
                     alt={Logo.title}
                     visibleByDefault={Logo.image}
                     className={`img-fluid d-block w-100 h-100 px-1 px-sm-3 pe-none`}

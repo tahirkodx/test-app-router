@@ -2,7 +2,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Badge, Button, Card, Container, Image } from "react-bootstrap";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import cardCSS from "@/styles/FPS/FPSPCCard.module.scss";
 import { CircularProgress } from "@ui-layouts";
 import styles from "@/styles/FPS/PCFPSByQueryID.module.scss";

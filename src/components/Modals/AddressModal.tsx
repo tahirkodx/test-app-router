@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { useContext } from "react";
 import { useState } from "react";
 import { Button, Form, Modal, Row } from "react-bootstrap";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 import AuthContext from "@/store/auth-context";
 import UserAPI from "@/custom/utils/actions/user";

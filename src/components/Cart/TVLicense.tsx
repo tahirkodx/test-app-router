@@ -27,7 +27,7 @@ import CartContext from "@/store/ncart-context";
 import MakeQuotation from "@/components/Cart/MakeQuotation";
 import CalcShipping from "@/components/Cart/CalShipping";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CartAPI } from "@/custom/utils/actions";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";

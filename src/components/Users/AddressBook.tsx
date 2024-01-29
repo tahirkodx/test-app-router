@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { FaEdit, FaTrash, FaPlus } from "react-icons/fa";
 import AuthContext from "@/store/auth-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaIconDynamic as Icon } from "@ui-layouts";
 import { Col, Row } from "react-bootstrap";
 import AddressModal from "@/components/Modals/AddressModal";

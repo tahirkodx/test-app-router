@@ -1,3 +1,4 @@
+"use client";
 import React, { useReducer } from "react";
 import CartContext from "./cart-context";
 import _ from "lodash";

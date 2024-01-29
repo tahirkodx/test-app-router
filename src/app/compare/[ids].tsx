@@ -5,7 +5,7 @@ import _ from "lodash";
 import Head from "next/head";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { Col, Image, Row, Spinner, Stack } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";

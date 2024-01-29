@@ -71,7 +71,7 @@ import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import UserAPI from "@/custom/utils/actions/user";
 import { CartAPI, ProductAPI } from "@/custom/utils/actions";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Head from "next/head";
 import { useTheme } from "@/store/ThemeContext";
 import Heading from "@/components/Heading";

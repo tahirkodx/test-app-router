@@ -21,7 +21,12 @@ function SocialLinks() {
         const data = await CmsAPI.getReactInfo({ id: 20 });
 
         if (data.result !== undefined) {
-          setLinks(data.result);
+          
+          const fixedData = data.result.map((item: any) => {
+            item.image = item.image.replace("evereact.", "");
+            return item;
+          })
+          setLinks(fixedData);
           setLoader(false);
         }
       } catch (error: any) {

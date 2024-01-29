@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import { FaIconDynamic as Icon } from "@ui-layouts";
 import { useContext } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import AuthContext from "@/store/auth-context";
 import { useEffect } from "react";
 import { useState } from "react";

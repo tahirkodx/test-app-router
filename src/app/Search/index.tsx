@@ -24,7 +24,7 @@ import useMediaQuery from "@/custom/hooks/useMediaQuery";
 import { FaSlidersH, FaTimes } from "react-icons/fa";
 import PCBanners from "@/components/Banners/PCBanners";
 import { simple } from "instantsearch.js/es/lib/stateMappings";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { search } from "@algolia/autocomplete-plugin-recent-searches";
 //import AppFooter from "../Layouts/CompFooter";
 import { Helmet } from "react-helmet";

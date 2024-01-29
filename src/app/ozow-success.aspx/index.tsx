@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { Col, Spinner } from "react-bootstrap";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI } from "@/custom/utils/actions";
 import { useTheme } from "@/store/ThemeContext";
 

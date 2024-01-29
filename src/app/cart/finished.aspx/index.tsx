@@ -21,7 +21,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI } from "@/custom/utils/actions";
 
 const _ = require("lodash");

@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import styles from "@/styles/User.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaIconDynamic as Icon } from "@ui-layouts";
 import { useContext } from "react";
 import AuthContext from "@/store/auth-context";

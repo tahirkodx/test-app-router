@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Stack from "react-bootstrap/Stack";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaAngleLeft, FaAngleRight, FaTimes } from "react-icons/fa";
 import { CircularProgress } from "@ui-layouts";
 import { customAlphabet } from "nanoid";

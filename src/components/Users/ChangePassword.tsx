@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { FaIconDynamic as Icon } from "@ui-layouts";
 import Swal from "sweetalert2";
 import AuthContext from "@/store/auth-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { InputGroup } from "react-bootstrap";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import UserAPI from "@/custom/utils/actions/user";

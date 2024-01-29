@@ -10,7 +10,7 @@ import {
   FaRedoAlt,
   FaWindowClose,
 } from "react-icons/fa";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import AuthContext from "@/store/auth-context";
 import { useState } from "react";
 import { useEffect } from "react";

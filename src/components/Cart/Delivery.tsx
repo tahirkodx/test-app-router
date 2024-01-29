@@ -20,7 +20,7 @@ import { Helmet } from "react-helmet";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import { Spinner } from "react-bootstrap";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CmsAPI, ProductAPI } from "@/custom/utils/actions";
 import UserAPI from "@/custom/utils/actions/user";
 import { Image } from "react-bootstrap";

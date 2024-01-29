@@ -21,7 +21,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
 import CustomeSpinner from "@/components/CustomeSpinner";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { CartAPI } from "@/custom/utils/actions";
 
 const _ = require("lodash");

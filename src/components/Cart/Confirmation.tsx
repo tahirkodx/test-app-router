@@ -14,7 +14,7 @@ import CartContext from "@/store/ncart-context";
 import AuthContext from "@/store/auth-context";
 import { Helmet } from "react-helmet";
 import ComponentsHeader from "@/components/Home/ComponentsHeader";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useTheme } from "@/store/ThemeContext";
 

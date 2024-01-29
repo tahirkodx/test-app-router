@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import styles from "@/styles/Cart/Cart.module.scss";
 import CartContext from "@/store/ncart-context";
 import AuthContext from "@/store/auth-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useTheme } from "@/store/ThemeContext";
 import FancyPrice from "../FancyPrice";
 
