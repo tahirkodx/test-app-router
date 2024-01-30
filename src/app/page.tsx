@@ -1,4 +1,5 @@
 "use client";
+import { NextPageContext } from 'next'
 import React, { useEffect, useContext, useState } from "react";
 import Head from "next/head";
 import Stack from "react-bootstrap/Stack";
@@ -22,6 +23,8 @@ import { CmsAPI, ProductAPI } from "@actions";
 import { useTheme } from "@/store/ThemeContext";
 
 const _ = require("lodash");
+
+
 const Home = (props: any) => {
   const [productCard, setProductCard] = useState<any>([]);
   const [initCards, setInitCards] = useState(false);
@@ -169,11 +172,9 @@ const Home = (props: any) => {
           Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
         </title>
         <link rel="icon" href="https://evetech.co.za/icons/favicon-32x32.png" />
-      </Head>
-      <Helmet>
-        {/* <title itemProp="name" lang="en">
+        <title itemProp="name" lang="en">
           Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
-        </title> */}
+        </title>
         <link rel="canonical" href="https://www.evetech.co.za/" />
         <meta
           name="description"
@@ -183,7 +184,7 @@ const Home = (props: any) => {
           name="keywords"
           content="gaming pc,gaming computers,cheap gaming pc,intel core i7,custom gaming computers,custom gaming pc"
         />
-      </Helmet>
+      </Head>
       <ComponentsHeader showpagetopmsg={showPageTopMsg} />
 
       <div className={`${isDarkMode ? `bg-secondary evetechDark` : ``}`}>
@@ -282,5 +283,12 @@ const Home = (props: any) => {
     </>
   );
 };
+
+Home.getInitialProps = async (ctx: NextPageContext) => {
+  return {
+    title: "Title you wanna show",
+    description: "Desc you wanna show"
+  }
+}
 
 export default Home;

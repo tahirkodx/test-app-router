@@ -59,27 +59,6 @@ const Swal = require("sweetalert2");
 // This gets called on every request
 // export async function getServerSideProps(context) {
 //   // Fetch data from external API
-//   // const res = await fetch(`https://.../data`)
-  
-//   const { params } = context;
-//   let urlId: any = params?.id;
-//   let ProductId;
-  
-//   if (urlId !== undefined && urlId.trim().length > 0) {
-//     if (isNaN(urlId)) {
-//       try {
-//         urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
-//         ProductId = urlId;
-//       } catch (e) {
-//         /* router.replace("/"); */
-//         console.log(e);
-//       }
-//     } else {
-//       urlId = parseInt(urlId.replace(".", "").replace("aspx", "").trim());
-//       ProductId = urlId;
-//     }
-//   }
-//   let data = {};
 //   const prods = await ProductAPI.getPCById({ ProductId });
 //         if (
 //           prods !== null &&
@@ -1313,11 +1292,13 @@ const PC = (props: any) => {
 
   return (
     <>
-      {pc !== undefined && (
+      {/* {pc !== undefined && ( */}
         <Head>
           <title itemProp="name" lang="en">
-            {pc.Title}
+            New Comment Here
+            {/* {pc.Title} */}
           </title>
+          <meta name="title" content="New Comment Here"></meta>
           <meta name="description" content={pc.ProductMetaDescription}></meta>
           <meta property="og:locale" content="en_US"></meta>
           <meta property="og:type" content="product"></meta>
@@ -1365,7 +1346,7 @@ const PC = (props: any) => {
           {/* <meta property="product:retailer_item_id:" content=""></meta> */}
           <meta property="product:condition" content="new"></meta>
         </Head>
-      )}
+      {/* )} */}
       <ComponentsHeader showpagetopmsg={showPageTopMsg} />
 
       {initInfo && (

@@ -54,7 +54,6 @@ axiosInstance.interceptors.request.use(
     if (!userToken()) {
       delete config.headers.Authorization;
     }
-    console.log("updateUrl", config);
     return config;
   },
   (error) => {
