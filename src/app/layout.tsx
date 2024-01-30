@@ -31,22 +31,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <title itemProp="name" lang="en">
-          Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
-        </title>
-        <link rel="icon" href="https://evetech.co.za/icons/favicon-32x32.png" />
-        <title itemProp="name" lang="en">
-          Evetech Custom Computer Systems, Gaming Computers, Desktops Gaming PCs
-        </title>
-        <link rel="canonical" href="https://www.evetech.co.za/" />
-        <meta
-          name="description"
-          content="Gaming Pc's, Custom Built Cheap Gaming Computer Systems, The lastest Gaming PC Systems, Intel i7 PC Gaming Desktops. Configure your own Gaming Pc Here!"
-        />
-        <meta
-          name="keywords"
-          content="gaming pc,gaming computers,cheap gaming pc,intel core i7,custom gaming computers,custom gaming pc"
-        />
       <body className={inter.className}>
         <AuthProvider>
         <HeaderProvider>

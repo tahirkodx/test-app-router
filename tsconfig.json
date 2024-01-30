@@ -31,6 +31,7 @@
       "@styles": ["./src/public/styles"],
       "@ui-layouts": ["./src/ui-layouts"],
       "@components": ["./src/components"],
+      "@pages": ["./src/components/pages"],
     }
   },
   "include": [

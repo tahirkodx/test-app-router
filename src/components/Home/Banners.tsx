@@ -56,7 +56,7 @@ const Banners = (props:any) => {
   const isSM = useMediaQuery("(min-width: 576px)");
   const isLG = useMediaQuery("(min-width: 992px)");
   const router = useRouter();
-  console.log("props.source", props.source)
+
   return (
     <>
       {props.source.map((Section:any) => {

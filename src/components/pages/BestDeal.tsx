@@ -1531,7 +1531,6 @@ const ViewProduct = () => {
             key="ogurl"
           ></meta>
           <meta property="og:site_name" content="Evetech"></meta>
-          {/* <meta property="article:modified_time" content={component.AddedDate}></meta> */}
           <meta
             property="og:image"
             content={
@@ -1559,13 +1558,7 @@ const ViewProduct = () => {
           <meta property="product:price:currency" content="ZAR"></meta>
           <meta property="og:availability" content={stockItemType}></meta>
           <meta property="product:availability" content={stockItemType}></meta>
-          {/* <meta property="product:retailer_item_id:" content=""></meta> */}
           <meta property="product:condition" content="new"></meta>
-
-          {/* {console.log(
-            `currencyFormat(component.Price_Vat).replace("R ", "")`,
-            currencyFormat(component.Price_Vat)
-          )} */}
         </Head>
       )}
 

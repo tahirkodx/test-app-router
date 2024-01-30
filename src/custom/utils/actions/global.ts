@@ -1,4 +1,3 @@
-"use client";
 import axios from "@axios";
 import * as _ from "lodash";
 import qs from "query-string";

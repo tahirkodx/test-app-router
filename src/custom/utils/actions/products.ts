@@ -1,4 +1,3 @@
-"use client";
 import ApiEndpoints from "@apiEndpoints";
 import { Catched, eveTechApi } from "@/custom/utils/actions/global";
 import * as _ from "lodash";
@@ -45,7 +44,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_CATEGORY_DETAILS_BRIEF}`,
         options
@@ -60,7 +58,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PRODUCT_COMPONENTS}`,
         options
@@ -75,7 +72,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_CATEGORY_DETAILS}`,
         options
@@ -90,7 +86,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENTS_CATEGORY}`,
         options
@@ -105,7 +100,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENTS_TOP_BANNERS}`,
         options
@@ -120,7 +114,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_CATEGORIES_BY_CID}`,
         options
@@ -135,7 +128,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PRODUCTS_BY_CATEGORYIDS}`,
         options
@@ -275,7 +267,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENT_SIMILAR_PRODUCTS}`,
         options
@@ -290,7 +281,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENT_OVERVIEW}`,
         options
@@ -305,7 +295,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENT_ATTRIBUTES_VALUES}`,
         options
@@ -320,7 +309,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_UPGRADEKIT_ITEMS}`,
         options
@@ -368,7 +356,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_COMPONENT_BY_ID}`,
         options
@@ -479,7 +466,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_BY_ATTRIBUTE_ID}`,
         options
@@ -494,7 +480,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_DEALS_BY_BRAND_ID}`,
         options
@@ -510,7 +495,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_SPECIAL_BY_ATTRIBUTE_ID}`,
         options
@@ -552,7 +536,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOPS_BY_IDS}`,
         options
@@ -568,7 +551,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_SPECIFICATIONS_BYIDS}`,
         options
@@ -597,7 +579,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_ATTRIBUTES_VALUE}`,
         options
@@ -612,7 +593,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_FPS_FILTER_DATA}`,
         options
@@ -627,7 +607,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_CPU_LIST}`,
         options
@@ -642,7 +621,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_GPU_LIST}`,
         options
@@ -657,7 +635,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_BUNDLES_INFO}`,
         options
@@ -672,7 +649,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_GAMES_FREE_INFO}`,
         options
@@ -687,7 +663,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_FREE_STUFF_INFO}`,
         options
@@ -702,7 +677,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_PRODUCT_CARDS}`,
         options
@@ -717,7 +691,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_PC_DATA}`,
         options
@@ -732,7 +705,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_BUNDLE_GALLERY}`,
         options
@@ -797,7 +769,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_BACKPACKS}`,
         options
@@ -812,7 +783,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_GALLERY_BYID}`,
         options
@@ -827,7 +797,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_SIMILAR_LINKS}`,
         options
@@ -842,7 +811,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_SPECIFICATIONS}`,
         options
@@ -857,7 +825,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_REVIEWS}`,
         options
@@ -872,7 +839,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_BUNDLES}`,
         options
@@ -887,7 +853,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_ATTRIBUTES_VALUES}`,
         options
@@ -902,7 +867,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_FREE_STUFF}`,
         options
@@ -917,7 +881,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_FPS_DATA}`,
         options
@@ -932,7 +895,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_GAME_DATA}`,
         options
@@ -947,7 +909,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_BYID}`,
         options
@@ -973,7 +934,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_CATEGORY_CID}`,
         options
@@ -1070,7 +1030,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_SPECIAL_PCS}`,
         options
@@ -1086,7 +1045,6 @@ const ProductAPI: any = {
       const options: any = {
         params: payload,
       };
-      console.log(options);
       const response = await eveTechApi.get(
         `${ApiEndpoints.GET_LAPTOP_SPECIALS}`,
         options
