@@ -184,5 +184,4 @@ export { AddressModal,
   ModalTimeSpyModal,
   WishModal,
   WriteReview } from "./Modals";
-export { default as MainHome } from "./MainHome";
 export { default as Structure } from "./Structure";
