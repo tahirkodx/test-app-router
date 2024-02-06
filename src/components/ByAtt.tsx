@@ -91,13 +91,6 @@ const ByAtt = (props: any) => {
         };
 
         const BindProductsByScreen = async (screen: any) => {
-          /* const prodData = await fetch(`/api/getProductsByScreen/${screen}`, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-          }).then((res) => res.json()); */
           const prodData = await ProductAPI.getProductsByScreen({ screen });
           if (
             prodData !== null &&
@@ -120,20 +113,6 @@ const ByAtt = (props: any) => {
         };
 
         const BindProductsByPrice = async (pStart: any, pEnd: any) => {
-          /* const prodData = await fetch(`/api/getProductsByPrice`, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify({
-              prices: {
-                pStart: pStart,
-                pEnd: pEnd,
-              },
-            }),
-          }).then((res) => res.json()); */
-
           const prodData = await ProductAPI.getProductsByPrice({
             prices: {
               pStart: pStart,
@@ -160,16 +139,6 @@ const ByAtt = (props: any) => {
         };
 
         const BindProductsByAttributeID = async (attID: any) => {
-          /* const prodData = await fetch(
-            `/api/getProductsByAttributeID/${attID}`,
-            {
-              method: "GET",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-              },
-            }
-          ).then((res) => res.json()); */
           const prodData = await ProductAPI.getProductsByAttributeID({ attID });
           if (
             prodData !== null &&
@@ -192,13 +161,6 @@ const ByAtt = (props: any) => {
         };
 
         const BindProductsBySeries = async (series: any) => {
-          /*  const prodData = await fetch(`/api/getProductsBySeries/${series}`, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-          }).then((res) => res.json()); */
           const prodData = await ProductAPI.getProductsBySeries({ series });
           if (
             prodData !== null &&
@@ -339,7 +301,7 @@ const ByAtt = (props: any) => {
   }, []);
 
   return (
-    <>
+    <div className={isDarkMode ? `evetechDark` : ``}>
       {attribute !== undefined && !_.isEmpty(attribute) && (
         <Helmet>
           <title itemProp="name" lang="en">
@@ -433,7 +395,7 @@ const ByAtt = (props: any) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

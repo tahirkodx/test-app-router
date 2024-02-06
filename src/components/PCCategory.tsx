@@ -187,14 +187,6 @@ const PCByCategory = (props: any) => {
 
   return (
     <>
-      {category !== undefined && (
-        <Helmet>
-          <title itemProp="name" lang="en">
-            {category.TitleText}
-          </title>
-          <meta name="description" content={category.MetaDescription}></meta>
-        </Helmet>
-      )}
       <ComponentsHeader showpagetopmsg={showPageTopMsg} />
       <Container fluid className={`${darkMode ? `bg-dark` : ``} py-4`}>
         {initPage && (
