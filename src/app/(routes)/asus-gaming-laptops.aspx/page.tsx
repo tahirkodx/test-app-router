@@ -1,4 +1,3 @@
-"use client";
 import ByAtt from "@/components/ByAtt";
 import { ProductAPI } from "@/custom/utils/actions";
 import { Metadata } from "next";
