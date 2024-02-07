@@ -5,7 +5,7 @@ import { MetaDefault } from "@/custom/utils/Helper";
 
 const defaultMeta = MetaDefault();
 export async function generateMetadata(params: any): Promise<Metadata> {
-  let attid = 27;
+  let attid = 13;
   const attData = await ProductAPI.getAttributeDetailsByID({ attid });
   let attDetail = null;
   if (
@@ -43,9 +43,8 @@ export async function generateMetadata(params: any): Promise<Metadata> {
     },
   };
 }
-
 const PCByAttHome = () => {
-  return <ByAtt attid={27}></ByAtt>;
+  return <ByAtt attid={13}></ByAtt>;
 };
 
 export default PCByAttHome;

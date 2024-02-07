@@ -89,7 +89,7 @@ export async function generateMetadata( {params}: {params: {id: string}}): Promi
 }
 
 const ViewProduct = (props) => {
-
+  console.log("component Page : ",props);
   return (
     <>
       <BestDeal />

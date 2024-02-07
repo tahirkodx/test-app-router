@@ -41,6 +41,6 @@
     ".next/types/**/*.ts",
     "html/types/**/*.ts",
     "src/store/common-context.js"
-  ],
+, "src/app/(routes)/find-gaming-laptops-by-fps/[game]"  ],
   "exclude": ["node_modules"]
 }
