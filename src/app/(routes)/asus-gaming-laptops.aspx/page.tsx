@@ -19,6 +19,7 @@ export async function generateMetadata(params: any): Promise<Metadata> {
     if (pages !== undefined && pages.length > 0) {
       attDetail = pages[0];
     }
+    
   }
 
   return {
